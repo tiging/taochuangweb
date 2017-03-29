@@ -3,6 +3,9 @@ $data = array (
   'exp' => 0,
   'data' => 
   array (
+    'it618_firstnfocus_deyi.plugin' => 1,
+    'drk_ledadv.plugin' => 1,
+    'levnav.plugin' => 1,
     'wechat.plugin' => 1,
     'pcmgr_url_safeguard.plugin' => 1,
     'mobile.plugin' => 1,

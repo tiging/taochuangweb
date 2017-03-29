@@ -207,5 +207,9 @@ $data = array (
       'show_scanqr' => '通过微信扫描二维码为我拉票',
       'resource_push' => '推送到微信素材',
     ),
+    'it618_firstnfocus_deyi' => 
+    array (
+      'it618_copyright' => '插件设计：<a href="http://www.cnit618.com" target="_blank" title="为站长解决问题的网站">IT618资讯网</a>',
+    ),
   ),
 );

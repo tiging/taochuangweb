@@ -1,6 +1,6 @@
 <?php
 $data = array (
-  'exp' => 1489788831,
+  'exp' => 1490789918,
   'data' => 
   array (
     'catlist' => 
@@ -220,10 +220,28 @@ $data = array (
     ),
     'whosonline' => 
     array (
+      0 => 
+      array (
+        'sid' => 'TRPku9',
+        'ip1' => '192',
+        'ip2' => '168',
+        'ip3' => '31',
+        'ip4' => '200',
+        'uid' => '1',
+        'username' => 'admin',
+        'groupid' => '1',
+        'invisible' => '0',
+        'action' => '0',
+        'lastactivity' => '20:14',
+        'lastolupdate' => '1490789670',
+        'fid' => '0',
+        'tid' => '0',
+        'icon' => 'online_admin.gif',
+      ),
     ),
     'onlinenum' => '1',
-    'membercount' => 0,
-    'guestcount' => 1,
+    'membercount' => 1,
+    'guestcount' => 0,
     'grids' => 
     array (
     ),

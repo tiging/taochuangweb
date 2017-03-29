@@ -1049,8 +1049,8 @@ j/n/Y',
       'guest_groupid' => 20,
       'oauth2' => 1,
     ),
-    'allowwidthauto' => '0',
-    'switchwidthauto' => '1',
+    'allowwidthauto' => '1',
+    'switchwidthauto' => '0',
     'leftsidewidth' => '0',
     'card' => 
     array (
@@ -1129,8 +1129,28 @@ j/n/Y',
     'wechatviewpluginid' => 'wechat',
     'site_qq' => '149779331',
     'connect_login_times' => '0',
-    'connect_login_report_date' => '2017-03-17',
+    'connect_login_report_date' => '2017-03-29',
     'wechatresponse' => 'a:4:{s:16:"receiveMsg::text";a:4:{s:6:"plugin";s:6:"wechat";s:7:"include";s:18:"response.class.php";s:5:"class";s:11:"WSQResponse";s:6:"method";s:4:"text";}s:19:"receiveEvent::click";a:4:{s:6:"plugin";s:6:"wechat";s:7:"include";s:18:"response.class.php";s:5:"class";s:11:"WSQResponse";s:6:"method";s:5:"click";}s:23:"receiveEvent::subscribe";a:4:{s:6:"plugin";s:6:"wechat";s:7:"include";s:18:"response.class.php";s:5:"class";s:11:"WSQResponse";s:6:"method";s:9:"subscribe";}s:18:"receiveEvent::scan";a:4:{s:6:"plugin";s:6:"wechat";s:7:"include";s:18:"response.class.php";s:5:"class";s:11:"WSQResponse";s:6:"method";s:4:"scan";}}',
+    'disfixednv_forumindex' => '0',
+    'forumpicstyle' => 'a:3:{s:10:"thumbwidth";i:0;s:11:"thumbheight";i:0;s:8:"thumbnum";i:0;}',
+    'disfixednv_forumdisplay' => '0',
+    'disfixedavatar' => '0',
+    'disfixednv_viewthread' => '0',
+    'threadguestlite' => '0',
+    'close_leftinfo' => '0',
+    'close_leftinfo_userctrl' => '0',
+    'guestviewthumb' => 
+    array (
+      'flag' => 0,
+      'width' => 100,
+      'height' => 100,
+    ),
+    'guesttipsinthread' => 
+    array (
+      'flag' => 0,
+      'text' => '',
+    ),
+    'allowreplybg' => '0',
     'newusergroupid' => '10',
     'buyusergroupexists' => '0',
     'forumfids' => 
@@ -1575,8 +1595,373 @@ j/n/Y',
     ),
     'hookscript' => 
     array (
-      'global' => 
+      'forum' => 
       array (
+        'it618' => 
+        array (
+          'module' => 
+          array (
+            'it618_firstnfocus_deyi' => 'it618_firstnfocus_deyi/firstnfocus_deyi',
+          ),
+          'adminid' => 
+          array (
+            'it618_firstnfocus_deyi' => '0',
+          ),
+          'funcs' => 
+          array (
+            'it618_hook' => 
+            array (
+              0 => 
+              array (
+                0 => 'it618_firstnfocus_deyi',
+                1 => 'it618_hook',
+              ),
+            ),
+          ),
+        ),
+        'index' => 
+        array (
+          'module' => 
+          array (
+            'it618_firstnfocus_deyi' => 'it618_firstnfocus_deyi/firstnfocus_deyi',
+            'qqconnect' => 'qqconnect/connect',
+          ),
+          'adminid' => 
+          array (
+            'it618_firstnfocus_deyi' => '0',
+            'qqconnect' => '0',
+          ),
+          'funcs' => 
+          array (
+            'index_top' => 
+            array (
+              0 => 
+              array (
+                0 => 'it618_firstnfocus_deyi',
+                1 => 'index_top',
+              ),
+            ),
+            'index_status_extra' => 
+            array (
+              0 => 
+              array (
+                0 => 'qqconnect',
+                1 => 'index_status_extra',
+              ),
+            ),
+          ),
+        ),
+        'global' => 
+        array (
+          'module' => 
+          array (
+            'levnav' => 'levnav/hook',
+            'wechat' => 'wechat/wechat',
+            'mobile' => 'mobile/mobile',
+            'qqconnect' => 'qqconnect/connect',
+          ),
+          'adminid' => 
+          array (
+            'levnav' => '0',
+            'wechat' => '0',
+            'mobile' => '0',
+            'qqconnect' => '0',
+          ),
+          'funcs' => 
+          array (
+            'global_nav_extra' => 
+            array (
+              0 => 
+              array (
+                0 => 'levnav',
+                1 => 'global_nav_extra',
+              ),
+            ),
+            'global_login_extra' => 
+            array (
+              0 => 
+              array (
+                0 => 'qqconnect',
+                1 => 'global_login_extra',
+              ),
+              1 => 
+              array (
+                0 => 'wechat',
+                1 => 'global_login_extra',
+              ),
+            ),
+            'global_usernav_extra1' => 
+            array (
+              0 => 
+              array (
+                0 => 'qqconnect',
+                1 => 'global_usernav_extra1',
+              ),
+              1 => 
+              array (
+                0 => 'wechat',
+                1 => 'global_usernav_extra1',
+              ),
+            ),
+            'global_footer' => 
+            array (
+              0 => 
+              array (
+                0 => 'qqconnect',
+                1 => 'global_footer',
+              ),
+              1 => 
+              array (
+                0 => 'wechat',
+                1 => 'global_footer',
+              ),
+            ),
+            'global_mobile' => 
+            array (
+              0 => 
+              array (
+                0 => 'mobile',
+                1 => 'global_mobile',
+              ),
+            ),
+          ),
+        ),
+        'viewthread' => 
+        array (
+          'module' => 
+          array (
+            'wechat' => 'wechat/wechat',
+            'pcmgr_url_safeguard' => 'pcmgr_url_safeguard/pcmgr_url_safeguard',
+            'mobile' => 'mobile/mobile',
+            'qqconnect' => 'qqconnect/connect',
+          ),
+          'adminid' => 
+          array (
+            'wechat' => '0',
+            'pcmgr_url_safeguard' => '0',
+            'mobile' => '0',
+            'qqconnect' => '0',
+          ),
+          'funcs' => 
+          array (
+            'viewthread_showactivity' => 
+            array (
+              0 => 
+              array (
+                0 => 'wechat',
+                1 => 'viewthread_showactivity',
+              ),
+            ),
+            'viewthread_postaction' => 
+            array (
+              0 => 
+              array (
+                0 => 'wechat',
+                1 => 'viewthread_postaction',
+              ),
+            ),
+          ),
+          'outputfuncs' => 
+          array (
+            'viewthread_postheader' => 
+            array (
+              0 => 
+              array (
+                0 => 'wechat',
+                1 => 'viewthread_postheader_output',
+              ),
+            ),
+            'viewthread_posttop' => 
+            array (
+              0 => 
+              array (
+                0 => 'wechat',
+                1 => 'viewthread_posttop_output',
+              ),
+            ),
+            'viewthread_share_method' => 
+            array (
+              0 => 
+              array (
+                0 => 'qqconnect',
+                1 => 'viewthread_share_method_output',
+              ),
+              1 => 
+              array (
+                0 => 'wechat',
+                1 => 'viewthread_share_method_output',
+              ),
+            ),
+            'viewthread_top' => 
+            array (
+              0 => 
+              array (
+                0 => 'pcmgr_url_safeguard',
+                1 => 'viewthread_top_output',
+              ),
+            ),
+            'viewthread_postbottom' => 
+            array (
+              0 => 
+              array (
+                0 => 'qqconnect',
+                1 => 'viewthread_postbottom_output',
+              ),
+              1 => 
+              array (
+                0 => 'mobile',
+                1 => 'viewthread_postbottom_output',
+              ),
+            ),
+            'viewthread_bottom' => 
+            array (
+              0 => 
+              array (
+                0 => 'qqconnect',
+                1 => 'viewthread_bottom_output',
+              ),
+            ),
+            'viewthread_fastpost_btn_extra' => 
+            array (
+              0 => 
+              array (
+                0 => 'qqconnect',
+                1 => 'viewthread_fastpost_btn_extra_output',
+              ),
+            ),
+          ),
+        ),
+        'misc' => 
+        array (
+          'module' => 
+          array (
+            'wechat' => 'wechat/wechat',
+            'mobile' => 'mobile/mobile',
+          ),
+          'adminid' => 
+          array (
+            'wechat' => '0',
+            'mobile' => '0',
+          ),
+          'funcs' => 
+          array (
+            'misc_showactivity' => 
+            array (
+              0 => 
+              array (
+                0 => 'wechat',
+                1 => 'misc_showactivity',
+              ),
+            ),
+          ),
+          'messagefuncs' => 
+          array (
+            'misc_mobile' => 
+            array (
+              0 => 
+              array (
+                0 => 'mobile',
+                1 => 'misc_mobile_message',
+              ),
+            ),
+          ),
+        ),
+        'post' => 
+        array (
+          'module' => 
+          array (
+            'wechat' => 'wechat/wechat',
+            'mobile' => 'mobile/mobile',
+            'qqconnect' => 'qqconnect/connect',
+          ),
+          'adminid' => 
+          array (
+            'wechat' => '0',
+            'mobile' => '0',
+            'qqconnect' => '0',
+          ),
+          'funcs' => 
+          array (
+            'post_showactivity' => 
+            array (
+              0 => 
+              array (
+                0 => 'wechat',
+                1 => 'post_showactivity',
+              ),
+            ),
+          ),
+          'messagefuncs' => 
+          array (
+            'post_mobile' => 
+            array (
+              0 => 
+              array (
+                0 => 'mobile',
+                1 => 'post_mobile_message',
+              ),
+            ),
+            'post_feedlog' => 
+            array (
+              0 => 
+              array (
+                0 => 'qqconnect',
+                1 => 'post_feedlog_message',
+              ),
+            ),
+          ),
+          'outputfuncs' => 
+          array (
+            'post_sync_method' => 
+            array (
+              0 => 
+              array (
+                0 => 'qqconnect',
+                1 => 'post_sync_method_output',
+              ),
+            ),
+            'post_infloat_btn_extra' => 
+            array (
+              0 => 
+              array (
+                0 => 'qqconnect',
+                1 => 'post_infloat_btn_extra_output',
+              ),
+            ),
+          ),
+        ),
+        'plugin' => 
+        array (
+          'module' => 
+          array (
+            'wechat' => 'wechat/wechat',
+            'qqconnect' => 'qqconnect/connect',
+          ),
+          'adminid' => 
+          array (
+            'wechat' => '0',
+            'qqconnect' => '0',
+          ),
+          'funcs' => 
+          array (
+            'plugin_wechat' => 
+            array (
+              0 => 
+              array (
+                0 => 'wechat',
+                1 => 'plugin_wechat',
+              ),
+            ),
+            'plugin_qqconnect' => 
+            array (
+              0 => 
+              array (
+                0 => 'qqconnect',
+                1 => 'plugin_qqconnect',
+              ),
+            ),
+          ),
+        ),
         'common' => 
         array (
           'module' => 
@@ -1643,22 +2028,125 @@ j/n/Y',
             ),
           ),
         ),
+        'discuzcode' => 
+        array (
+          'module' => 
+          array (
+            'mobile' => 'mobile/mobile',
+            'qqconnect' => 'qqconnect/connect',
+          ),
+          'adminid' => 
+          array (
+            'mobile' => '0',
+            'qqconnect' => '0',
+          ),
+          'funcs' => 
+          array (
+            'discuzcode' => 
+            array (
+              0 => 
+              array (
+                0 => 'qqconnect',
+                1 => 'discuzcode',
+              ),
+              1 => 
+              array (
+                0 => 'mobile',
+                1 => 'discuzcode',
+              ),
+            ),
+          ),
+        ),
+        'forumdisplay' => 
+        array (
+          'module' => 
+          array (
+            'qqconnect' => 'qqconnect/connect',
+          ),
+          'adminid' => 
+          array (
+            'qqconnect' => '0',
+          ),
+          'outputfuncs' => 
+          array (
+            'forumdisplay_fastpost_sync_method' => 
+            array (
+              0 => 
+              array (
+                0 => 'qqconnect',
+                1 => 'forumdisplay_fastpost_sync_method_output',
+              ),
+            ),
+          ),
+        ),
+        'init' => 
+        array (
+          'module' => 
+          array (
+            'qqconnect' => 'qqconnect/connect',
+          ),
+          'adminid' => 
+          array (
+            'qqconnect' => '0',
+          ),
+          'funcs' => 
+          array (
+            'init' => 
+            array (
+              0 => 
+              array (
+                0 => 'qqconnect',
+                1 => 'init',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'global' => 
+      array (
         'global' => 
         array (
           'module' => 
           array (
+            'it618_firstnfocus_deyi' => 'it618_firstnfocus_deyi/firstnfocus_deyi',
+            'drk_ledadv' => 'drk_ledadv/drk_ledadv',
+            'levnav' => 'levnav/hook',
             'wechat' => 'wechat/wechat',
             'mobile' => 'mobile/mobile',
             'qqconnect' => 'qqconnect/connect',
           ),
           'adminid' => 
           array (
+            'it618_firstnfocus_deyi' => '0',
+            'drk_ledadv' => '0',
+            'levnav' => '0',
             'wechat' => '0',
             'mobile' => '0',
             'qqconnect' => '0',
           ),
           'funcs' => 
           array (
+            'global_header' => 
+            array (
+              0 => 
+              array (
+                0 => 'drk_ledadv',
+                1 => 'global_header',
+              ),
+              1 => 
+              array (
+                0 => 'it618_firstnfocus_deyi',
+                1 => 'global_header',
+              ),
+            ),
+            'global_nav_extra' => 
+            array (
+              0 => 
+              array (
+                0 => 'levnav',
+                1 => 'global_nav_extra',
+              ),
+            ),
             'global_login_extra' => 
             array (
               0 => 
@@ -1704,6 +2192,116 @@ j/n/Y',
               array (
                 0 => 'mobile',
                 1 => 'global_mobile',
+              ),
+            ),
+          ),
+        ),
+        'it618' => 
+        array (
+          'module' => 
+          array (
+            'it618_firstnfocus_deyi' => 'it618_firstnfocus_deyi/firstnfocus_deyi',
+          ),
+          'adminid' => 
+          array (
+            'it618_firstnfocus_deyi' => '0',
+          ),
+          'funcs' => 
+          array (
+            'it618_hook' => 
+            array (
+              0 => 
+              array (
+                0 => 'it618_firstnfocus_deyi',
+                1 => 'it618_hook',
+              ),
+            ),
+          ),
+        ),
+        'index' => 
+        array (
+          'module' => 
+          array (
+            'it618_firstnfocus_deyi' => 'it618_firstnfocus_deyi/firstnfocus_deyi',
+          ),
+          'adminid' => 
+          array (
+            'it618_firstnfocus_deyi' => '0',
+          ),
+          'funcs' => 
+          array (
+            'index_top' => 
+            array (
+              0 => 
+              array (
+                0 => 'it618_firstnfocus_deyi',
+                1 => 'index_top',
+              ),
+            ),
+          ),
+        ),
+        'common' => 
+        array (
+          'module' => 
+          array (
+            'wechat' => 'wechat/wechat',
+            'mobile' => 'mobile/mobile',
+            'qqconnect' => 'qqconnect/connect',
+          ),
+          'adminid' => 
+          array (
+            'wechat' => '0',
+            'mobile' => '0',
+            'qqconnect' => '0',
+          ),
+          'funcs' => 
+          array (
+            'common' => 
+            array (
+              0 => 
+              array (
+                0 => 'qqconnect',
+                1 => 'common',
+              ),
+              1 => 
+              array (
+                0 => 'mobile',
+                1 => 'common',
+              ),
+              2 => 
+              array (
+                0 => 'wechat',
+                1 => 'common',
+              ),
+            ),
+            'common_base' => 
+            array (
+              0 => 
+              array (
+                0 => 'qqconnect',
+                1 => 'common_base',
+              ),
+            ),
+          ),
+        ),
+        'deletemember' => 
+        array (
+          'module' => 
+          array (
+            'wechat' => 'wechat/wechat',
+          ),
+          'adminid' => 
+          array (
+            'wechat' => '0',
+          ),
+          'funcs' => 
+          array (
+            'deletemember' => 
+            array (
+              0 => 
+              array (
+                0 => 'wechat',
+                1 => 'deletemember',
               ),
             ),
           ),
@@ -2052,471 +2650,6 @@ j/n/Y',
               array (
                 0 => 'qqconnect',
                 1 => 'discuzcode',
-              ),
-            ),
-          ),
-        ),
-        'init' => 
-        array (
-          'module' => 
-          array (
-            'qqconnect' => 'qqconnect/connect',
-          ),
-          'adminid' => 
-          array (
-            'qqconnect' => '0',
-          ),
-          'funcs' => 
-          array (
-            'init' => 
-            array (
-              0 => 
-              array (
-                0 => 'qqconnect',
-                1 => 'init',
-              ),
-            ),
-          ),
-        ),
-      ),
-      'forum' => 
-      array (
-        'viewthread' => 
-        array (
-          'module' => 
-          array (
-            'wechat' => 'wechat/wechat',
-            'pcmgr_url_safeguard' => 'pcmgr_url_safeguard/pcmgr_url_safeguard',
-            'mobile' => 'mobile/mobile',
-            'qqconnect' => 'qqconnect/connect',
-          ),
-          'adminid' => 
-          array (
-            'wechat' => '0',
-            'pcmgr_url_safeguard' => '0',
-            'mobile' => '0',
-            'qqconnect' => '0',
-          ),
-          'funcs' => 
-          array (
-            'viewthread_showactivity' => 
-            array (
-              0 => 
-              array (
-                0 => 'wechat',
-                1 => 'viewthread_showactivity',
-              ),
-            ),
-            'viewthread_postaction' => 
-            array (
-              0 => 
-              array (
-                0 => 'wechat',
-                1 => 'viewthread_postaction',
-              ),
-            ),
-          ),
-          'outputfuncs' => 
-          array (
-            'viewthread_postheader' => 
-            array (
-              0 => 
-              array (
-                0 => 'wechat',
-                1 => 'viewthread_postheader_output',
-              ),
-            ),
-            'viewthread_posttop' => 
-            array (
-              0 => 
-              array (
-                0 => 'wechat',
-                1 => 'viewthread_posttop_output',
-              ),
-            ),
-            'viewthread_share_method' => 
-            array (
-              0 => 
-              array (
-                0 => 'qqconnect',
-                1 => 'viewthread_share_method_output',
-              ),
-              1 => 
-              array (
-                0 => 'wechat',
-                1 => 'viewthread_share_method_output',
-              ),
-            ),
-            'viewthread_top' => 
-            array (
-              0 => 
-              array (
-                0 => 'pcmgr_url_safeguard',
-                1 => 'viewthread_top_output',
-              ),
-            ),
-            'viewthread_postbottom' => 
-            array (
-              0 => 
-              array (
-                0 => 'qqconnect',
-                1 => 'viewthread_postbottom_output',
-              ),
-              1 => 
-              array (
-                0 => 'mobile',
-                1 => 'viewthread_postbottom_output',
-              ),
-            ),
-            'viewthread_bottom' => 
-            array (
-              0 => 
-              array (
-                0 => 'qqconnect',
-                1 => 'viewthread_bottom_output',
-              ),
-            ),
-            'viewthread_fastpost_btn_extra' => 
-            array (
-              0 => 
-              array (
-                0 => 'qqconnect',
-                1 => 'viewthread_fastpost_btn_extra_output',
-              ),
-            ),
-          ),
-        ),
-        'misc' => 
-        array (
-          'module' => 
-          array (
-            'wechat' => 'wechat/wechat',
-            'mobile' => 'mobile/mobile',
-          ),
-          'adminid' => 
-          array (
-            'wechat' => '0',
-            'mobile' => '0',
-          ),
-          'funcs' => 
-          array (
-            'misc_showactivity' => 
-            array (
-              0 => 
-              array (
-                0 => 'wechat',
-                1 => 'misc_showactivity',
-              ),
-            ),
-          ),
-          'messagefuncs' => 
-          array (
-            'misc_mobile' => 
-            array (
-              0 => 
-              array (
-                0 => 'mobile',
-                1 => 'misc_mobile_message',
-              ),
-            ),
-          ),
-        ),
-        'post' => 
-        array (
-          'module' => 
-          array (
-            'wechat' => 'wechat/wechat',
-            'mobile' => 'mobile/mobile',
-            'qqconnect' => 'qqconnect/connect',
-          ),
-          'adminid' => 
-          array (
-            'wechat' => '0',
-            'mobile' => '0',
-            'qqconnect' => '0',
-          ),
-          'funcs' => 
-          array (
-            'post_showactivity' => 
-            array (
-              0 => 
-              array (
-                0 => 'wechat',
-                1 => 'post_showactivity',
-              ),
-            ),
-          ),
-          'messagefuncs' => 
-          array (
-            'post_mobile' => 
-            array (
-              0 => 
-              array (
-                0 => 'mobile',
-                1 => 'post_mobile_message',
-              ),
-            ),
-            'post_feedlog' => 
-            array (
-              0 => 
-              array (
-                0 => 'qqconnect',
-                1 => 'post_feedlog_message',
-              ),
-            ),
-          ),
-          'outputfuncs' => 
-          array (
-            'post_sync_method' => 
-            array (
-              0 => 
-              array (
-                0 => 'qqconnect',
-                1 => 'post_sync_method_output',
-              ),
-            ),
-            'post_infloat_btn_extra' => 
-            array (
-              0 => 
-              array (
-                0 => 'qqconnect',
-                1 => 'post_infloat_btn_extra_output',
-              ),
-            ),
-          ),
-        ),
-        'plugin' => 
-        array (
-          'module' => 
-          array (
-            'wechat' => 'wechat/wechat',
-            'qqconnect' => 'qqconnect/connect',
-          ),
-          'adminid' => 
-          array (
-            'wechat' => '0',
-            'qqconnect' => '0',
-          ),
-          'funcs' => 
-          array (
-            'plugin_wechat' => 
-            array (
-              0 => 
-              array (
-                0 => 'wechat',
-                1 => 'plugin_wechat',
-              ),
-            ),
-            'plugin_qqconnect' => 
-            array (
-              0 => 
-              array (
-                0 => 'qqconnect',
-                1 => 'plugin_qqconnect',
-              ),
-            ),
-          ),
-        ),
-        'common' => 
-        array (
-          'module' => 
-          array (
-            'wechat' => 'wechat/wechat',
-            'mobile' => 'mobile/mobile',
-            'qqconnect' => 'qqconnect/connect',
-          ),
-          'adminid' => 
-          array (
-            'wechat' => '0',
-            'mobile' => '0',
-            'qqconnect' => '0',
-          ),
-          'funcs' => 
-          array (
-            'common' => 
-            array (
-              0 => 
-              array (
-                0 => 'qqconnect',
-                1 => 'common',
-              ),
-              1 => 
-              array (
-                0 => 'mobile',
-                1 => 'common',
-              ),
-              2 => 
-              array (
-                0 => 'wechat',
-                1 => 'common',
-              ),
-            ),
-            'common_base' => 
-            array (
-              0 => 
-              array (
-                0 => 'qqconnect',
-                1 => 'common_base',
-              ),
-            ),
-          ),
-        ),
-        'deletemember' => 
-        array (
-          'module' => 
-          array (
-            'wechat' => 'wechat/wechat',
-          ),
-          'adminid' => 
-          array (
-            'wechat' => '0',
-          ),
-          'funcs' => 
-          array (
-            'deletemember' => 
-            array (
-              0 => 
-              array (
-                0 => 'wechat',
-                1 => 'deletemember',
-              ),
-            ),
-          ),
-        ),
-        'global' => 
-        array (
-          'module' => 
-          array (
-            'wechat' => 'wechat/wechat',
-            'mobile' => 'mobile/mobile',
-            'qqconnect' => 'qqconnect/connect',
-          ),
-          'adminid' => 
-          array (
-            'wechat' => '0',
-            'mobile' => '0',
-            'qqconnect' => '0',
-          ),
-          'funcs' => 
-          array (
-            'global_login_extra' => 
-            array (
-              0 => 
-              array (
-                0 => 'qqconnect',
-                1 => 'global_login_extra',
-              ),
-              1 => 
-              array (
-                0 => 'wechat',
-                1 => 'global_login_extra',
-              ),
-            ),
-            'global_usernav_extra1' => 
-            array (
-              0 => 
-              array (
-                0 => 'qqconnect',
-                1 => 'global_usernav_extra1',
-              ),
-              1 => 
-              array (
-                0 => 'wechat',
-                1 => 'global_usernav_extra1',
-              ),
-            ),
-            'global_footer' => 
-            array (
-              0 => 
-              array (
-                0 => 'qqconnect',
-                1 => 'global_footer',
-              ),
-              1 => 
-              array (
-                0 => 'wechat',
-                1 => 'global_footer',
-              ),
-            ),
-            'global_mobile' => 
-            array (
-              0 => 
-              array (
-                0 => 'mobile',
-                1 => 'global_mobile',
-              ),
-            ),
-          ),
-        ),
-        'discuzcode' => 
-        array (
-          'module' => 
-          array (
-            'mobile' => 'mobile/mobile',
-            'qqconnect' => 'qqconnect/connect',
-          ),
-          'adminid' => 
-          array (
-            'mobile' => '0',
-            'qqconnect' => '0',
-          ),
-          'funcs' => 
-          array (
-            'discuzcode' => 
-            array (
-              0 => 
-              array (
-                0 => 'qqconnect',
-                1 => 'discuzcode',
-              ),
-              1 => 
-              array (
-                0 => 'mobile',
-                1 => 'discuzcode',
-              ),
-            ),
-          ),
-        ),
-        'index' => 
-        array (
-          'module' => 
-          array (
-            'qqconnect' => 'qqconnect/connect',
-          ),
-          'adminid' => 
-          array (
-            'qqconnect' => '0',
-          ),
-          'funcs' => 
-          array (
-            'index_status_extra' => 
-            array (
-              0 => 
-              array (
-                0 => 'qqconnect',
-                1 => 'index_status_extra',
-              ),
-            ),
-          ),
-        ),
-        'forumdisplay' => 
-        array (
-          'module' => 
-          array (
-            'qqconnect' => 'qqconnect/connect',
-          ),
-          'adminid' => 
-          array (
-            'qqconnect' => '0',
-          ),
-          'outputfuncs' => 
-          array (
-            'forumdisplay_fastpost_sync_method' => 
-            array (
-              0 => 
-              array (
-                0 => 'qqconnect',
-                1 => 'forumdisplay_fastpost_sync_method_output',
               ),
             ),
           ),
@@ -3178,10 +3311,13 @@ j/n/Y',
     array (
       'available' => 
       array (
-        0 => 'wechat',
-        1 => 'pcmgr_url_safeguard',
-        2 => 'mobile',
-        3 => 'qqconnect',
+        0 => 'it618_firstnfocus_deyi',
+        1 => 'drk_ledadv',
+        2 => 'levnav',
+        3 => 'wechat',
+        4 => 'pcmgr_url_safeguard',
+        5 => 'mobile',
+        6 => 'qqconnect',
       ),
       'func' => 
       array (
@@ -3199,6 +3335,9 @@ j/n/Y',
       ),
       'version' => 
       array (
+        'it618_firstnfocus_deyi' => 'v1.7',
+        'drk_ledadv' => '2.0',
+        'levnav' => '1.0',
         'wechat' => '1.1.6',
         'pcmgr_url_safeguard' => '1.1',
         'mobile' => '1.4.8',
@@ -3256,12 +3395,12 @@ j/n/Y',
     array (
       2 => 
       array (
-        'navname' => '论坛',
+        'navname' => '淘创网首页',
         'filename' => 'forum.php',
         'available' => '1',
         'navid' => 'mn_forum',
         'level' => '0',
-        'nav' => 'id="mn_forum" ><a href="forum.php" hidefocus="true" title="BBS"  >论坛<span>BBS</span></a',
+        'nav' => 'id="mn_forum" ><a href="forum.php" hidefocus="true" title="BBS"  >淘创网首页<span>BBS</span></a',
       ),
       5 => 
       array (
@@ -3435,19 +3574,19 @@ j/n/Y',
       array (
         0 => 
         array (
-          'left' => '{hw0Ge2tY}
-{ln9111Z6}
-{weQA3I8N}
-{MtM9lrR4}
-{RIUC8c1P}
-{Zo4A4O0r}
+          'left' => '{OrTKKGdR}
+{A6ladH19}
+{vZzMPQMS}
+{uuaADJj0}
+{hG7Ggxyt}
+{oayD91PB}
 <dl class="pil cl">
-	<dt>{bfN9EZS5}</dt><dd>{nIP4I8pt}</dd>
+	<dt>{CYJeE1vx}</dt><dd>{EOSvoQOP}</dd>
 </dl>
-{RzjMc60Q}
-<dl class="pil cl">{xcw7KWlF}</dl>',
+{T66eUzOE}
+<dl class="pil cl">{q52zM5R4}</dl>',
           'top' => '<dl class="cl">
-<dt>{gDac0MkD}</dt><dd>{h3pacqce}</dd>
+<dt>{EK35Izek}</dt><dd>{hPRz7ch3}</dd>
 </dl>',
         ),
       ),
@@ -3457,70 +3596,70 @@ j/n/Y',
         array (
           'left' => 
           array (
-            '{hw0Ge2tY}' => 
+            '{OrTKKGdR}' => 
             array (
               0 => 'numbercard',
               1 => '',
               2 => '',
               3 => '',
             ),
-            '{ln9111Z6}' => 
+            '{A6ladH19}' => 
             array (
               0 => 'groupicon',
               1 => '<p>',
               2 => '</p>',
               3 => '',
             ),
-            '{weQA3I8N}' => 
+            '{vZzMPQMS}' => 
             array (
               0 => 'authortitle',
               1 => '<p><em>',
               2 => '</em></p>',
               3 => '',
             ),
-            '{MtM9lrR4}' => 
+            '{uuaADJj0}' => 
             array (
               0 => 'customstatus',
               1 => '<p class="xg1">',
               2 => '</p>',
               3 => '',
             ),
-            '{RIUC8c1P}' => 
+            '{hG7Ggxyt}' => 
             array (
               0 => 'star',
               1 => '<p>',
               2 => '</p>',
               3 => '',
             ),
-            '{Zo4A4O0r}' => 
+            '{oayD91PB}' => 
             array (
               0 => 'upgradeprogress',
               1 => '<p>',
               2 => '</p>',
               3 => '',
             ),
-            '{bfN9EZS5}' => 
+            '{CYJeE1vx}' => 
             array (
               0 => 'baseinfo',
               1 => '',
               2 => '',
               3 => 'credits,1',
             ),
-            '{nIP4I8pt}' => 
+            '{EOSvoQOP}' => 
             array (
               0 => 'baseinfo',
               1 => '',
               2 => '',
               3 => 'credits,0',
             ),
-            '{RzjMc60Q}' => 
+            '{T66eUzOE}' => 
             array (
               0 => 'medal',
               1 => '<p class="md_ctrl">',
               2 => '</p>',
               3 => '',
             ),
-            '{xcw7KWlF}' => 
+            '{q52zM5R4}' => 
             array (
               0 => 'baseinfo',
               1 => '',
@@ -3530,14 +3669,14 @@ j/n/Y',
           ),
           'top' => 
           array (
-            '{gDac0MkD}' => 
+            '{EK35Izek}' => 
             array (
               0 => 'baseinfo',
               1 => '',
               2 => '',
               3 => 'credits,1',
             ),
-            '{h3pacqce}' => 
+            '{hPRz7ch3}' => 
             array (
               0 => 'baseinfo',
               1 => '',
@@ -3562,10 +3701,10 @@ j/n/Y',
     'csspath' => 'data/cache/style_',
     'reginput' => 
     array (
-      'username' => 'BZdfFV',
-      'password' => 'uJ2Cs6',
-      'password2' => 't8zHkj',
-      'email' => 'AzDIW2',
+      'username' => 'Nz4z24',
+      'password' => 'bznYZK',
+      'password2' => 't6iUu9',
+      'email' => 'hC0572',
     ),
     'output' => 
     array (

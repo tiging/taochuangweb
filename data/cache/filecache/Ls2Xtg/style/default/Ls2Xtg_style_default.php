@@ -100,6 +100,6 @@ $data = array (
     'boardlogo' => '<img src="static/image/common/logo.png" alt="ÌÔ´´Íø" border="0" />',
     'bold' => 'bold',
     'defaultextstyle' => '',
-    'verhash' => 'k38',
+    'verhash' => 'tuP',
   ),
 );
