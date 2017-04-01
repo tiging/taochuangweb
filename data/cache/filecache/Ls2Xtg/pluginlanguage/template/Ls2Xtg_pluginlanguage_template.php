@@ -211,5 +211,14 @@ $data = array (
     array (
       'it618_copyright' => '插件设计：<a href="http://www.cnit618.com" target="_blank" title="为站长解决问题的网站">IT618资讯网</a>',
     ),
+    'kx_new100' => 
+    array (
+      'new_1' => '所在版块',
+      'new_2' => '标题',
+      'new_3' => '作者',
+      'new_4' => '人气',
+      'new_5' => '回复',
+      'new_6' => '发表时间',
+    ),
   ),
 );

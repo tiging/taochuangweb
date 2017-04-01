@@ -5,8 +5,8 @@ $data = array (
   array (
     'global' => 
     array (
-      'tids' => '',
-      'count' => 0,
+      'tids' => '\'1\',\'2\',\'4\',\'5\',\'6\'',
+      'count' => 5,
     ),
   ),
 );

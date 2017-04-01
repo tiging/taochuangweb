@@ -3,6 +3,10 @@ $data = array (
   'exp' => 0,
   'data' => 
   array (
+    'touclick.plugin' => 1,
+    'rpancn_buy_usergroup.plugin' => 1,
+    'ljqq.plugin' => 1,
+    'kx_new100.plugin' => 1,
     'it618_firstnfocus_deyi.plugin' => 1,
     'drk_ledadv.plugin' => 1,
     'levnav.plugin' => 1,

@@ -5,6 +5,61 @@ $data = array (
   array (
     'forum' => 
     array (
+      'forum_trade' => 
+      array (
+        'group_trade' => 
+        array (
+          'name' => '群组商品',
+          'script' => 'grouptrade',
+          'searchkeys' => 
+          array (
+          ),
+          'replacekeys' => 
+          array (
+          ),
+        ),
+      ),
+      'forum_forum' => 
+      array (
+        'group_group' => 
+        array (
+          'name' => '群组模块',
+          'script' => 'group',
+          'searchkeys' => 
+          array (
+          ),
+          'replacekeys' => 
+          array (
+          ),
+        ),
+        'portal_category' => 
+        array (
+          'name' => '文章栏目',
+          'script' => 'portalcategory',
+          'searchkeys' => 
+          array (
+            0 => 'threads',
+          ),
+          'replacekeys' => 
+          array (
+            0 => 'articles',
+          ),
+        ),
+      ),
+      'forum_activity' => 
+      array (
+        'group_activity' => 
+        array (
+          'name' => '群组活动',
+          'script' => 'groupactivity',
+          'searchkeys' => 
+          array (
+          ),
+          'replacekeys' => 
+          array (
+          ),
+        ),
+      ),
       'forum_thread' => 
       array (
         'portal_article' => 
@@ -67,61 +122,6 @@ $data = array (
           ),
         ),
       ),
-      'forum_activity' => 
-      array (
-        'group_activity' => 
-        array (
-          'name' => '群组活动',
-          'script' => 'groupactivity',
-          'searchkeys' => 
-          array (
-          ),
-          'replacekeys' => 
-          array (
-          ),
-        ),
-      ),
-      'forum_trade' => 
-      array (
-        'group_trade' => 
-        array (
-          'name' => '群组商品',
-          'script' => 'grouptrade',
-          'searchkeys' => 
-          array (
-          ),
-          'replacekeys' => 
-          array (
-          ),
-        ),
-      ),
-      'forum_forum' => 
-      array (
-        'group_group' => 
-        array (
-          'name' => '群组模块',
-          'script' => 'group',
-          'searchkeys' => 
-          array (
-          ),
-          'replacekeys' => 
-          array (
-          ),
-        ),
-        'portal_category' => 
-        array (
-          'name' => '文章栏目',
-          'script' => 'portalcategory',
-          'searchkeys' => 
-          array (
-            0 => 'threads',
-          ),
-          'replacekeys' => 
-          array (
-            0 => 'articles',
-          ),
-        ),
-      ),
     ),
     'group' => 
     array (
@@ -136,33 +136,6 @@ $data = array (
           ),
           'replacekeys' => 
           array (
-          ),
-        ),
-      ),
-      'group_group' => 
-      array (
-        'forum_forum' => 
-        array (
-          'name' => '版块模块',
-          'script' => 'forum',
-          'searchkeys' => 
-          array (
-          ),
-          'replacekeys' => 
-          array (
-          ),
-        ),
-        'portal_category' => 
-        array (
-          'name' => '文章栏目',
-          'script' => 'portalcategory',
-          'searchkeys' => 
-          array (
-            0 => 'threads',
-          ),
-          'replacekeys' => 
-          array (
-            0 => 'articles',
           ),
         ),
       ),
@@ -242,10 +215,7 @@ $data = array (
           ),
         ),
       ),
-    ),
-    'portal' => 
-    array (
-      'portal_category' => 
+      'group_group' => 
       array (
         'forum_forum' => 
         array (
@@ -253,27 +223,28 @@ $data = array (
           'script' => 'forum',
           'searchkeys' => 
           array (
-            0 => 'articles',
           ),
           'replacekeys' => 
           array (
-            0 => 'threads',
           ),
         ),
-        'group_group' => 
+        'portal_category' => 
         array (
-          'name' => '群组模块',
-          'script' => 'group',
+          'name' => '文章栏目',
+          'script' => 'portalcategory',
           'searchkeys' => 
           array (
-            0 => 'articles',
+            0 => 'threads',
           ),
           'replacekeys' => 
           array (
-            0 => 'threads',
+            0 => 'articles',
           ),
         ),
       ),
+    ),
+    'portal' => 
+    array (
       'portal_article' => 
       array (
         'forum_thread' => 
@@ -337,6 +308,35 @@ $data = array (
           'replacekeys' => 
           array (
             0 => 'replynum',
+          ),
+        ),
+      ),
+      'portal_category' => 
+      array (
+        'forum_forum' => 
+        array (
+          'name' => '版块模块',
+          'script' => 'forum',
+          'searchkeys' => 
+          array (
+            0 => 'articles',
+          ),
+          'replacekeys' => 
+          array (
+            0 => 'threads',
+          ),
+        ),
+        'group_group' => 
+        array (
+          'name' => '群组模块',
+          'script' => 'group',
+          'searchkeys' => 
+          array (
+            0 => 'articles',
+          ),
+          'replacekeys' => 
+          array (
+            0 => 'threads',
           ),
         ),
       ),

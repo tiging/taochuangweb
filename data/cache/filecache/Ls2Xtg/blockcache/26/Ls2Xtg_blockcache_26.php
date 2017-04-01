@@ -1,0 +1,42 @@
+<?php
+$data = array (
+  'exp' => 1490973480,
+  'data' => 
+  array (
+    'bid' => '26',
+    'blockclass' => 'html_html',
+    'blocktype' => '0',
+    'name' => 'VIP1',
+    'title' => '',
+    'classname' => '',
+    'summary' => '<a href="forum.php?mod=viewthread&amp;tid=1" target="_blank"><img src="data/attachment/portal/201703/31/225742mwmvq805w8nnjwjy.png" width="100%" height="100%" /></a>',
+    'uid' => '1',
+    'username' => 'admin',
+    'styleid' => '0',
+    'blockstyle' => '',
+    'picwidth' => '0',
+    'picheight' => '0',
+    'target' => 'blank',
+    'dateformat' => 'Y-m-d',
+    'dateuformat' => '0',
+    'script' => 'banner',
+    'param' => 
+    array (
+      'pic' => 'data/attachment/portal/201703/31/225742mwmvq805w8nnjwjy.png',
+      'url' => 'forum.php?mod=viewthread&tid=1',
+      'atarget' => '_blank',
+      'width' => '100%',
+      'height' => '100%',
+      'text' => '',
+      'items' => 10,
+    ),
+    'shownum' => '10',
+    'cachetime' => '0',
+    'cachetimerange' => '0,0',
+    'punctualupdate' => '0',
+    'hidedisplay' => '0',
+    'dateline' => 1490973180,
+    'notinherited' => '0',
+    'isblank' => '0',
+  ),
+);
