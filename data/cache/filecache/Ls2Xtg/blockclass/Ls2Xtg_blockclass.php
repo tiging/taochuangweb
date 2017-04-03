@@ -8,236 +8,6 @@ $data = array (
       'name' => '论坛类',
       'subs' => 
       array (
-        'forum_trade' => 
-        array (
-          'name' => '商品模块',
-          'fields' => 
-          array (
-            'id' => 
-            array (
-              'name' => '数据ID',
-              'formtype' => 'text',
-              'datatype' => 'int',
-            ),
-            'url' => 
-            array (
-              'name' => '商品链接',
-              'formtype' => 'text',
-              'datatype' => 'string',
-            ),
-            'title' => 
-            array (
-              'name' => '商品名称',
-              'formtype' => 'title',
-              'datatype' => 'title',
-            ),
-            'pic' => 
-            array (
-              'name' => '商品图片地址',
-              'formtype' => 'pic',
-              'datatype' => 'pic',
-            ),
-            'summary' => 
-            array (
-              'name' => '商品说明',
-              'formtype' => 'summary',
-              'datatype' => 'summary',
-            ),
-            'totalitems' => 
-            array (
-              'name' => '商品累计售出数',
-              'formtype' => 'text',
-              'datatype' => 'int',
-            ),
-            'author' => 
-            array (
-              'name' => '商品卖家',
-              'formtype' => 'text',
-              'datatype' => 'text',
-            ),
-            'authorid' => 
-            array (
-              'name' => '商品卖家UID',
-              'formtype' => 'text',
-              'datatype' => 'int',
-            ),
-            'price' => 
-            array (
-              'name' => '商品价格',
-              'formtype' => 'text',
-              'datatype' => 'text',
-            ),
-          ),
-          'script' => 
-          array (
-            'tradehot' => '热门商品',
-            'trade' => '高级自定义',
-            'tradespecified' => '指定商品',
-            'tradenew' => '新商品',
-          ),
-        ),
-        'forum_forum' => 
-        array (
-          'name' => '版块模块',
-          'fields' => 
-          array (
-            'id' => 
-            array (
-              'name' => '数据ID',
-              'formtype' => 'text',
-              'datatype' => 'int',
-            ),
-            'url' => 
-            array (
-              'name' => '版块链接',
-              'formtype' => 'text',
-              'datatype' => 'string',
-            ),
-            'title' => 
-            array (
-              'name' => '版块名称',
-              'formtype' => 'title',
-              'datatype' => 'title',
-            ),
-            'summary' => 
-            array (
-              'name' => '版块介绍',
-              'formtype' => 'summary',
-              'datatype' => 'summary',
-            ),
-            'icon' => 
-            array (
-              'name' => '版块图标',
-              'formtype' => 'text',
-              'datatype' => 'string',
-            ),
-            'posts' => 
-            array (
-              'name' => '版块帖子数',
-              'formtype' => 'text',
-              'datatype' => 'int',
-            ),
-            'threads' => 
-            array (
-              'name' => '版块话题数',
-              'formtype' => 'text',
-              'datatype' => 'int',
-            ),
-            'todayposts' => 
-            array (
-              'name' => '版块今日新帖数',
-              'formtype' => 'text',
-              'datatype' => 'int',
-            ),
-          ),
-          'script' => 
-          array (
-            'forum' => '论坛版块',
-          ),
-        ),
-        'forum_activity' => 
-        array (
-          'name' => '活动模块',
-          'fields' => 
-          array (
-            'id' => 
-            array (
-              'name' => '数据ID',
-              'formtype' => 'text',
-              'datatype' => 'int',
-            ),
-            'url' => 
-            array (
-              'name' => '活动帖URL',
-              'formtype' => 'text',
-              'datatype' => 'string',
-            ),
-            'title' => 
-            array (
-              'name' => '活动标题',
-              'formtype' => 'title',
-              'datatype' => 'title',
-            ),
-            'pic' => 
-            array (
-              'name' => '主题图片',
-              'formtype' => 'pic',
-              'datatype' => 'pic',
-            ),
-            'summary' => 
-            array (
-              'name' => '活动介绍',
-              'formtype' => 'summary',
-              'datatype' => 'summary',
-            ),
-            'time' => 
-            array (
-              'name' => '活动时间',
-              'formtype' => 'text',
-              'datatype' => 'text',
-            ),
-            'expiration' => 
-            array (
-              'name' => '报名截止时间',
-              'formtype' => 'text',
-              'datatype' => 'text',
-            ),
-            'author' => 
-            array (
-              'name' => '发起人',
-              'formtype' => 'text',
-              'datatype' => 'text',
-            ),
-            'authorid' => 
-            array (
-              'name' => '发起人UID',
-              'formtype' => 'text',
-              'datatype' => 'int',
-            ),
-            'cost' => 
-            array (
-              'name' => '每人花销',
-              'formtype' => 'text',
-              'datatype' => 'int',
-            ),
-            'place' => 
-            array (
-              'name' => '活动地点',
-              'formtype' => 'text',
-              'datatype' => 'text',
-            ),
-            'class' => 
-            array (
-              'name' => '活动类型',
-              'formtype' => 'text',
-              'datatype' => 'text',
-            ),
-            'gender' => 
-            array (
-              'name' => '性别要求',
-              'formtype' => 'text',
-              'datatype' => 'text',
-            ),
-            'number' => 
-            array (
-              'name' => '需要人数',
-              'formtype' => 'text',
-              'datatype' => 'int',
-            ),
-            'applynumber' => 
-            array (
-              'name' => '已报名人数',
-              'formtype' => 'text',
-              'datatype' => 'int',
-            ),
-          ),
-          'script' => 
-          array (
-            'activitynew' => '最新活动',
-            'activity' => '高级自定义',
-            'activitycity' => '同城活动',
-          ),
-        ),
         'forum_thread' => 
         array (
           'name' => '帖子模块',
@@ -396,13 +166,243 @@ $data = array (
           ),
           'script' => 
           array (
-            'threadhot' => '热门帖',
-            'threadstick' => '置顶帖',
-            'threadnew' => '最新帖',
-            'threaddigest' => '精华帖',
-            'threadspecified' => '指定帖子',
             'threadspecial' => '特殊主题帖',
+            'threadhot' => '热门帖',
             'thread' => '高级自定义',
+            'threadnew' => '最新帖',
+            'threadspecified' => '指定帖子',
+            'threadstick' => '置顶帖',
+            'threaddigest' => '精华帖',
+          ),
+        ),
+        'forum_activity' => 
+        array (
+          'name' => '活动模块',
+          'fields' => 
+          array (
+            'id' => 
+            array (
+              'name' => '数据ID',
+              'formtype' => 'text',
+              'datatype' => 'int',
+            ),
+            'url' => 
+            array (
+              'name' => '活动帖URL',
+              'formtype' => 'text',
+              'datatype' => 'string',
+            ),
+            'title' => 
+            array (
+              'name' => '活动标题',
+              'formtype' => 'title',
+              'datatype' => 'title',
+            ),
+            'pic' => 
+            array (
+              'name' => '主题图片',
+              'formtype' => 'pic',
+              'datatype' => 'pic',
+            ),
+            'summary' => 
+            array (
+              'name' => '活动介绍',
+              'formtype' => 'summary',
+              'datatype' => 'summary',
+            ),
+            'time' => 
+            array (
+              'name' => '活动时间',
+              'formtype' => 'text',
+              'datatype' => 'text',
+            ),
+            'expiration' => 
+            array (
+              'name' => '报名截止时间',
+              'formtype' => 'text',
+              'datatype' => 'text',
+            ),
+            'author' => 
+            array (
+              'name' => '发起人',
+              'formtype' => 'text',
+              'datatype' => 'text',
+            ),
+            'authorid' => 
+            array (
+              'name' => '发起人UID',
+              'formtype' => 'text',
+              'datatype' => 'int',
+            ),
+            'cost' => 
+            array (
+              'name' => '每人花销',
+              'formtype' => 'text',
+              'datatype' => 'int',
+            ),
+            'place' => 
+            array (
+              'name' => '活动地点',
+              'formtype' => 'text',
+              'datatype' => 'text',
+            ),
+            'class' => 
+            array (
+              'name' => '活动类型',
+              'formtype' => 'text',
+              'datatype' => 'text',
+            ),
+            'gender' => 
+            array (
+              'name' => '性别要求',
+              'formtype' => 'text',
+              'datatype' => 'text',
+            ),
+            'number' => 
+            array (
+              'name' => '需要人数',
+              'formtype' => 'text',
+              'datatype' => 'int',
+            ),
+            'applynumber' => 
+            array (
+              'name' => '已报名人数',
+              'formtype' => 'text',
+              'datatype' => 'int',
+            ),
+          ),
+          'script' => 
+          array (
+            'activity' => '高级自定义',
+            'activitycity' => '同城活动',
+            'activitynew' => '最新活动',
+          ),
+        ),
+        'forum_trade' => 
+        array (
+          'name' => '商品模块',
+          'fields' => 
+          array (
+            'id' => 
+            array (
+              'name' => '数据ID',
+              'formtype' => 'text',
+              'datatype' => 'int',
+            ),
+            'url' => 
+            array (
+              'name' => '商品链接',
+              'formtype' => 'text',
+              'datatype' => 'string',
+            ),
+            'title' => 
+            array (
+              'name' => '商品名称',
+              'formtype' => 'title',
+              'datatype' => 'title',
+            ),
+            'pic' => 
+            array (
+              'name' => '商品图片地址',
+              'formtype' => 'pic',
+              'datatype' => 'pic',
+            ),
+            'summary' => 
+            array (
+              'name' => '商品说明',
+              'formtype' => 'summary',
+              'datatype' => 'summary',
+            ),
+            'totalitems' => 
+            array (
+              'name' => '商品累计售出数',
+              'formtype' => 'text',
+              'datatype' => 'int',
+            ),
+            'author' => 
+            array (
+              'name' => '商品卖家',
+              'formtype' => 'text',
+              'datatype' => 'text',
+            ),
+            'authorid' => 
+            array (
+              'name' => '商品卖家UID',
+              'formtype' => 'text',
+              'datatype' => 'int',
+            ),
+            'price' => 
+            array (
+              'name' => '商品价格',
+              'formtype' => 'text',
+              'datatype' => 'text',
+            ),
+          ),
+          'script' => 
+          array (
+            'trade' => '高级自定义',
+            'tradehot' => '热门商品',
+            'tradespecified' => '指定商品',
+            'tradenew' => '新商品',
+          ),
+        ),
+        'forum_forum' => 
+        array (
+          'name' => '版块模块',
+          'fields' => 
+          array (
+            'id' => 
+            array (
+              'name' => '数据ID',
+              'formtype' => 'text',
+              'datatype' => 'int',
+            ),
+            'url' => 
+            array (
+              'name' => '版块链接',
+              'formtype' => 'text',
+              'datatype' => 'string',
+            ),
+            'title' => 
+            array (
+              'name' => '版块名称',
+              'formtype' => 'title',
+              'datatype' => 'title',
+            ),
+            'summary' => 
+            array (
+              'name' => '版块介绍',
+              'formtype' => 'summary',
+              'datatype' => 'summary',
+            ),
+            'icon' => 
+            array (
+              'name' => '版块图标',
+              'formtype' => 'text',
+              'datatype' => 'string',
+            ),
+            'posts' => 
+            array (
+              'name' => '版块帖子数',
+              'formtype' => 'text',
+              'datatype' => 'int',
+            ),
+            'threads' => 
+            array (
+              'name' => '版块话题数',
+              'formtype' => 'text',
+              'datatype' => 'int',
+            ),
+            'todayposts' => 
+            array (
+              'name' => '版块今日新帖数',
+              'formtype' => 'text',
+              'datatype' => 'int',
+            ),
+          ),
+          'script' => 
+          array (
+            'forum' => '论坛版块',
           ),
         ),
       ),
@@ -474,10 +474,120 @@ $data = array (
           ),
           'script' => 
           array (
-            'grouptrade' => '高级自定义',
-            'grouptradehot' => '热门商品',
-            'grouptradenew' => '新商品',
             'grouptradespecified' => '指定商品',
+            'grouptradenew' => '新商品',
+            'grouptradehot' => '热门商品',
+            'grouptrade' => '高级自定义',
+          ),
+        ),
+        'group_group' => 
+        array (
+          'name' => '群组模块',
+          'fields' => 
+          array (
+            'id' => 
+            array (
+              'name' => '数据ID',
+              'formtype' => 'text',
+              'datatype' => 'int',
+            ),
+            'url' => 
+            array (
+              'name' => '群组链接',
+              'formtype' => 'text',
+              'datatype' => 'string',
+            ),
+            'title' => 
+            array (
+              'name' => '群组名称',
+              'formtype' => 'title',
+              'datatype' => 'title',
+            ),
+            'pic' => 
+            array (
+              'name' => '群组图片',
+              'formtype' => 'pic',
+              'datatype' => 'pic',
+            ),
+            'summary' => 
+            array (
+              'name' => '群组介绍',
+              'formtype' => 'summary',
+              'datatype' => 'summary',
+            ),
+            'icon' => 
+            array (
+              'name' => '群组图标',
+              'formtype' => 'text',
+              'datatype' => 'string',
+            ),
+            'foundername' => 
+            array (
+              'name' => '创始人',
+              'formtype' => 'text',
+              'datatype' => 'string',
+            ),
+            'founderuid' => 
+            array (
+              'name' => '创始人UID',
+              'formtype' => 'text',
+              'datatype' => 'int',
+            ),
+            'posts' => 
+            array (
+              'name' => '总发帖数',
+              'formtype' => 'text',
+              'datatype' => 'int',
+            ),
+            'todayposts' => 
+            array (
+              'name' => '今日发帖数',
+              'formtype' => 'text',
+              'datatype' => 'int',
+            ),
+            'threads' => 
+            array (
+              'name' => '总话题数',
+              'formtype' => 'date',
+              'datatype' => 'int',
+            ),
+            'membernum' => 
+            array (
+              'name' => '成员数',
+              'formtype' => 'text',
+              'datatype' => 'int',
+            ),
+            'dateline' => 
+            array (
+              'name' => '创建时间',
+              'formtype' => 'date',
+              'datatype' => 'date',
+            ),
+            'level' => 
+            array (
+              'name' => '群组等级',
+              'formtype' => 'text',
+              'datatype' => 'int',
+            ),
+            'commoncredits' => 
+            array (
+              'name' => '群组公共积分',
+              'formtype' => 'text',
+              'datatype' => 'int',
+            ),
+            'activity' => 
+            array (
+              'name' => '群组活跃度',
+              'formtype' => 'text',
+              'datatype' => 'int',
+            ),
+          ),
+          'script' => 
+          array (
+            'groupnew' => '最新群组',
+            'group' => '高级自定义',
+            'groupspecified' => '指定群组',
+            'grouphot' => '热门群组',
           ),
         ),
         'group_thread' => 
@@ -608,11 +718,11 @@ $data = array (
           ),
           'script' => 
           array (
-            'groupthreadnew' => '新主题',
             'groupthreadspecial' => '特殊主题',
             'groupthreadhot' => '热门主题',
-            'groupthreadspecified' => '指定主题',
+            'groupthreadnew' => '新主题',
             'groupthread' => '高级自定义',
+            'groupthreadspecified' => '指定主题',
           ),
         ),
         'group_activity' => 
@@ -713,119 +823,9 @@ $data = array (
           ),
           'script' => 
           array (
-            'groupactivitycity' => '同城活动',
             'groupactivitynew' => '最新活动',
             'groupactivity' => '群组活动',
-          ),
-        ),
-        'group_group' => 
-        array (
-          'name' => '群组模块',
-          'fields' => 
-          array (
-            'id' => 
-            array (
-              'name' => '数据ID',
-              'formtype' => 'text',
-              'datatype' => 'int',
-            ),
-            'url' => 
-            array (
-              'name' => '群组链接',
-              'formtype' => 'text',
-              'datatype' => 'string',
-            ),
-            'title' => 
-            array (
-              'name' => '群组名称',
-              'formtype' => 'title',
-              'datatype' => 'title',
-            ),
-            'pic' => 
-            array (
-              'name' => '群组图片',
-              'formtype' => 'pic',
-              'datatype' => 'pic',
-            ),
-            'summary' => 
-            array (
-              'name' => '群组介绍',
-              'formtype' => 'summary',
-              'datatype' => 'summary',
-            ),
-            'icon' => 
-            array (
-              'name' => '群组图标',
-              'formtype' => 'text',
-              'datatype' => 'string',
-            ),
-            'foundername' => 
-            array (
-              'name' => '创始人',
-              'formtype' => 'text',
-              'datatype' => 'string',
-            ),
-            'founderuid' => 
-            array (
-              'name' => '创始人UID',
-              'formtype' => 'text',
-              'datatype' => 'int',
-            ),
-            'posts' => 
-            array (
-              'name' => '总发帖数',
-              'formtype' => 'text',
-              'datatype' => 'int',
-            ),
-            'todayposts' => 
-            array (
-              'name' => '今日发帖数',
-              'formtype' => 'text',
-              'datatype' => 'int',
-            ),
-            'threads' => 
-            array (
-              'name' => '总话题数',
-              'formtype' => 'date',
-              'datatype' => 'int',
-            ),
-            'membernum' => 
-            array (
-              'name' => '成员数',
-              'formtype' => 'text',
-              'datatype' => 'int',
-            ),
-            'dateline' => 
-            array (
-              'name' => '创建时间',
-              'formtype' => 'date',
-              'datatype' => 'date',
-            ),
-            'level' => 
-            array (
-              'name' => '群组等级',
-              'formtype' => 'text',
-              'datatype' => 'int',
-            ),
-            'commoncredits' => 
-            array (
-              'name' => '群组公共积分',
-              'formtype' => 'text',
-              'datatype' => 'int',
-            ),
-            'activity' => 
-            array (
-              'name' => '群组活跃度',
-              'formtype' => 'text',
-              'datatype' => 'int',
-            ),
-          ),
-          'script' => 
-          array (
-            'groupspecified' => '指定群组',
-            'group' => '高级自定义',
-            'groupnew' => '最新群组',
-            'grouphot' => '热门群组',
+            'groupactivitycity' => '同城活动',
           ),
         ),
       ),
@@ -835,6 +835,47 @@ $data = array (
       'name' => '展示类',
       'subs' => 
       array (
+        'html_announcement' => 
+        array (
+          'name' => '公告模块',
+          'fields' => 
+          array (
+            'url' => 
+            array (
+              'name' => '公告链接',
+              'formtype' => 'text',
+              'datatype' => 'string',
+            ),
+            'title' => 
+            array (
+              'name' => '公告标题',
+              'formtype' => 'title',
+              'datatype' => 'title',
+            ),
+            'summary' => 
+            array (
+              'name' => '公告内容',
+              'formtype' => 'summary',
+              'datatype' => 'summary',
+            ),
+            'starttime' => 
+            array (
+              'name' => '开始时间',
+              'formtype' => 'text',
+              'datatype' => 'date',
+            ),
+            'endtime' => 
+            array (
+              'name' => '结束时间',
+              'formtype' => 'text',
+              'datatype' => 'date',
+            ),
+          ),
+          'script' => 
+          array (
+            'announcement' => '站点公告',
+          ),
+        ),
         'html_html' => 
         array (
           'name' => '静态模块',
@@ -843,17 +884,17 @@ $data = array (
           ),
           'script' => 
           array (
-            'stat' => '数据统计',
-            'sort' => '分类信息',
+            'blank' => '自定义HTML',
             'google' => 'GOOGLE',
+            'search' => '搜索条',
+            'sort' => '分类信息',
+            'adv' => '站点广告',
             'banner' => '图片横幅',
-            'friendlink' => '友情链接',
+            'stat' => '数据统计',
+            'line' => '分割线',
             'vedio' => '网络视频',
             'forumtree' => '版块列表',
-            'blank' => '自定义HTML',
-            'search' => '搜索条',
-            'adv' => '站点广告',
-            'line' => '分割线',
+            'friendlink' => '友情链接',
           ),
         ),
         'html_myapp' => 
@@ -895,47 +936,6 @@ $data = array (
           'script' => 
           array (
             'myapp' => '漫游应用',
-          ),
-        ),
-        'html_announcement' => 
-        array (
-          'name' => '公告模块',
-          'fields' => 
-          array (
-            'url' => 
-            array (
-              'name' => '公告链接',
-              'formtype' => 'text',
-              'datatype' => 'string',
-            ),
-            'title' => 
-            array (
-              'name' => '公告标题',
-              'formtype' => 'title',
-              'datatype' => 'title',
-            ),
-            'summary' => 
-            array (
-              'name' => '公告内容',
-              'formtype' => 'summary',
-              'datatype' => 'summary',
-            ),
-            'starttime' => 
-            array (
-              'name' => '开始时间',
-              'formtype' => 'text',
-              'datatype' => 'date',
-            ),
-            'endtime' => 
-            array (
-              'name' => '结束时间',
-              'formtype' => 'text',
-              'datatype' => 'date',
-            ),
-          ),
-          'script' => 
-          array (
-            'announcement' => '站点公告',
           ),
         ),
       ),
@@ -1289,13 +1289,13 @@ $data = array (
           ),
           'script' => 
           array (
-            'memberposts' => '发帖排行',
-            'membercredit' => '积分排行',
-            'memberspecial' => '特殊会员',
-            'member' => '高级自定义',
-            'memberspecified' => '指定用户',
             'membernew' => '新会员',
+            'memberspecial' => '特殊会员',
             'membershow' => '竞价排行',
+            'member' => '高级自定义',
+            'membercredit' => '积分排行',
+            'memberspecified' => '指定用户',
+            'memberposts' => '发帖排行',
           ),
         ),
       ),
@@ -1514,6 +1514,109 @@ $data = array (
       'name' => '门户类',
       'subs' => 
       array (
+        'portal_topic' => 
+        array (
+          'name' => '专题模块',
+          'fields' => 
+          array (
+            'id' => 
+            array (
+              'name' => '数据ID',
+              'formtype' => 'text',
+              'datatype' => 'int',
+            ),
+            'url' => 
+            array (
+              'name' => '专题链接',
+              'formtype' => 'text',
+              'datatype' => 'string',
+            ),
+            'title' => 
+            array (
+              'name' => '专题名称',
+              'formtype' => 'title',
+              'datatype' => 'title',
+            ),
+            'pic' => 
+            array (
+              'name' => '专题封面',
+              'formtype' => 'pic',
+              'datatype' => 'pic',
+            ),
+            'summary' => 
+            array (
+              'name' => '专题介绍',
+              'formtype' => 'summary',
+              'datatype' => 'summary',
+            ),
+            'uid' => 
+            array (
+              'name' => '创建者UID',
+              'formtype' => 'text',
+              'datatype' => 'int',
+            ),
+            'username' => 
+            array (
+              'name' => '创建者',
+              'formtype' => 'text',
+              'datatype' => 'string',
+            ),
+            'dateline' => 
+            array (
+              'name' => '创建时间',
+              'formtype' => 'date',
+              'datatype' => 'date',
+            ),
+            'viewnum' => 
+            array (
+              'name' => '查看数',
+              'formtype' => 'text',
+              'datatype' => 'int',
+            ),
+          ),
+          'script' => 
+          array (
+            'topicnew' => '最新专题',
+            'topic' => '高级自定义',
+            'topicspecified' => '指定专题',
+            'topichot' => '热门专题',
+          ),
+        ),
+        'portal_category' => 
+        array (
+          'name' => '文章栏目',
+          'fields' => 
+          array (
+            'id' => 
+            array (
+              'name' => '数据ID',
+              'formtype' => 'text',
+              'datatype' => 'int',
+            ),
+            'url' => 
+            array (
+              'name' => '栏目链接',
+              'formtype' => 'text',
+              'datatype' => 'string',
+            ),
+            'title' => 
+            array (
+              'name' => '栏目名称',
+              'formtype' => 'title',
+              'datatype' => 'title',
+            ),
+            'articles' => 
+            array (
+              'name' => '文章数',
+              'formtype' => 'text',
+              'datatype' => 'int',
+            ),
+          ),
+          'script' => 
+          array (
+            'portalcategory' => '文章栏目',
+          ),
+        ),
         'portal_article' => 
         array (
           'name' => '文章模块',
@@ -1618,113 +1721,10 @@ $data = array (
           ),
           'script' => 
           array (
+            'articlespecified' => '指定文章',
             'articlehot' => '热门文章',
             'article' => '高级自定义',
-            'articlespecified' => '指定文章',
             'articlenew' => '最新文章',
-          ),
-        ),
-        'portal_topic' => 
-        array (
-          'name' => '专题模块',
-          'fields' => 
-          array (
-            'id' => 
-            array (
-              'name' => '数据ID',
-              'formtype' => 'text',
-              'datatype' => 'int',
-            ),
-            'url' => 
-            array (
-              'name' => '专题链接',
-              'formtype' => 'text',
-              'datatype' => 'string',
-            ),
-            'title' => 
-            array (
-              'name' => '专题名称',
-              'formtype' => 'title',
-              'datatype' => 'title',
-            ),
-            'pic' => 
-            array (
-              'name' => '专题封面',
-              'formtype' => 'pic',
-              'datatype' => 'pic',
-            ),
-            'summary' => 
-            array (
-              'name' => '专题介绍',
-              'formtype' => 'summary',
-              'datatype' => 'summary',
-            ),
-            'uid' => 
-            array (
-              'name' => '创建者UID',
-              'formtype' => 'text',
-              'datatype' => 'int',
-            ),
-            'username' => 
-            array (
-              'name' => '创建者',
-              'formtype' => 'text',
-              'datatype' => 'string',
-            ),
-            'dateline' => 
-            array (
-              'name' => '创建时间',
-              'formtype' => 'date',
-              'datatype' => 'date',
-            ),
-            'viewnum' => 
-            array (
-              'name' => '查看数',
-              'formtype' => 'text',
-              'datatype' => 'int',
-            ),
-          ),
-          'script' => 
-          array (
-            'topic' => '高级自定义',
-            'topicspecified' => '指定专题',
-            'topicnew' => '最新专题',
-            'topichot' => '热门专题',
-          ),
-        ),
-        'portal_category' => 
-        array (
-          'name' => '文章栏目',
-          'fields' => 
-          array (
-            'id' => 
-            array (
-              'name' => '数据ID',
-              'formtype' => 'text',
-              'datatype' => 'int',
-            ),
-            'url' => 
-            array (
-              'name' => '栏目链接',
-              'formtype' => 'text',
-              'datatype' => 'string',
-            ),
-            'title' => 
-            array (
-              'name' => '栏目名称',
-              'formtype' => 'title',
-              'datatype' => 'title',
-            ),
-            'articles' => 
-            array (
-              'name' => '文章数',
-              'formtype' => 'text',
-              'datatype' => 'int',
-            ),
-          ),
-          'script' => 
-          array (
-            'portalcategory' => '文章栏目',
           ),
         ),
       ),
@@ -1734,9 +1734,9 @@ $data = array (
       'name' => '空间类',
       'subs' => 
       array (
-        'space_pic' => 
+        'space_doing' => 
         array (
-          'name' => '图片模块',
+          'name' => '记录模块',
           'fields' => 
           array (
             'id' => 
@@ -1747,33 +1747,21 @@ $data = array (
             ),
             'url' => 
             array (
-              'name' => '图片链接',
+              'name' => '记录链接',
               'formtype' => 'text',
               'datatype' => 'string',
             ),
             'title' => 
             array (
-              'name' => '图片名称',
+              'name' => '记录内容',
               'formtype' => 'title',
               'datatype' => 'title',
-            ),
-            'pic' => 
-            array (
-              'name' => '图片地址',
-              'formtype' => 'pic',
-              'datatype' => 'pic',
-            ),
-            'summary' => 
-            array (
-              'name' => '图片说明',
-              'formtype' => 'summary',
-              'datatype' => 'summary',
             ),
             'uid' => 
             array (
               'name' => '用户UID',
               'formtype' => 'text',
-              'datatype' => 'int',
+              'datatype' => 'pic',
             ),
             'username' => 
             array (
@@ -1781,73 +1769,42 @@ $data = array (
               'formtype' => 'text',
               'datatype' => 'string',
             ),
+            'avatar' => 
+            array (
+              'name' => '用户头像',
+              'formtype' => 'text',
+              'datatype' => 'string',
+            ),
+            'avatar_middle' => 
+            array (
+              'name' => '用户头像(中)',
+              'formtype' => 'text',
+              'datatype' => 'string',
+            ),
+            'avatar_big' => 
+            array (
+              'name' => '用户头像(大)',
+              'formtype' => 'text',
+              'datatype' => 'string',
+            ),
             'dateline' => 
             array (
-              'name' => '上传时间',
+              'name' => '发布时间',
               'formtype' => 'date',
               'datatype' => 'date',
             ),
-            'viewnum' => 
+            'replynum' => 
             array (
-              'name' => '查看数',
-              'formtype' => 'text',
-              'datatype' => 'int',
-            ),
-            'click1' => 
-            array (
-              'name' => '表态项1',
-              'formtype' => 'text',
-              'datatype' => 'int',
-            ),
-            'click2' => 
-            array (
-              'name' => '表态项2',
-              'formtype' => 'text',
-              'datatype' => 'int',
-            ),
-            'click3' => 
-            array (
-              'name' => '表态项3',
-              'formtype' => 'text',
-              'datatype' => 'int',
-            ),
-            'click4' => 
-            array (
-              'name' => '表态项4',
-              'formtype' => 'text',
-              'datatype' => 'int',
-            ),
-            'click5' => 
-            array (
-              'name' => '表态项5',
-              'formtype' => 'text',
-              'datatype' => 'int',
-            ),
-            'click6' => 
-            array (
-              'name' => '表态项6',
-              'formtype' => 'text',
-              'datatype' => 'int',
-            ),
-            'click7' => 
-            array (
-              'name' => '表态项7',
-              'formtype' => 'text',
-              'datatype' => 'int',
-            ),
-            'click8' => 
-            array (
-              'name' => '表态项8',
+              'name' => '回复数',
               'formtype' => 'text',
               'datatype' => 'int',
             ),
           ),
           'script' => 
           array (
-            'picspecified' => '指定图片',
-            'picnew' => '最新图片',
-            'pichot' => '热门图片',
-            'pic' => '高级自定义',
+            'doing' => '高级自定义',
+            'doinghot' => '热门记录',
+            'doingnew' => '最新记录',
           ),
         ),
         'space_album' => 
@@ -1912,8 +1869,8 @@ $data = array (
           ),
           'script' => 
           array (
-            'album' => '高级自定义',
             'albumnew' => '最新相册',
+            'album' => '高级自定义',
             'albumspecified' => '指定相册',
           ),
         ),
@@ -2052,14 +2009,14 @@ $data = array (
           'script' => 
           array (
             'blognew' => '最新日志',
-            'bloghot' => '热门日志',
             'blogspecified' => '指定日志',
+            'bloghot' => '热门日志',
             'blog' => '高级自定义',
           ),
         ),
-        'space_doing' => 
+        'space_pic' => 
         array (
-          'name' => '记录模块',
+          'name' => '图片模块',
           'fields' => 
           array (
             'id' => 
@@ -2070,21 +2027,33 @@ $data = array (
             ),
             'url' => 
             array (
-              'name' => '记录链接',
+              'name' => '图片链接',
               'formtype' => 'text',
               'datatype' => 'string',
             ),
             'title' => 
             array (
-              'name' => '记录内容',
+              'name' => '图片名称',
               'formtype' => 'title',
               'datatype' => 'title',
+            ),
+            'pic' => 
+            array (
+              'name' => '图片地址',
+              'formtype' => 'pic',
+              'datatype' => 'pic',
+            ),
+            'summary' => 
+            array (
+              'name' => '图片说明',
+              'formtype' => 'summary',
+              'datatype' => 'summary',
             ),
             'uid' => 
             array (
               'name' => '用户UID',
               'formtype' => 'text',
-              'datatype' => 'pic',
+              'datatype' => 'int',
             ),
             'username' => 
             array (
@@ -2092,42 +2061,73 @@ $data = array (
               'formtype' => 'text',
               'datatype' => 'string',
             ),
-            'avatar' => 
-            array (
-              'name' => '用户头像',
-              'formtype' => 'text',
-              'datatype' => 'string',
-            ),
-            'avatar_middle' => 
-            array (
-              'name' => '用户头像(中)',
-              'formtype' => 'text',
-              'datatype' => 'string',
-            ),
-            'avatar_big' => 
-            array (
-              'name' => '用户头像(大)',
-              'formtype' => 'text',
-              'datatype' => 'string',
-            ),
             'dateline' => 
             array (
-              'name' => '发布时间',
+              'name' => '上传时间',
               'formtype' => 'date',
               'datatype' => 'date',
             ),
-            'replynum' => 
+            'viewnum' => 
             array (
-              'name' => '回复数',
+              'name' => '查看数',
+              'formtype' => 'text',
+              'datatype' => 'int',
+            ),
+            'click1' => 
+            array (
+              'name' => '表态项1',
+              'formtype' => 'text',
+              'datatype' => 'int',
+            ),
+            'click2' => 
+            array (
+              'name' => '表态项2',
+              'formtype' => 'text',
+              'datatype' => 'int',
+            ),
+            'click3' => 
+            array (
+              'name' => '表态项3',
+              'formtype' => 'text',
+              'datatype' => 'int',
+            ),
+            'click4' => 
+            array (
+              'name' => '表态项4',
+              'formtype' => 'text',
+              'datatype' => 'int',
+            ),
+            'click5' => 
+            array (
+              'name' => '表态项5',
+              'formtype' => 'text',
+              'datatype' => 'int',
+            ),
+            'click6' => 
+            array (
+              'name' => '表态项6',
+              'formtype' => 'text',
+              'datatype' => 'int',
+            ),
+            'click7' => 
+            array (
+              'name' => '表态项7',
+              'formtype' => 'text',
+              'datatype' => 'int',
+            ),
+            'click8' => 
+            array (
+              'name' => '表态项8',
               'formtype' => 'text',
               'datatype' => 'int',
             ),
           ),
           'script' => 
           array (
-            'doinghot' => '热门记录',
-            'doing' => '高级自定义',
-            'doingnew' => '最新记录',
+            'picspecified' => '指定图片',
+            'pichot' => '热门图片',
+            'pic' => '高级自定义',
+            'picnew' => '最新图片',
           ),
         ),
       ),

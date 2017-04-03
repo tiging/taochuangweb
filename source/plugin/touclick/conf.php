@@ -1,6 +1,6 @@
 <?php
 //plugin touclick config file, DO NOT modify me!
-//Identify: 1a8c51bb64a466b17de4dc466cac7dba
+//Identify: 569966f16eb7334044c0d5d1e25ede60
 
 return array (
   'isdebug' => false,
@@ -16,10 +16,7 @@ return array (
     'mod' => 
     array (
       0 => 'reg',
-      1 => 'login',
-      2 => 'newthread',
-      3 => 'reply',
-      4 => 'edit',
+      1 => 'reply',
     ),
     'groupid' => 
     array (

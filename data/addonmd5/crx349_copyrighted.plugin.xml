@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[crx349_copyrighted.plugin]]></item>
+	<item id="RevisionID"><![CDATA[19012]]></item>
+	<item id="SN"><![CDATA[2017040315yzkvIkKuN6]]></item>
+	<item id="RevisionDateline"><![CDATA[1372653611]]></item>
+	<item id="Data">
+		<item id="/template/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/template/help.htm"><![CDATA[c7801b6247dceb0b0ebaf2348f0759b6]]></item>
+		<item id="/template/extend_module.css"><![CDATA[dd5a43f23afeb32d5d2d419b686eec6c]]></item>
+		<item id="/template/more.htm"><![CDATA[ce885129f44dbe49cc426aff47c74d7d]]></item>
+		<item id="/addon.discuz.com.png"><![CDATA[2e4a12273c42340d75ea316d63564997]]></item>
+		<item id="/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/discuz_plugin_crx349_copyrighted_SC_GBK.xml"><![CDATA[640a26878e847741b53c39938376f083]]></item>
+		<item id="/crx349_more.inc.php"><![CDATA[ee3124b707e844d10e305a91fed500e5]]></item>
+		<item id="/crx349_copyrighted.class.php"><![CDATA[b4a2c77993babda0de48b443671bcb9c]]></item>
+		<item id="/crx349_help.inc.php"><![CDATA[478100417de3476bb47494791428194d]]></item>
+	</item>
+</root>

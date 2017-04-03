@@ -1,6 +1,6 @@
 <?php
 $data = array (
-  'exp' => 1491065225,
+  'exp' => 1491229840,
   'data' => 
   array (
     'bid' => '23',
@@ -13,9 +13,9 @@ $data = array (
     'uid' => '1',
     'username' => 'admin',
     'styleid' => '0',
-    'blockstyle' => 'a:10:{s:4:"name";s:0:"";s:10:"blockclass";s:12:"forum_thread";s:9:"makethumb";i:0;s:6:"getpic";i:0;s:10:"getsummary";i:0;s:9:"settarget";i:1;s:7:"moreurl";i:0;s:6:"fields";a:6:{i:0;s:8:"authorid";i:1;s:6:"author";i:2;s:8:"forumurl";i:3;s:9:"forumname";i:4;s:3:"url";i:5;s:5:"title";}s:8:"template";a:9:{s:3:"raw";s:221:"[loop]
-<li><SPAN><a href="/home.php?mod=space&uid={authorid}"{target}>{author}</a></SPAN><a class="cl_topic" href="{forumurl}"{target}>【{forumname}】</a> <a href="{url}" title="{title}"{target}>{title}</a></li>
-[/loop]";s:6:"footer";s:0:"";s:6:"header";s:0:"";s:9:"indexplus";a:0:{}s:5:"index";a:0:{}s:9:"orderplus";a:0:{}s:5:"order";a:0:{}s:8:"loopplus";a:0:{}s:4:"loop";s:204:"<li><SPAN><a href="/home.php?mod=space&uid={authorid}"{target}>{author}</a></SPAN><a class="cl_topic" href="{forumurl}"{target}>【{forumname}】</a> <a href="{url}" title="{title}"{target}>{title}</a></li>";}s:4:"hash";s:8:"54c7d30c";}',
+    'blockstyle' => 'a:10:{s:4:"name";s:0:"";s:10:"blockclass";s:12:"forum_thread";s:9:"makethumb";i:0;s:6:"getpic";i:0;s:10:"getsummary";i:0;s:9:"settarget";i:1;s:7:"moreurl";i:0;s:6:"fields";a:4:{i:0;s:8:"authorid";i:1;s:6:"author";i:2;s:3:"url";i:3;s:5:"title";}s:8:"template";a:9:{s:3:"raw";s:157:"[loop]
+<li><SPAN><a href="/home.php?mod=space&uid={authorid}"{target}>{author}</a></SPAN>　<a href="{url}" title="{title}"{target}>{title}</a></li>
+[/loop]";s:6:"footer";s:0:"";s:6:"header";s:0:"";s:9:"indexplus";a:0:{}s:5:"index";a:0:{}s:9:"orderplus";a:0:{}s:5:"order";a:0:{}s:8:"loopplus";a:0:{}s:4:"loop";s:140:"<li><SPAN><a href="/home.php?mod=space&uid={authorid}"{target}>{author}</a></SPAN>　<a href="{url}" title="{title}"{target}>{title}</a></li>";}s:4:"hash";s:8:"7b84f242";}',
     'picwidth' => '0',
     'picheight' => '0',
     'target' => 'blank',
@@ -45,7 +45,7 @@ $data = array (
       'postdateline' => '0',
       'lastpost' => '0',
       'highlight' => '1',
-      'titlelength' => '36',
+      'titlelength' => '42',
       'summarylength' => '80',
       'startrow' => '0',
       'items' => 8,
@@ -55,7 +55,7 @@ $data = array (
     'cachetimerange' => '',
     'punctualupdate' => '0',
     'hidedisplay' => '0',
-    'dateline' => 1491064925,
+    'dateline' => 1491229540,
     'notinherited' => '0',
     'isblank' => '0',
     'itemlist' => 
@@ -68,7 +68,7 @@ $data = array (
         'url' => 'forum.php?mod=viewthread&tid=8',
         'pic' => 'static/image/common/nophoto.gif',
         'picflag' => '0',
-        'fields' => 'a:26:{s:9:"fulltitle";s:12:"自动发货软件";s:7:"threads";N;s:6:"author";s:5:"admin";s:8:"authorid";s:1:"1";s:6:"avatar";s:65:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=small";s:13:"avatar_middle";s:66:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=middle";s:10:"avatar_big";s:63:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=big";s:5:"posts";N;s:10:"todayposts";N;s:8:"lastpost";s:10:"1491059029";s:8:"dateline";s:10:"1491059029";s:7:"replies";s:1:"0";s:8:"forumurl";s:34:"forum.php?mod=forumdisplay&fid=150";s:9:"forumname";s:15:"VIP资源分享专区";s:8:"typename";N;s:8:"typeicon";N;s:7:"typeurl";s:57:"forum.php?mod=forumdisplay&fid=150&filter=typeid&typeid=0";s:8:"sortname";N;s:7:"sorturl";s:57:"forum.php?mod=forumdisplay&fid=150&filter=sortid&sortid=0";s:5:"views";s:1:"1";s:5:"heats";s:1:"0";s:10:"recommends";s:1:"0";s:9:"hourviews";s:1:"1";s:10:"todayviews";s:1:"1";s:9:"weekviews";s:1:"1";s:10:"monthviews";s:1:"1";}',
+        'fields' => 'a:26:{s:9:"fulltitle";s:12:"自动发货软件";s:7:"threads";N;s:6:"author";s:5:"admin";s:8:"authorid";s:1:"1";s:6:"avatar";s:65:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=small";s:13:"avatar_middle";s:66:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=middle";s:10:"avatar_big";s:63:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=big";s:5:"posts";N;s:10:"todayposts";N;s:8:"lastpost";s:10:"1491059029";s:8:"dateline";s:10:"1491059029";s:7:"replies";s:1:"0";s:8:"forumurl";s:34:"forum.php?mod=forumdisplay&fid=150";s:9:"forumname";s:15:"VIP资源分享专区";s:8:"typename";N;s:8:"typeicon";N;s:7:"typeurl";s:57:"forum.php?mod=forumdisplay&fid=150&filter=typeid&typeid=0";s:8:"sortname";N;s:7:"sorturl";s:57:"forum.php?mod=forumdisplay&fid=150&filter=sortid&sortid=0";s:5:"views";s:2:"12";s:5:"heats";s:1:"0";s:10:"recommends";s:1:"0";s:9:"hourviews";s:2:"12";s:10:"todayviews";s:2:"12";s:9:"weekviews";s:2:"12";s:10:"monthviews";s:2:"12";}',
         'itemid' => '50',
         'displayorder' => 1,
         'makethumb' => 0,
@@ -77,11 +77,11 @@ $data = array (
       array (
         'id' => '7',
         'idtype' => 'tid',
-        'title' => '利用本站资源打造一个无人值守24小时赚',
+        'title' => '利用本站资源打造一个无人值守24小时赚钱的淘',
         'url' => 'forum.php?mod=viewthread&tid=7',
         'pic' => 'static/image/common/nophoto.gif',
         'picflag' => '0',
-        'fields' => 'a:26:{s:9:"fulltitle";s:48:"利用本站资源打造一个无人值守24小时赚钱的淘宝网店";s:7:"threads";N;s:6:"author";s:5:"admin";s:8:"authorid";s:1:"1";s:6:"avatar";s:65:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=small";s:13:"avatar_middle";s:66:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=middle";s:10:"avatar_big";s:63:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=big";s:5:"posts";N;s:10:"todayposts";N;s:8:"lastpost";s:10:"1491058575";s:8:"dateline";s:10:"1491058575";s:7:"replies";s:1:"0";s:8:"forumurl";s:33:"forum.php?mod=forumdisplay&fid=46";s:9:"forumname";s:16:"淘宝开店精品资源";s:8:"typename";N;s:8:"typeicon";N;s:7:"typeurl";s:56:"forum.php?mod=forumdisplay&fid=46&filter=typeid&typeid=0";s:8:"sortname";N;s:7:"sorturl";s:56:"forum.php?mod=forumdisplay&fid=46&filter=sortid&sortid=0";s:5:"views";s:1:"2";s:5:"heats";s:1:"0";s:10:"recommends";s:1:"0";s:9:"hourviews";s:1:"2";s:10:"todayviews";s:1:"2";s:9:"weekviews";s:1:"2";s:10:"monthviews";s:1:"2";}',
+        'fields' => 'a:26:{s:9:"fulltitle";s:48:"利用本站资源打造一个无人值守24小时赚钱的淘宝网店";s:7:"threads";N;s:6:"author";s:5:"admin";s:8:"authorid";s:1:"1";s:6:"avatar";s:65:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=small";s:13:"avatar_middle";s:66:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=middle";s:10:"avatar_big";s:63:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=big";s:5:"posts";N;s:10:"todayposts";N;s:8:"lastpost";s:10:"1491058575";s:8:"dateline";s:10:"1491058575";s:7:"replies";s:1:"0";s:8:"forumurl";s:33:"forum.php?mod=forumdisplay&fid=46";s:9:"forumname";s:16:"淘宝开店精品资源";s:8:"typename";N;s:8:"typeicon";N;s:7:"typeurl";s:56:"forum.php?mod=forumdisplay&fid=46&filter=typeid&typeid=0";s:8:"sortname";N;s:7:"sorturl";s:56:"forum.php?mod=forumdisplay&fid=46&filter=sortid&sortid=0";s:5:"views";s:2:"11";s:5:"heats";s:1:"0";s:10:"recommends";s:1:"0";s:9:"hourviews";s:2:"11";s:10:"todayviews";s:2:"11";s:9:"weekviews";s:2:"11";s:10:"monthviews";s:2:"11";}',
         'itemid' => '44',
         'displayorder' => 2,
         'makethumb' => 0,
@@ -90,11 +90,11 @@ $data = array (
       array (
         'id' => '6',
         'idtype' => 'tid',
-        'title' => '2017新手淘宝开店教程视频全套淘宝开店',
+        'title' => '2017新手淘宝开店教程视频全套淘宝开店指导怎',
         'url' => 'forum.php?mod=viewthread&tid=6',
         'pic' => 'static/image/common/nophoto.gif',
         'picflag' => '0',
-        'fields' => 'a:27:{s:9:"fulltitle";s:54:"2017新手淘宝开店教程视频全套淘宝开店指导怎么开淘宝店铺";s:7:"threads";N;s:6:"author";s:5:"admin";s:8:"authorid";s:1:"1";s:6:"avatar";s:65:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=small";s:13:"avatar_middle";s:66:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=middle";s:10:"avatar_big";s:63:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=big";s:5:"posts";N;s:10:"todayposts";N;s:8:"lastpost";s:10:"1491038272";s:8:"dateline";s:10:"1491038272";s:7:"replies";s:1:"0";s:8:"forumurl";s:33:"forum.php?mod=forumdisplay&fid=46";s:9:"forumname";s:16:"淘宝开店精品资源";s:8:"typename";N;s:8:"typeicon";N;s:7:"typeurl";s:56:"forum.php?mod=forumdisplay&fid=46&filter=typeid&typeid=0";s:8:"sortname";N;s:7:"sorturl";s:56:"forum.php?mod=forumdisplay&fid=46&filter=sortid&sortid=0";s:5:"views";s:1:"1";s:5:"heats";s:1:"0";s:10:"recommends";s:1:"0";s:9:"hourviews";s:1:"1";s:10:"todayviews";s:1:"1";s:9:"weekviews";s:1:"1";s:10:"monthviews";s:1:"1";s:9:"showstyle";a:4:{s:7:"title_b";s:1:"1";s:7:"title_i";s:0:"";s:7:"title_u";s:0:"";s:7:"title_c";s:7:"#EE1B2E";}}',
+        'fields' => 'a:27:{s:9:"fulltitle";s:54:"2017新手淘宝开店教程视频全套淘宝开店指导怎么开淘宝店铺";s:7:"threads";N;s:6:"author";s:5:"admin";s:8:"authorid";s:1:"1";s:6:"avatar";s:65:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=small";s:13:"avatar_middle";s:66:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=middle";s:10:"avatar_big";s:63:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=big";s:5:"posts";N;s:10:"todayposts";N;s:8:"lastpost";s:10:"1491038272";s:8:"dateline";s:10:"1491038272";s:7:"replies";s:1:"0";s:8:"forumurl";s:33:"forum.php?mod=forumdisplay&fid=46";s:9:"forumname";s:16:"淘宝开店精品资源";s:8:"typename";N;s:8:"typeicon";N;s:7:"typeurl";s:56:"forum.php?mod=forumdisplay&fid=46&filter=typeid&typeid=0";s:8:"sortname";N;s:7:"sorturl";s:56:"forum.php?mod=forumdisplay&fid=46&filter=sortid&sortid=0";s:5:"views";s:1:"3";s:5:"heats";s:1:"0";s:10:"recommends";s:1:"0";s:9:"hourviews";s:1:"3";s:10:"todayviews";s:1:"3";s:9:"weekviews";s:1:"3";s:10:"monthviews";s:1:"3";s:9:"showstyle";a:4:{s:7:"title_b";s:1:"1";s:7:"title_i";s:0:"";s:7:"title_u";s:0:"";s:7:"title_c";s:7:"#EE1B2E";}}',
         'itemid' => '36',
         'displayorder' => 3,
         'makethumb' => 0,
@@ -107,7 +107,7 @@ $data = array (
         'url' => 'forum.php?mod=viewthread&tid=5',
         'pic' => 'static/image/common/nophoto.gif',
         'picflag' => '0',
-        'fields' => 'a:27:{s:9:"fulltitle";s:34:"少部分电商学院视频需要播放器和密码";s:7:"threads";N;s:6:"author";s:5:"admin";s:8:"authorid";s:1:"1";s:6:"avatar";s:65:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=small";s:13:"avatar_middle";s:66:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=middle";s:10:"avatar_big";s:63:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=big";s:5:"posts";N;s:10:"todayposts";N;s:8:"lastpost";s:10:"1491037311";s:8:"dateline";s:10:"1491037311";s:7:"replies";s:1:"0";s:8:"forumurl";s:34:"forum.php?mod=forumdisplay&fid=151";s:9:"forumname";s:14:"一键上架数据包";s:8:"typename";N;s:8:"typeicon";N;s:7:"typeurl";s:57:"forum.php?mod=forumdisplay&fid=151&filter=typeid&typeid=0";s:8:"sortname";N;s:7:"sorturl";s:57:"forum.php?mod=forumdisplay&fid=151&filter=sortid&sortid=0";s:5:"views";s:1:"1";s:5:"heats";s:1:"0";s:10:"recommends";s:1:"0";s:9:"hourviews";s:1:"1";s:10:"todayviews";s:1:"1";s:9:"weekviews";s:1:"1";s:10:"monthviews";s:1:"1";s:9:"showstyle";a:4:{s:7:"title_b";s:1:"1";s:7:"title_i";s:0:"";s:7:"title_u";s:0:"";s:7:"title_c";s:7:"#EE1B2E";}}',
+        'fields' => 'a:27:{s:9:"fulltitle";s:34:"少部分电商学院视频需要播放器和密码";s:7:"threads";N;s:6:"author";s:5:"admin";s:8:"authorid";s:1:"1";s:6:"avatar";s:65:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=small";s:13:"avatar_middle";s:66:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=middle";s:10:"avatar_big";s:63:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=big";s:5:"posts";N;s:10:"todayposts";N;s:8:"lastpost";s:10:"1491037311";s:8:"dateline";s:10:"1491037311";s:7:"replies";s:1:"0";s:8:"forumurl";s:34:"forum.php?mod=forumdisplay&fid=151";s:9:"forumname";s:14:"一键上架数据包";s:8:"typename";N;s:8:"typeicon";N;s:7:"typeurl";s:57:"forum.php?mod=forumdisplay&fid=151&filter=typeid&typeid=0";s:8:"sortname";N;s:7:"sorturl";s:57:"forum.php?mod=forumdisplay&fid=151&filter=sortid&sortid=0";s:5:"views";s:1:"2";s:5:"heats";s:1:"0";s:10:"recommends";s:1:"0";s:9:"hourviews";s:1:"2";s:10:"todayviews";s:1:"2";s:9:"weekviews";s:1:"2";s:10:"monthviews";s:1:"2";s:9:"showstyle";a:4:{s:7:"title_b";s:1:"1";s:7:"title_i";s:0:"";s:7:"title_u";s:0:"";s:7:"title_c";s:7:"#EE1B2E";}}',
         'itemid' => '37',
         'displayorder' => 4,
         'makethumb' => 0,
@@ -120,7 +120,7 @@ $data = array (
         'url' => 'forum.php?mod=viewthread&tid=4',
         'pic' => 'static/image/common/nophoto.gif',
         'picflag' => '0',
-        'fields' => 'a:27:{s:9:"fulltitle";s:21:"淘创网VIP会员核心教程";s:7:"threads";N;s:6:"author";s:5:"admin";s:8:"authorid";s:1:"1";s:6:"avatar";s:65:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=small";s:13:"avatar_middle";s:66:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=middle";s:10:"avatar_big";s:63:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=big";s:5:"posts";N;s:10:"todayposts";N;s:8:"lastpost";s:10:"1491029545";s:8:"dateline";s:10:"1491029545";s:7:"replies";s:1:"0";s:8:"forumurl";s:34:"forum.php?mod=forumdisplay&fid=151";s:9:"forumname";s:14:"一键上架数据包";s:8:"typename";N;s:8:"typeicon";N;s:7:"typeurl";s:57:"forum.php?mod=forumdisplay&fid=151&filter=typeid&typeid=0";s:8:"sortname";N;s:7:"sorturl";s:57:"forum.php?mod=forumdisplay&fid=151&filter=sortid&sortid=0";s:5:"views";s:1:"3";s:5:"heats";s:1:"0";s:10:"recommends";s:1:"0";s:9:"hourviews";s:1:"3";s:10:"todayviews";s:1:"3";s:9:"weekviews";s:1:"3";s:10:"monthviews";s:1:"3";s:9:"showstyle";a:4:{s:7:"title_b";s:1:"1";s:7:"title_i";s:0:"";s:7:"title_u";s:0:"";s:7:"title_c";s:7:"#EC1282";}}',
+        'fields' => 'a:27:{s:9:"fulltitle";s:21:"淘创网VIP会员核心教程";s:7:"threads";N;s:6:"author";s:5:"admin";s:8:"authorid";s:1:"1";s:6:"avatar";s:65:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=small";s:13:"avatar_middle";s:66:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=middle";s:10:"avatar_big";s:63:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=big";s:5:"posts";N;s:10:"todayposts";N;s:8:"lastpost";s:10:"1491029545";s:8:"dateline";s:10:"1491029545";s:7:"replies";s:1:"0";s:8:"forumurl";s:34:"forum.php?mod=forumdisplay&fid=151";s:9:"forumname";s:14:"一键上架数据包";s:8:"typename";N;s:8:"typeicon";N;s:7:"typeurl";s:57:"forum.php?mod=forumdisplay&fid=151&filter=typeid&typeid=0";s:8:"sortname";N;s:7:"sorturl";s:57:"forum.php?mod=forumdisplay&fid=151&filter=sortid&sortid=0";s:5:"views";s:1:"6";s:5:"heats";s:1:"0";s:10:"recommends";s:1:"0";s:9:"hourviews";s:1:"6";s:10:"todayviews";s:1:"6";s:9:"weekviews";s:1:"6";s:10:"monthviews";s:1:"6";s:9:"showstyle";a:4:{s:7:"title_b";s:1:"1";s:7:"title_i";s:0:"";s:7:"title_u";s:0:"";s:7:"title_c";s:7:"#EC1282";}}',
         'itemid' => '23',
         'displayorder' => 5,
         'makethumb' => 0,
@@ -129,7 +129,7 @@ $data = array (
       array (
         'id' => '3',
         'idtype' => 'tid',
-        'title' => '聚！打造爆款宝贝 淘宝网店铺推广人气 ',
+        'title' => '聚！打造爆款宝贝 淘宝网店铺推广人气 销量提',
         'url' => 'forum.php?mod=viewthread&tid=3',
         'pic' => 'static/image/common/nophoto.gif',
         'picflag' => '0',
@@ -146,7 +146,7 @@ $data = array (
         'url' => 'forum.php?mod=viewthread&tid=2',
         'pic' => 'static/image/common/nophoto.gif',
         'picflag' => '0',
-        'fields' => 'a:27:{s:9:"fulltitle";s:20:"网盘链接失效修复专栏";s:7:"threads";N;s:6:"author";s:5:"admin";s:8:"authorid";s:1:"1";s:6:"avatar";s:65:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=small";s:13:"avatar_middle";s:66:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=middle";s:10:"avatar_big";s:63:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=big";s:5:"posts";N;s:10:"todayposts";N;s:8:"lastpost";s:10:"1491027293";s:8:"dateline";s:10:"1491027293";s:7:"replies";s:1:"0";s:8:"forumurl";s:33:"forum.php?mod=forumdisplay&fid=41";s:9:"forumname";s:26:"工具区 (运营工具 装修工具)";s:8:"typename";N;s:8:"typeicon";N;s:7:"typeurl";s:56:"forum.php?mod=forumdisplay&fid=41&filter=typeid&typeid=0";s:8:"sortname";N;s:7:"sorturl";s:56:"forum.php?mod=forumdisplay&fid=41&filter=sortid&sortid=0";s:5:"views";s:1:"2";s:5:"heats";s:1:"0";s:10:"recommends";s:1:"0";s:9:"hourviews";s:1:"2";s:10:"todayviews";s:1:"2";s:9:"weekviews";s:1:"2";s:10:"monthviews";s:1:"2";s:9:"showstyle";a:4:{s:7:"title_b";s:1:"1";s:7:"title_i";s:0:"";s:7:"title_u";s:0:"";s:7:"title_c";s:7:"#2B65B7";}}',
+        'fields' => 'a:27:{s:9:"fulltitle";s:20:"网盘链接失效修复专栏";s:7:"threads";N;s:6:"author";s:5:"admin";s:8:"authorid";s:1:"1";s:6:"avatar";s:65:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=small";s:13:"avatar_middle";s:66:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=middle";s:10:"avatar_big";s:63:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=big";s:5:"posts";N;s:10:"todayposts";N;s:8:"lastpost";s:10:"1491027293";s:8:"dateline";s:10:"1491027293";s:7:"replies";s:1:"0";s:8:"forumurl";s:34:"forum.php?mod=forumdisplay&fid=152";s:9:"forumname";s:16:"贵宾超级会员专区";s:8:"typename";N;s:8:"typeicon";N;s:7:"typeurl";s:57:"forum.php?mod=forumdisplay&fid=152&filter=typeid&typeid=0";s:8:"sortname";N;s:7:"sorturl";s:57:"forum.php?mod=forumdisplay&fid=152&filter=sortid&sortid=0";s:5:"views";s:1:"5";s:5:"heats";s:1:"0";s:10:"recommends";s:1:"0";s:9:"hourviews";s:1:"5";s:10:"todayviews";s:1:"5";s:9:"weekviews";s:1:"5";s:10:"monthviews";s:1:"5";s:9:"showstyle";a:4:{s:7:"title_b";s:1:"1";s:7:"title_i";s:0:"";s:7:"title_u";s:0:"";s:7:"title_c";s:7:"#2B65B7";}}',
         'itemid' => '12',
         'displayorder' => 7,
         'makethumb' => 0,
@@ -159,7 +159,7 @@ $data = array (
         'url' => 'forum.php?mod=viewthread&tid=1',
         'pic' => 'static/image/common/nophoto.gif',
         'picflag' => '0',
-        'fields' => 'a:27:{s:9:"fulltitle";s:15:"申请论坛开通VIP";s:7:"threads";N;s:6:"author";s:5:"admin";s:8:"authorid";s:1:"1";s:6:"avatar";s:65:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=small";s:13:"avatar_middle";s:66:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=middle";s:10:"avatar_big";s:63:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=big";s:5:"posts";N;s:10:"todayposts";N;s:8:"lastpost";s:10:"1490970514";s:8:"dateline";s:10:"1490970514";s:7:"replies";s:1:"0";s:8:"forumurl";s:34:"forum.php?mod=forumdisplay&fid=151";s:9:"forumname";s:14:"一键上架数据包";s:8:"typename";N;s:8:"typeicon";N;s:7:"typeurl";s:57:"forum.php?mod=forumdisplay&fid=151&filter=typeid&typeid=0";s:8:"sortname";N;s:7:"sorturl";s:57:"forum.php?mod=forumdisplay&fid=151&filter=sortid&sortid=0";s:5:"views";s:2:"10";s:5:"heats";s:1:"0";s:10:"recommends";s:1:"0";s:9:"hourviews";s:2:"10";s:10:"todayviews";s:2:"10";s:9:"weekviews";s:2:"10";s:10:"monthviews";s:2:"10";s:9:"showstyle";a:4:{s:7:"title_b";s:1:"1";s:7:"title_i";s:0:"";s:7:"title_u";s:0:"";s:7:"title_c";s:7:"#EE1B2E";}}',
+        'fields' => 'a:27:{s:9:"fulltitle";s:15:"申请论坛开通VIP";s:7:"threads";N;s:6:"author";s:5:"admin";s:8:"authorid";s:1:"1";s:6:"avatar";s:65:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=small";s:13:"avatar_middle";s:66:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=middle";s:10:"avatar_big";s:63:"http://www.taochuangweb.com/uc_server/avatar.php?uid=1&size=big";s:5:"posts";N;s:10:"todayposts";N;s:8:"lastpost";s:10:"1490970514";s:8:"dateline";s:10:"1490970514";s:7:"replies";s:1:"0";s:8:"forumurl";s:34:"forum.php?mod=forumdisplay&fid=151";s:9:"forumname";s:14:"一键上架数据包";s:8:"typename";N;s:8:"typeicon";N;s:7:"typeurl";s:57:"forum.php?mod=forumdisplay&fid=151&filter=typeid&typeid=0";s:8:"sortname";N;s:7:"sorturl";s:57:"forum.php?mod=forumdisplay&fid=151&filter=sortid&sortid=0";s:5:"views";s:2:"15";s:5:"heats";s:1:"0";s:10:"recommends";s:1:"0";s:9:"hourviews";s:2:"15";s:10:"todayviews";s:2:"15";s:9:"weekviews";s:2:"15";s:10:"monthviews";s:2:"15";s:9:"showstyle";a:4:{s:7:"title_b";s:1:"1";s:7:"title_i";s:0:"";s:7:"title_u";s:0:"";s:7:"title_c";s:7:"#EE1B2E";}}',
         'itemid' => '6',
         'displayorder' => 8,
         'makethumb' => 0,

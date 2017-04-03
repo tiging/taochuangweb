@@ -8,7 +8,7 @@
 <script type="text/javascript" src="{$_G['setting']['jspath']}forum_viewthread.js?{VERHASH}"></script>
 <script type="text/javascript">zoomstatus = parseInt($_G['setting']['zoomstatus']);var imagemaxwidth = '{$_G['setting']['imagemaxwidth']}';var aimgcount = new Array();</script>
 
-<style id="diy_style" type="text/css">#frameGd9Fd4 { border:#000000 none !important;margin:1px !important;}#portal_block_27 .dxb_bc { margin:0px !important;}#frame96G31V { margin-top:0px !important;margin-right:0px !important;margin-bottom:5px !important;margin-left:0px !important;}#frameBB69D7 { margin:0px !important;}#portal_block_27 { margin:5px !important;}#portal_block_28 { margin:5px !important;}</style>
+<style id="diy_style" type="text/css">#frameGd9Fd4 {  border:#000000 none !important;margin:1px !important;}#portal_block_27 .dxb_bc {  margin:0px !important;}#frame96G31V {  margin-top:0px !important;margin-right:0px !important;margin-bottom:5px !important;margin-left:0px !important;}#frameBB69D7 {  margin:0px !important;}#portal_block_27 {  margin:5px !important;}#portal_block_28 {  margin:5px !important;}</style>
 <!--[diy=diynavtop]--><div id="diynavtop" class="area"><div id="frameGd9Fd4" class=" frame move-span cl frame-1"><div id="frameGd9Fd4_left" class="column frame-1-c"><div id="frameGd9Fd4_left_temp" class="move-span temp"></div><div id="frame96G31V" class=" frame move-span cl frame-1"><div id="frame96G31V_left" class="column frame-1-c"><div id="frame96G31V_left_temp" class="move-span temp"></div><!--{block/27}--></div></div></div></div><div id="frameBB69D7" class=" frame move-span cl frame-1"><div id="frameBB69D7_left" class="column frame-1-c"><div id="frameBB69D7_left_temp" class="move-span temp"></div><!--{block/28}--></div></div></div><!--[/diy]-->
 <div id="pt" class="bm cl">
 	<div class="z">
@@ -19,7 +19,7 @@
 <!--{hook/viewthread_top}-->
 <!--{ad/text/wp a_t}-->
 
-<style id="diy_style" type="text/css">#frameGd9Fd4 { border:#000000 none !important;margin:1px !important;}#portal_block_27 .dxb_bc { margin:0px !important;}#frame96G31V { margin-top:0px !important;margin-right:0px !important;margin-bottom:5px !important;margin-left:0px !important;}#frameBB69D7 { margin:0px !important;}#portal_block_27 { margin:5px !important;}#portal_block_28 { margin:5px !important;}</style>
+<style id="diy_style" type="text/css">#frameGd9Fd4 {  border:#000000 none !important;margin:1px !important;}#portal_block_27 .dxb_bc {  margin:0px !important;}#frame96G31V {  margin-top:0px !important;margin-right:0px !important;margin-bottom:5px !important;margin-left:0px !important;}#frameBB69D7 {  margin:0px !important;}#portal_block_27 {  margin:5px !important;}#portal_block_28 {  margin:5px !important;}</style>
 <div class="wp">
 	<!--[diy=diy1]--><div id="diy1" class="area"></div><!--[/diy]-->
 </div>

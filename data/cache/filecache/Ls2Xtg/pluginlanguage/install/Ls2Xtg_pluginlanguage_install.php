@@ -15,5 +15,9 @@ $data = array (
     array (
       'mobilesign' => '微社区签到',
     ),
+    'iplus_gezi' => 
+    array (
+      'info' => '安装、升级、卸载脚本用的语言包',
+    ),
   ),
 );

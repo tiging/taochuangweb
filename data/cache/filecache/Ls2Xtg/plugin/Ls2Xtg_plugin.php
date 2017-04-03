@@ -3,18 +3,57 @@ $data = array (
   'exp' => 0,
   'data' => 
   array (
+    'iplus_gezi' => 
+    array (
+      'page' => '2',
+      'local' => '2',
+      'styleid' => '2',
+      'rows' => '1',
+      'credits' => '4',
+      'dcredits' => '100',
+      'mcredits' => '2500',
+      'wzlen' => '14',
+      'wztitle' => '赞助我们请点击自助购买广告位',
+      'wzcolor' => '#333333',
+      'adcolor' => '#0000FF',
+      'lcredits' => 'home.php?mod=spacecp&ac=credit&op=buy',
+      'mytips' => '付费广告投放，请认真填写内容！',
+      'cache' => '300',
+      'name' => '赞助我们',
+      'nav' => '2',
+    ),
+    'crx349_copyrighted' => 
+    array (
+      'crx349_on' => '1',
+      'crx349_re' => '1',
+    ),
+    'nimba_thot' => 
+    array (
+      'title' => '淘创网 最新资源',
+      'forums' => '1',
+      'num' => '12',
+      'rank' => '4',
+      'color' => '#FF0000',
+      'ban' => 'a:1:{i:0;s:0:"";}',
+      'open' => 'a:6:{i:0;s:1:"2";i:1;s:2:"37";i:2;s:2:"38";i:3;s:2:"39";i:4;s:2:"40";i:5;s:2:"42";}',
+    ),
+    'invite_aboc' => 
+    array (
+      'upgrade_group_id' => '16',
+      'ban_group_id' => 'a:1:{i:0;s:1:"1";}',
+    ),
     'rpancn_buy_usergroup' => 
     array (
       'is_open' => '1',
       'usernav_on' => '1',
-      'linktitle' => '淘创币冲值',
+      'linktitle' => '淘创币充值',
       'linkcolor' => '#FF6633',
       'linkurl' => 'home.php?mod=spacecp&ac=credit&op=buy',
       'bankopen' => '1',
       'alipayopen' => '1',
       'default' => 'alipay',
-      'partner' => '0',
-      'securitycode' => '0',
+      'partner' => '18057',
+      'securitycode' => 'e439cd78623640a781da9ff3296c2ac3',
       'notice' => '说明: 本组是收费用户组，您可以根据日价格按天购买。请注意，本交易属于虚拟交易，购买后不能退款！',
     ),
     'ljqq' => 
@@ -68,7 +107,7 @@ $data = array (
       'right_urls_1' => '<a title="荷塘月色/TB58" href="forum.php?mod=forumdisplay&fid=42" target="_blank" rel="nofollow">荷塘月色/TB58</a> <a title="逐鹿" href="forum.php?mod=forumdisplay&fid=93" target="_blank" rel="nofollow">逐鹿</a> <a title="看店宝" href="forum.php?mod=forumdisplay&fid=94" target="_blank" rel="nofollow">看店宝</a><a title="欧风" href="forum.php?mod=forumdisplay&fid=136" target="_blank" rel="nofollow">欧风</a><a title="智多星" href="forum.php?mod=forumdisplay&fid=96" target="_blank" rel="nofollow">智多星</a><a title="冰美人" href="forum.php?mod=forumdisplay&fid=101" target="_blank" rel="nofollow">冰美人</a><a title="蚂蚁推门" href="forum.php?mod=forumdisplay&fid=104" target="_blank" rel="nofollow">蚂蚁推门</a><a title="新农人" href="forum.php?mod=forumdisplay&fid=105" target="_blank" rel="nofollow">新农人</a><a title="火牛" href="forum.php?mod=forumdisplay&fid=108" target="_blank" rel="nofollow">火牛</a><a title="凤凰社" href="forum.php?mod=forumdisplay&fid=115" target="_blank" rel="nofollow">凤凰社</a><a title="网淘巨人" href="forum.php?mod=forumdisplay&fid=122" target="_blank" rel="nofollow">网淘巨人</a><a title="叫我XH" href="forum.php?mod=forumdisplay&fid=130" target="_blank" rel="nofollow">叫我XH</a><a title="新电商" href="forum.php?mod=forumdisplay&fid=111" target="_blank" rel="nofollow">新电商</a><a title="薄言" href="forum.php?mod=forumdisplay&fid=128" target="_blank" rel="nofollow">薄言</a><a title="渔舟教室" href="forum.php?mod=forumdisplay&fid=129" target="_blank" rel="nofollow">渔舟教室</a>',
       'csscolor' => '#f25d08',
       'rewriteurl' => '1',
-      'cachetime' => '0',
+      'cachetime' => '5',
       'usergroup' => 'a:1:{i:0;s:0:"";}',
       'indextop' => '1',
       'diyad' => '',
@@ -108,35 +147,35 @@ home.php?mod=spacecp&ac=usergroup|加入钻石VIP，免费获取100多家淘宝大学收费教程，
       'textcolor1' => '#FFFF00',
       'textcolor2' => '#00FF00',
       'direction' => '3',
-      'speed' => '10',
+      'speed' => '15',
       'isweater' => '0',
       'weaterposition' => '2',
     ),
     'levnav' => 
     array (
       'isopen' => 'a:1:{i:0;s:10:"heightauto";}',
-      'mynavs' => '<font color="red">热卖软件</font>==forum.php?mod=forumdisplay&fid=154
-设计素材==
-特色美食==
-<font color="red">网站源码</font>==
-软件教程==
-<font color="blue">彩票股票</font>==
-<font color="red">创富致富</font>==
-维修系列==
-母婴早教==
-周易精品==
-<font color="blue">文体健康</font>==
-认证考试==
-<font color="red">泡妞秘籍</font>==
-<font color="blue">记忆口才</font>==
-<font color="red">项目教程</font>==
-高校名师==
-IT 培训==
-<font color="red">营销教程</font>==
-<font color="red">核心技术</font>==
-<font color="red">生活教程</font>==
-<font color="blue">中医养生</font>==
-<font color="red">美术书法</font>==',
+      'mynavs' => '<font color="red">热卖软件</font>==forum-154-1.html
+设计素材==forum-155-1.html
+特色美食==forum-153-1.html
+<font color="red">网站源码</font>==forum-159-1.html
+软件教程==forum-160-1.html
+<font color="blue">彩票股票</font>==forum-174-1.html
+<font color="red">创富致富</font>==forum-171-1.html
+维修系列==forum-172-1.html
+母婴早教==forum-176-1.html
+周易精品==forum-180-1.html
+<font color="blue">文体健康</font>==forum-182-1.html
+认证考试==forum-170-1.html
+<font color="red">泡妞秘籍</font>==forum-162-1.html
+<font color="blue">记忆口才</font>==forum-164-1.html
+<font color="red">项目教程</font>==forum-161-1.html
+高校名师==forum-168-1.html
+IT 培训==forum-166-1.html
+<font color="red">营销教程</font>==forum-157-1.html
+<font color="red">核心技术</font>==forum-42-1.html
+<font color="red">生活教程</font>==forum-156-1.html
+<font color="blue">中医养生</font>==forum-177-1.html
+<font color="red">美术书法</font>==forum-167-1.html',
       'navicon' => 'nav_icon_1.jpg
 nav_icon_2.jpg
 nav_icon_3.jpg

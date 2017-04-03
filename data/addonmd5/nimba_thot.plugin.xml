@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[nimba_thot.plugin]]></item>
+	<item id="RevisionID"><![CDATA[2995]]></item>
+	<item id="SN"><![CDATA[2017040315eq1BN1OPPP]]></item>
+	<item id="RevisionDateline"><![CDATA[1479369605]]></item>
+	<item id="Data">
+		<item id="/install.php"><![CDATA[8009100dd93636611178eac75d190337]]></item>
+		<item id="/template/post.htm"><![CDATA[12643cdbda24757e6f95df87c47d09cc]]></item>
+		<item id="/discuz_plugin_nimba_thot_TC_UTF8.xml"><![CDATA[7eab147b8a3ec90b4379f1504740f285]]></item>
+		<item id="/uninstall.php"><![CDATA[8009100dd93636611178eac75d190337]]></item>
+		<item id="/discuz_plugin_nimba_thot_SC_GBK.xml"><![CDATA[beda342fbeebe2d4597eac10a01aec77]]></item>
+		<item id="/hook.class.php"><![CDATA[39a5f6ed1c692ebd80758c51081d79bb]]></item>
+		<item id="/discuz_plugin_nimba_thot_SC_UTF8.xml"><![CDATA[b57c5464b6bb10b8cc87ec317890b603]]></item>
+		<item id="/upgrade.php"><![CDATA[8009100dd93636611178eac75d190337]]></item>
+		<item id="/discuz_plugin_nimba_thot_TC_BIG5.xml"><![CDATA[dbcfc845918e615f69c112862a33f526]]></item>
+		<item id="/addon.inc.php"><![CDATA[5dd5720dee817a270fd0b63f81b190c0]]></item>
+	</item>
+</root>

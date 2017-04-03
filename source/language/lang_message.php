@@ -205,7 +205,7 @@ $lang = array (
   'view_to_info_did_not_exist' => '抱歉，您要查看的信息不存在或已被删除',
   'plugin_module_nonexistence' => '指定的插件模块文件({mod})不存在或存在语法错误，请检查是否已将插件完整上传',
   'postperm_none_nopermission' => '抱歉，您没有权限在该版块发帖</p></div><div>',
-  'replyperm_none_nopermission' => '抱歉，您没有权限在该版块回帖</p></div><div>',
+  'replyperm_none_nopermission' => '抱歉，您需要升级所在的用户组后才能回帖，详细请 <a href="home.php?mod=spacecp&ac=usergroup&do=forum">点击这里查看</a>。<br /><strong>有权回帖的用户组或认证用户为：</strong><br /><font color="red">白金VIP、钻石VIP、贵宾VIP、超级VIP</font></p></div><div>',
   'getattachperm_none_nopermission' => '抱歉，您没有权限下载本附件</p></div><div>',
   'magics_target_member_nonexistence' => '抱歉，您指定的用户不存在或被冻结',
   'unknown_magic' => '抱歉，指定的道具不存在或已被禁止使用',

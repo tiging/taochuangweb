@@ -71,27 +71,51 @@ $data = array (
     ),
     11 => 
     array (
-      'groupid' => '2',
-      'readaccess' => '150',
-      'grouptitle' => '超级版主',
+      'groupid' => '23',
+      'readaccess' => '120',
+      'grouptitle' => '贵宾VIP',
     ),
     12 => 
+    array (
+      'groupid' => '22',
+      'readaccess' => '120',
+      'grouptitle' => '钻石VIP',
+    ),
+    13 => 
+    array (
+      'groupid' => '21',
+      'readaccess' => '120',
+      'grouptitle' => '白金VIP',
+    ),
+    14 => 
     array (
       'groupid' => '17',
       'readaccess' => '150',
       'grouptitle' => '网站编辑',
     ),
-    13 => 
+    15 => 
+    array (
+      'groupid' => '2',
+      'readaccess' => '150',
+      'grouptitle' => '超级版主',
+    ),
+    16 => 
     array (
       'groupid' => '18',
       'readaccess' => '200',
       'grouptitle' => '信息监察员',
     ),
-    14 => 
+    17 => 
     array (
       'groupid' => '1',
       'readaccess' => '200',
       'grouptitle' => '管理员',
+    ),
+    18 => 
+    array (
+      'groupid' => '24',
+      'readaccess' => '210',
+      'grouptitle' => '超级VIP',
     ),
   ),
 );

@@ -1,0 +1,14 @@
+.GzList{ width:100%; margin:0 auto 0; height:auto; overflow:hidden;  border:1px #cccccc solid;}
+.GzList ul li{ width:20%; background:#ff; float:left; text-align:center;}
+.GzList ul li a{ background:#F9F9F9; width:100%; float:left; line-height:32px; height:32px; border:0px; color:#3379C6}
+.GzList ul li a:hover{ color:#F00}
+.GzList .Buy{ width:370px; height:auto;}
+.GzList .Buy h2{ height:22px; margin-bottom:5px; border-bottom:1px #cccccc solid; padding:5px 0; background:#EFEFEF }
+.GzList .Buy h2 em{float:left; padding-left:10px; font-size:14px}
+.GzList .Buy h2 .flbc{ float:right; padding-right:8px}
+.GzList .Buy ol{}
+.GzList .Buy ol input{ border:1px #e3e3e3 solid; height:20px}
+.GzList .Buy .tb2s{ width:20%; font-weight:bold; text-align:center; height:30px}
+.GzList .Buy table td em{ color: #F60; font-family:Georgia; font-weight:bold}
+.GzList table,.GzList tr,.GzList td{ border:1px #cccccc solid}
+.GzList #tpsdd{ border:1px #EE831F solid; width:360px; margin:0 auto 5px; height:28px; line-height:28px; text-align:center; background:#FCF6E0; color:#EE4F20; font-weight:bold}

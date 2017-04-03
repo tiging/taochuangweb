@@ -4,7 +4,7 @@ $_CACHE['apps'] = array (
   array (
     'appid' => '1',
     'type' => 'DISCUZX',
-    'name' => 'Discuz! Board',
+    'name' => 'ÌÔ´´Íø',
     'url' => 'http://www.taochuangweb.com',
     'authkey' => 'Q58ct4W7o3AcZdC1sfEfC8oe9cB6C9H3daN3XdZdTa6420M1ufJ692M419u4Fez8',
     'ip' => '',
@@ -14,8 +14,17 @@ $_CACHE['apps'] = array (
     'dbcharset' => '',
     'synlogin' => '1',
     'recvnote' => '1',
-    'extra' => '',
-    'tagtemplates' => '',
+    'extra' => 
+    array (
+      'apppath' => '',
+      'extraurl' => 
+      array (
+      ),
+    ),
+    'tagtemplates' => '<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="template"><![CDATA[]]></item>
+</root>',
     'allowips' => '',
   ),
 );

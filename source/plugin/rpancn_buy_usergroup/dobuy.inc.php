@@ -144,8 +144,8 @@ if (!$_POST['buysubmit']) {
     $str .= '	
 		</table>
 		</div>
-		<p class="o pns">
-		<strong><button type="submit" name="editsubmit_btn" id="editsubmit_btn" value="true" class="pn pnc">' . lang('plugin/rpancn_buy_usergroup', 'rpancn_submit') . '</button></strong>
+		<p class="ptm pbw hm">
+		<strong><button type="submit" name="editsubmit_btn" id="editsubmit_btn" value="true" class="pn pnc" style="padding: 0 10px;line-height: 21px;">' . lang('plugin/rpancn_buy_usergroup', 'rpancn_submit') . '</button></strong>
 		</p>
 		</form>
 		</div>' . "\r\n";

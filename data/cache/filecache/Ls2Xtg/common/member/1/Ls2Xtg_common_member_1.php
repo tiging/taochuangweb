@@ -4,7 +4,7 @@ $data = array (
   'data' => 
   array (
     'uid' => '1',
-    'email' => '149779331@qq.com',
+    'email' => 'hi@taochuangweb.com',
     'username' => 'admin',
     'password' => '2b3f3c58c51681ac4902c707638eb053',
     'status' => '0',
@@ -16,7 +16,7 @@ $data = array (
     'groupexpiry' => '0',
     'extgroupids' => '',
     'regdate' => '1489748997',
-    'credits' => 36,
+    'credits' => 38,
     'notifysound' => '0',
     'timeoffset' => '',
     'newpm' => '0',

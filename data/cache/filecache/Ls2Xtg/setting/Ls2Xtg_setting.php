@@ -14,7 +14,7 @@ $data = array (
 自驾出行
 公益活动
 线上活动',
-    'adminemail' => '149779331@qq.com',
+    'adminemail' => 'hi@taochuangweb.com',
     'adminipaccess' => '',
     'adminnotifytypes' => 'verifythread,verifypost,verifyuser,verifyblog,verifydoing,verifypic,verifyshare,verifycommontes,verifyrecycle,verifyrecyclepost,verifyarticle,verifyacommont,verifymedal,verify_1,verify_2,verify_3,verify_4,verify_5,verify_6,verify_7',
     'anonymoustext' => '匿名',
@@ -280,8 +280,8 @@ $data = array (
       ),
     ),
     'guide' => 'a:2:{s:5:"hotdt";i:604800;s:8:"digestdt";i:604800;}',
-    'hideprivate' => '1',
-    'historyposts' => '7	7',
+    'hideprivate' => '0',
+    'historyposts' => '0	7',
     'hottopic' => '10',
     'icp' => '辽ICP备16004775号-3',
     'imagelib' => '0',
@@ -408,7 +408,7 @@ $data = array (
     'magicdiscount' => '85',
     'magicmarket' => '1',
     'magicstatus' => '1',
-    'mail' => 'a:10:{s:8:"mailsend";s:1:"1";s:6:"server";s:13:"smtp.21cn.com";s:4:"port";s:2:"25";s:4:"auth";s:1:"1";s:4:"from";s:26:"Discuz <username@21cn.com>";s:13:"auth_username";s:17:"username@21cn.com";s:13:"auth_password";s:8:"password";s:13:"maildelimiter";s:1:"0";s:12:"mailusername";s:1:"1";s:15:"sendmail_silent";s:1:"1";}',
+    'mail' => 'a:6:{s:8:"mailsend";s:1:"2";s:4:"smtp";a:1:{i:0;a:6:{s:6:"server";s:18:"smtp.mxhichina.com";s:4:"port";s:2:"25";s:4:"auth";s:1:"1";s:4:"from";s:26:"hi@taochuangweb.com&#8205;";s:13:"auth_username";s:26:"hi@taochuangweb.com&#8205;";s:13:"auth_password";s:11:"qq9812977QQ";}}s:5:"esmtp";a:3:{i:0;a:6:{s:6:"server";s:18:"smtp.mxhichina.com";s:4:"port";s:2:"25";s:4:"auth";s:1:"1";s:4:"from";s:26:"hi@taochuangweb.com&#8205;";s:13:"auth_username";s:26:"hi@taochuangweb.com&#8205;";s:13:"auth_password";s:11:"q********QQ";}s:6:"delete";a:1:{i:0;s:1:"1";}i:1;a:6:{s:6:"server";s:12:"smtp.163.com";s:4:"port";s:2:"25";s:4:"auth";s:1:"1";s:4:"from";s:20:"taochuangweb@163.com";s:13:"auth_username";s:20:"taochuangweb@163.com";s:13:"auth_password";s:11:"q********77";}}s:13:"maildelimiter";s:1:"0";s:12:"mailusername";s:1:"1";s:15:"sendmail_silent";s:1:"1";}',
     'maxavatarpixel' => '120',
     'maxavatarsize' => '20000',
     'maxbdays' => '0',
@@ -450,15 +450,19 @@ $data = array (
     'mobile' => 
     array (
       'allowmobile' => 1,
-      'mobileforward' => 1,
-      'mobileregister' => 0,
-      'mobilecharset' => 'utf-8',
+      'mobileforward' => 0,
+      'mobileregister' => 1,
+      'mobileseccode' => 0,
+      'mobilehotthread' => 0,
+      'mobiledisplayorder3' => 0,
       'mobilesimpletype' => 0,
       'mobiletopicperpage' => 10,
       'mobilepostperpage' => 5,
       'mobilecachetime' => 0,
       'mobileforumview' => 0,
-      'mobilepreview' => 1,
+      'mobilecomefrom' => '',
+      'mobilepreview' => 0,
+      'wml' => 0,
     ),
     'moddisplay' => 'flat',
     'modratelimit' => '0',
@@ -471,14 +475,14 @@ $data = array (
     'msgforward' => 'a:3:{s:11:"refreshtime";i:2;s:5:"quick";i:1;s:8:"messages";a:14:{i:0;s:19:"thread_poll_succeed";i:1;s:19:"thread_rate_succeed";i:2;s:23:"usergroups_join_succeed";i:3;s:23:"usergroups_exit_succeed";i:4;s:25:"usergroups_update_succeed";i:5;s:20:"buddy_update_succeed";i:6;s:17:"post_edit_succeed";i:7;s:18:"post_reply_succeed";i:8;s:24:"post_edit_delete_succeed";i:9;s:22:"post_newthread_succeed";i:10;s:13:"admin_succeed";i:11;s:17:"pm_delete_succeed";i:12;s:15:"search_redirect";i:13;s:10:"do_success";}}',
     'msn' => '',
     'networkpage' => '0',
-    'newbiespan' => '5',
+    'newbiespan' => '0',
     'newbietasks' => '',
     'newbietaskupdate' => '',
     'newspaceavatar' => '0',
     'nocacheheaders' => '0',
     'oltimespan' => '10',
     'onlinehold' => 900,
-    'onlinerecord' => '5	1490876247',
+    'onlinerecord' => '59	1491178365',
     'pollforumid' => '0',
     'postbanperiods' => '',
     'postmodperiods' => '',
@@ -622,7 +626,7 @@ $data = array (
         ),
         'password' => 
         array (
-          'allow' => '1',
+          'allow' => '0',
         ),
         'card' => 
         array (
@@ -724,7 +728,7 @@ $data = array (
       array (
       ),
     ),
-    'sitename' => 'TaoChuangWeb.',
+    'sitename' => '淘创网',
     'siteuniqueid' => 'DXRDRTJvca3bCw3I',
     'siteurl' => 'http://www.taochuangweb.com/',
     'smcols' => '8',
@@ -838,7 +842,7 @@ j/n/Y',
     'zoomstatus' => '1',
     'my_app_status' => '0',
     'my_siteid' => '60928892',
-    'my_sitekey' => '403c0ccdcac031001eef198f78886e4d',
+    'my_sitekey' => 'aa0c1ffb77ce75deb794449b68e55d68',
     'my_closecheckupdate' => '',
     'my_ip' => '',
     'my_search_data' => false,
@@ -1078,7 +1082,7 @@ j/n/Y',
     'regconnect' => '1',
     'connect' => 
     array (
-      'allow' => 1,
+      'allow' => '1',
       'feed' => 
       array (
         'allow' => '1',
@@ -1088,6 +1092,8 @@ j/n/Y',
       array (
         'allow' => '1',
         'group' => '0',
+        'reply' => '0',
+        'reply_showauthor' => '0',
       ),
       'like_allow' => '1',
       'like_qq' => '',
@@ -1105,8 +1111,10 @@ j/n/Y',
       'newbiespan' => '',
       'turl_code' => '',
       'mblog_app_key' => '',
-      'guest_groupid' => 20,
+      'guest_groupid' => '20',
       'oauth2' => 1,
+      'qshare_allow' => '0',
+      'qshare_appkey' => '',
     ),
     'allowwidthauto' => '1',
     'switchwidthauto' => '0',
@@ -1183,12 +1191,12 @@ j/n/Y',
     'cloud_status' => '1',
     'connectappid' => '310825187',
     'connectappkey' => 'IHW6pI1vfLetwkU3',
-    'cloud_apps' => 'a:1:{s:7:"connect";a:2:{s:4:"name";s:7:"connect";s:6:"status";s:6:"normal";}}',
+    'cloud_apps' => 'a:4:{s:7:"connect";a:2:{s:4:"name";s:7:"connect";s:6:"status";s:6:"normal";}s:8:"security";a:2:{s:4:"name";s:8:"security";s:6:"status";s:6:"normal";}s:7:"smilies";a:2:{s:4:"name";s:7:"smilies";s:6:"status";s:6:"normal";}s:5:"union";a:2:{s:4:"name";s:5:"union";s:6:"status";s:6:"normal";}}',
     'wechatredirect' => 'a:4:{s:6:"plugin";s:6:"wechat";s:7:"include";s:18:"response.class.php";s:5:"class";s:11:"WSQResponse";s:6:"method";s:8:"redirect";}',
     'wechatviewpluginid' => 'wechat',
     'site_qq' => '149779331',
     'connect_login_times' => '0',
-    'connect_login_report_date' => '2017-04-01',
+    'connect_login_report_date' => '2017-04-03',
     'wechatresponse' => 'a:4:{s:16:"receiveMsg::text";a:4:{s:6:"plugin";s:6:"wechat";s:7:"include";s:18:"response.class.php";s:5:"class";s:11:"WSQResponse";s:6:"method";s:4:"text";}s:19:"receiveEvent::click";a:4:{s:6:"plugin";s:6:"wechat";s:7:"include";s:18:"response.class.php";s:5:"class";s:11:"WSQResponse";s:6:"method";s:5:"click";}s:23:"receiveEvent::subscribe";a:4:{s:6:"plugin";s:6:"wechat";s:7:"include";s:18:"response.class.php";s:5:"class";s:11:"WSQResponse";s:6:"method";s:9:"subscribe";}s:18:"receiveEvent::scan";a:4:{s:6:"plugin";s:6:"wechat";s:7:"include";s:18:"response.class.php";s:5:"class";s:11:"WSQResponse";s:6:"method";s:4:"scan";}}',
     'disfixednv_forumindex' => '0',
     'forumpicstyle' => 'a:3:{s:10:"thumbwidth";i:0;s:11:"thumbheight";i:0;s:8:"thumbnum";i:0;}',
@@ -1212,8 +1220,14 @@ j/n/Y',
     'allowreplybg' => '0',
     'rewriteguest' => '0',
     'baidusitemap_life' => '1',
-    'rpancn_buy_user_group_package' => 'a:4:{i:21;a:6:{s:3:"gid";s:2:"21";s:7:"sort_id";s:1:"1";s:9:"pricepday";s:6:"0.3222";s:9:"extcredit";s:1:"0";s:15:"extcredit_value";s:6:"0.0000";s:6:"minday";s:3:"180";}i:22;a:6:{s:3:"gid";s:2:"22";s:7:"sort_id";s:1:"2";s:9:"pricepday";s:6:"0.2685";s:9:"extcredit";s:1:"0";s:15:"extcredit_value";s:6:"0.0000";s:6:"minday";s:3:"365";}i:23;a:6:{s:3:"gid";s:2:"23";s:7:"sort_id";s:1:"3";s:9:"pricepday";s:8:"198.0000";s:9:"extcredit";s:1:"0";s:15:"extcredit_value";s:6:"0.0000";s:6:"minday";s:1:"0";}i:24;a:6:{s:3:"gid";s:2:"24";s:7:"sort_id";s:1:"4";s:9:"pricepday";s:8:"598.0000";s:9:"extcredit";s:1:"0";s:15:"extcredit_value";s:6:"0.0000";s:6:"minday";s:1:"0";}}',
+    'rpancn_buy_user_group_package' => 'a:4:{i:21;a:6:{s:3:"gid";s:2:"21";s:7:"sort_id";s:1:"1";s:9:"pricepday";s:6:"0.3220";s:9:"extcredit";s:1:"0";s:15:"extcredit_value";s:6:"0.0000";s:6:"minday";s:3:"180";}i:22;a:6:{s:3:"gid";s:2:"22";s:7:"sort_id";s:1:"2";s:9:"pricepday";s:6:"0.2680";s:9:"extcredit";s:1:"0";s:15:"extcredit_value";s:6:"0.0000";s:6:"minday";s:3:"365";}i:23;a:6:{s:3:"gid";s:2:"23";s:7:"sort_id";s:1:"3";s:9:"pricepday";s:8:"198.0000";s:9:"extcredit";s:1:"0";s:15:"extcredit_value";s:6:"0.0000";s:6:"minday";s:1:"0";}i:24;a:6:{s:3:"gid";s:2:"24";s:7:"sort_id";s:1:"4";s:9:"pricepday";s:8:"598.0000";s:9:"extcredit";s:1:"0";s:15:"extcredit_value";s:6:"0.0000";s:6:"minday";s:1:"0";}}',
     'sendregisterurl' => '0',
+    'accountguard' => 
+    array (
+      'postqqonly' => '1',
+      'loginoutofdate' => '0',
+    ),
+    'upgrade' => false,
     'newusergroupid' => '10',
     'buyusergroupexists' => '0',
     'forumfids' => 
@@ -1262,12 +1276,14 @@ j/n/Y',
           array (
             'wechat' => 'wechat/wechat',
             'mobile' => 'mobile/mobile',
+            'security' => 'security/security',
             'qqconnect' => 'qqconnect/connect',
           ),
           'adminid' => 
           array (
             'wechat' => '0',
             'mobile' => '0',
+            'security' => '0',
             'qqconnect' => '0',
           ),
           'funcs' => 
@@ -1289,6 +1305,11 @@ j/n/Y',
                 0 => 'wechat',
                 1 => 'common',
               ),
+              3 => 
+              array (
+                0 => 'security',
+                1 => 'common',
+              ),
             ),
             'common_base' => 
             array (
@@ -1305,11 +1326,13 @@ j/n/Y',
           'module' => 
           array (
             'mobile' => 'mobile/mobile',
+            'security' => 'security/security',
             'qqconnect' => 'qqconnect/connect',
           ),
           'adminid' => 
           array (
             'mobile' => '0',
+            'security' => '0',
             'qqconnect' => '0',
           ),
           'funcs' => 
@@ -1330,6 +1353,22 @@ j/n/Y',
                 1 => 'global_mobile',
               ),
             ),
+            'global_footer' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'global_footer',
+              ),
+            ),
+            'global_footerlink' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'global_footerlink',
+              ),
+            ),
             'global_footer_mobile' => 
             array (
               0 => 
@@ -1345,10 +1384,12 @@ j/n/Y',
           'module' => 
           array (
             'mobile' => 'mobile/mobile',
+            'soso_smilies' => 'soso_smilies/soso',
           ),
           'adminid' => 
           array (
             'mobile' => '0',
+            'soso_smilies' => '0',
           ),
           'funcs' => 
           array (
@@ -1356,8 +1397,189 @@ j/n/Y',
             array (
               0 => 
               array (
+                0 => 'soso_smilies',
+                1 => 'discuzcode',
+              ),
+              1 => 
+              array (
                 0 => 'mobile',
                 1 => 'discuzcode',
+              ),
+            ),
+          ),
+        ),
+        'deletepost' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'deletepost' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'deletepost',
+              ),
+            ),
+          ),
+        ),
+        'deletethread' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'deletethread' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'deletethread',
+              ),
+            ),
+          ),
+        ),
+        'savebanlog' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'savebanlog' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'savebanlog',
+              ),
+            ),
+          ),
+        ),
+        'undeletethreads' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'undeletethreads' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'undeletethreads',
+              ),
+            ),
+          ),
+        ),
+        'recyclebinpostundelete' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'recyclebinpostundelete' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'recyclebinpostundelete',
+              ),
+            ),
+          ),
+        ),
+        'deletemember' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'deletemember' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'deletemember',
+              ),
+            ),
+          ),
+        ),
+        'secLog' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'secLog' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'secLog',
+              ),
+            ),
+          ),
+        ),
+        'getMergeAction' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'getMergeAction' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'getMergeAction',
               ),
             ),
           ),
@@ -1393,11 +1615,13 @@ j/n/Y',
           array (
             'wechat' => 'wechat/wechat',
             'mobile' => 'mobile/mobile',
+            'security' => 'security/security',
           ),
           'adminid' => 
           array (
             'wechat' => '0',
             'mobile' => '0',
+            'security' => '0',
           ),
           'funcs' => 
           array (
@@ -1409,6 +1633,14 @@ j/n/Y',
                 1 => 'post_showactivity',
               ),
             ),
+            'post_security' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'post_security',
+              ),
+            ),
           ),
           'messagefuncs' => 
           array (
@@ -1418,6 +1650,14 @@ j/n/Y',
               array (
                 0 => 'mobile',
                 1 => 'post_mobile_message',
+              ),
+            ),
+            'post_report' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'post_report_message',
               ),
             ),
           ),
@@ -1498,11 +1738,13 @@ j/n/Y',
           array (
             'wechat' => 'wechat/wechat',
             'mobile' => 'mobile/mobile',
+            'security' => 'security/security',
           ),
           'adminid' => 
           array (
             'wechat' => '0',
             'mobile' => '0',
+            'security' => '0',
           ),
           'funcs' => 
           array (
@@ -1510,12 +1752,17 @@ j/n/Y',
             array (
               0 => 
               array (
-                0 => 'mobile',
+                0 => 'wechat',
                 1 => 'common',
               ),
               1 => 
               array (
-                0 => 'wechat',
+                0 => 'mobile',
+                1 => 'common',
+              ),
+              2 => 
+              array (
+                0 => 'security',
                 1 => 'common',
               ),
             ),
@@ -1548,10 +1795,12 @@ j/n/Y',
           'module' => 
           array (
             'mobile' => 'mobile/mobile',
+            'security' => 'security/security',
           ),
           'adminid' => 
           array (
             'mobile' => '0',
+            'security' => '0',
           ),
           'funcs' => 
           array (
@@ -1561,6 +1810,198 @@ j/n/Y',
               array (
                 0 => 'mobile',
                 1 => 'global_mobile',
+              ),
+            ),
+            'global_footer' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'global_footer',
+              ),
+            ),
+            'global_footerlink' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'global_footerlink',
+              ),
+            ),
+          ),
+        ),
+        'deletepost' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'deletepost' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'deletepost',
+              ),
+            ),
+          ),
+        ),
+        'deletethread' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'deletethread' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'deletethread',
+              ),
+            ),
+          ),
+        ),
+        'savebanlog' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'savebanlog' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'savebanlog',
+              ),
+            ),
+          ),
+        ),
+        'undeletethreads' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'undeletethreads' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'undeletethreads',
+              ),
+            ),
+          ),
+        ),
+        'recyclebinpostundelete' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'recyclebinpostundelete' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'recyclebinpostundelete',
+              ),
+            ),
+          ),
+        ),
+        'deletemember' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'deletemember' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'deletemember',
+              ),
+            ),
+          ),
+        ),
+        'secLog' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'secLog' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'secLog',
+              ),
+            ),
+          ),
+        ),
+        'getMergeAction' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'getMergeAction' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'getMergeAction',
               ),
             ),
           ),
@@ -1657,29 +2098,92 @@ j/n/Y',
           ),
         ),
       ),
-    ),
-    'hookscript' => 
-    array (
-      'global' => 
+      'member' => 
       array (
-        'clearcookie' => 
+        'logging' => 
         array (
           'module' => 
           array (
-            'touclick' => 'touclick/touclick',
+            'security' => 'security/security',
           ),
           'adminid' => 
           array (
-            'touclick' => '0',
+            'security' => '0',
           ),
-          'funcs' => 
+          'messagefuncs' => 
           array (
-            'clearcookie' => 
+            'logging_report' => 
             array (
               0 => 
               array (
-                0 => 'touclick',
-                1 => 'clearcookie',
+                0 => 'security',
+                1 => 'logging_report_message',
+              ),
+            ),
+          ),
+        ),
+        'register' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'messagefuncs' => 
+          array (
+            'register_report' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'register_report_message',
+              ),
+            ),
+          ),
+        ),
+        'connect' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'messagefuncs' => 
+          array (
+            'connect_report' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'connect_report_message',
+              ),
+            ),
+          ),
+        ),
+        'common' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'common' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'common',
               ),
             ),
           ),
@@ -1688,6 +2192,219 @@ j/n/Y',
         array (
           'module' => 
           array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'global_footer' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'global_footer',
+              ),
+            ),
+            'global_footerlink' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'global_footerlink',
+              ),
+            ),
+          ),
+        ),
+        'deletepost' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'deletepost' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'deletepost',
+              ),
+            ),
+          ),
+        ),
+        'deletethread' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'deletethread' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'deletethread',
+              ),
+            ),
+          ),
+        ),
+        'savebanlog' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'savebanlog' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'savebanlog',
+              ),
+            ),
+          ),
+        ),
+        'undeletethreads' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'undeletethreads' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'undeletethreads',
+              ),
+            ),
+          ),
+        ),
+        'recyclebinpostundelete' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'recyclebinpostundelete' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'recyclebinpostundelete',
+              ),
+            ),
+          ),
+        ),
+        'deletemember' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'deletemember' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'deletemember',
+              ),
+            ),
+          ),
+        ),
+        'secLog' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'secLog' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'secLog',
+              ),
+            ),
+          ),
+        ),
+        'getMergeAction' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'getMergeAction' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'getMergeAction',
+              ),
+            ),
+          ),
+        ),
+      ),
+    ),
+    'hookscript' => 
+    array (
+      'global' => 
+      array (
+        'global' => 
+        array (
+          'module' => 
+          array (
+            'iplus_gezi' => 'iplus_gezi/hook',
             'touclick' => 'touclick/touclick',
             'rpancn_buy_usergroup' => 'rpancn_buy_usergroup/hook',
             'ljqq' => 'ljqq/ljqq',
@@ -1696,10 +2413,13 @@ j/n/Y',
             'levnav' => 'levnav/hook',
             'wechat' => 'wechat/wechat',
             'mobile' => 'mobile/mobile',
+            'security' => 'security/security',
+            'soso_smilies' => 'soso_smilies/soso',
             'qqconnect' => 'qqconnect/connect',
           ),
           'adminid' => 
           array (
+            'iplus_gezi' => '0',
             'touclick' => '0',
             'rpancn_buy_usergroup' => '0',
             'ljqq' => '0',
@@ -1708,41 +2428,12 @@ j/n/Y',
             'levnav' => '0',
             'wechat' => '0',
             'mobile' => '0',
+            'security' => '0',
+            'soso_smilies' => '0',
             'qqconnect' => '0',
           ),
           'funcs' => 
           array (
-            'global_footer' => 
-            array (
-              0 => 
-              array (
-                0 => 'qqconnect',
-                1 => 'global_footer',
-              ),
-              1 => 
-              array (
-                0 => 'wechat',
-                1 => 'global_footer',
-              ),
-              2 => 
-              array (
-                0 => 'ljqq',
-                1 => 'global_footer',
-              ),
-              3 => 
-              array (
-                0 => 'touclick',
-                1 => 'global_footer',
-              ),
-            ),
-            'global_usernav_extra3' => 
-            array (
-              0 => 
-              array (
-                0 => 'rpancn_buy_usergroup',
-                1 => 'global_usernav_extra3',
-              ),
-            ),
             'global_header' => 
             array (
               0 => 
@@ -1755,6 +2446,57 @@ j/n/Y',
                 0 => 'it618_firstnfocus_deyi',
                 1 => 'global_header',
               ),
+              2 => 
+              array (
+                0 => 'iplus_gezi',
+                1 => 'global_header',
+              ),
+            ),
+            'global_footer' => 
+            array (
+              0 => 
+              array (
+                0 => 'qqconnect',
+                1 => 'global_footer',
+              ),
+              1 => 
+              array (
+                0 => 'soso_smilies',
+                1 => 'global_footer',
+              ),
+              2 => 
+              array (
+                0 => 'wechat',
+                1 => 'global_footer',
+              ),
+              3 => 
+              array (
+                0 => 'security',
+                1 => 'global_footer',
+              ),
+              4 => 
+              array (
+                0 => 'touclick',
+                1 => 'global_footer',
+              ),
+              5 => 
+              array (
+                0 => 'ljqq',
+                1 => 'global_footer',
+              ),
+              6 => 
+              array (
+                0 => 'iplus_gezi',
+                1 => 'global_footer',
+              ),
+            ),
+            'global_cpnav_extra1' => 
+            array (
+              0 => 
+              array (
+                0 => 'iplus_gezi',
+                1 => 'global_cpnav_extra1',
+              ),
             ),
             'global_nav_extra' => 
             array (
@@ -1762,6 +2504,40 @@ j/n/Y',
               array (
                 0 => 'levnav',
                 1 => 'global_nav_extra',
+              ),
+              1 => 
+              array (
+                0 => 'iplus_gezi',
+                1 => 'global_nav_extra',
+              ),
+            ),
+            'global_footerlink' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'global_footerlink',
+              ),
+              1 => 
+              array (
+                0 => 'iplus_gezi',
+                1 => 'global_footerlink',
+              ),
+            ),
+            'global_usernav_extra2' => 
+            array (
+              0 => 
+              array (
+                0 => 'iplus_gezi',
+                1 => 'global_usernav_extra2',
+              ),
+            ),
+            'global_usernav_extra3' => 
+            array (
+              0 => 
+              array (
+                0 => 'rpancn_buy_usergroup',
+                1 => 'global_usernav_extra3',
               ),
             ),
             'global_login_extra' => 
@@ -1796,6 +2572,86 @@ j/n/Y',
               array (
                 0 => 'mobile',
                 1 => 'global_mobile',
+              ),
+            ),
+          ),
+        ),
+        'common' => 
+        array (
+          'module' => 
+          array (
+            'invite_aboc' => 'invite_aboc/invite_aboc',
+            'wechat' => 'wechat/wechat',
+            'mobile' => 'mobile/mobile',
+            'security' => 'security/security',
+            'qqconnect' => 'qqconnect/connect',
+          ),
+          'adminid' => 
+          array (
+            'invite_aboc' => '0',
+            'wechat' => '0',
+            'mobile' => '0',
+            'security' => '0',
+            'qqconnect' => '0',
+          ),
+          'funcs' => 
+          array (
+            'common' => 
+            array (
+              0 => 
+              array (
+                0 => 'qqconnect',
+                1 => 'common',
+              ),
+              1 => 
+              array (
+                0 => 'mobile',
+                1 => 'common',
+              ),
+              2 => 
+              array (
+                0 => 'wechat',
+                1 => 'common',
+              ),
+              3 => 
+              array (
+                0 => 'security',
+                1 => 'common',
+              ),
+              4 => 
+              array (
+                0 => 'invite_aboc',
+                1 => 'common',
+              ),
+            ),
+            'common_base' => 
+            array (
+              0 => 
+              array (
+                0 => 'qqconnect',
+                1 => 'common_base',
+              ),
+            ),
+          ),
+        ),
+        'clearcookie' => 
+        array (
+          'module' => 
+          array (
+            'touclick' => 'touclick/touclick',
+          ),
+          'adminid' => 
+          array (
+            'touclick' => '0',
+          ),
+          'funcs' => 
+          array (
+            'clearcookie' => 
+            array (
+              0 => 
+              array (
+                0 => 'touclick',
+                1 => 'clearcookie',
               ),
             ),
           ),
@@ -1866,59 +2722,17 @@ j/n/Y',
             ),
           ),
         ),
-        'common' => 
-        array (
-          'module' => 
-          array (
-            'wechat' => 'wechat/wechat',
-            'mobile' => 'mobile/mobile',
-            'qqconnect' => 'qqconnect/connect',
-          ),
-          'adminid' => 
-          array (
-            'wechat' => '0',
-            'mobile' => '0',
-            'qqconnect' => '0',
-          ),
-          'funcs' => 
-          array (
-            'common' => 
-            array (
-              0 => 
-              array (
-                0 => 'qqconnect',
-                1 => 'common',
-              ),
-              1 => 
-              array (
-                0 => 'mobile',
-                1 => 'common',
-              ),
-              2 => 
-              array (
-                0 => 'wechat',
-                1 => 'common',
-              ),
-            ),
-            'common_base' => 
-            array (
-              0 => 
-              array (
-                0 => 'qqconnect',
-                1 => 'common_base',
-              ),
-            ),
-          ),
-        ),
         'deletemember' => 
         array (
           'module' => 
           array (
             'wechat' => 'wechat/wechat',
+            'security' => 'security/security',
           ),
           'adminid' => 
           array (
             'wechat' => '0',
+            'security' => '0',
           ),
           'funcs' => 
           array (
@@ -1929,6 +2743,11 @@ j/n/Y',
                 0 => 'wechat',
                 1 => 'deletemember',
               ),
+              1 => 
+              array (
+                0 => 'security',
+                1 => 'deletemember',
+              ),
             ),
           ),
         ),
@@ -1937,11 +2756,13 @@ j/n/Y',
           'module' => 
           array (
             'mobile' => 'mobile/mobile',
+            'soso_smilies' => 'soso_smilies/soso',
             'qqconnect' => 'qqconnect/connect',
           ),
           'adminid' => 
           array (
             'mobile' => '0',
+            'soso_smilies' => '0',
             'qqconnect' => '0',
           ),
           'funcs' => 
@@ -1955,8 +2776,175 @@ j/n/Y',
               ),
               1 => 
               array (
+                0 => 'soso_smilies',
+                1 => 'discuzcode',
+              ),
+              2 => 
+              array (
                 0 => 'mobile',
                 1 => 'discuzcode',
+              ),
+            ),
+            'discuzcode_callback_soso_smiles_1' => 
+            array (
+              0 => 
+              array (
+                0 => 'soso_smilies',
+                1 => 'discuzcode_callback_soso_smiles_1',
+              ),
+            ),
+          ),
+        ),
+        'deletepost' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'deletepost' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'deletepost',
+              ),
+            ),
+          ),
+        ),
+        'deletethread' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'deletethread' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'deletethread',
+              ),
+            ),
+          ),
+        ),
+        'savebanlog' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'savebanlog' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'savebanlog',
+              ),
+            ),
+          ),
+        ),
+        'undeletethreads' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'undeletethreads' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'undeletethreads',
+              ),
+            ),
+          ),
+        ),
+        'recyclebinpostundelete' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'recyclebinpostundelete' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'recyclebinpostundelete',
+              ),
+            ),
+          ),
+        ),
+        'secLog' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'secLog' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'secLog',
+              ),
+            ),
+          ),
+        ),
+        'getMergeAction' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'getMergeAction' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'getMergeAction',
               ),
             ),
           ),
@@ -1990,22 +2978,51 @@ j/n/Y',
         array (
           'module' => 
           array (
+            'crx349_copyrighted' => 'crx349_copyrighted/crx349_copyrighted',
+            'nimba_thot' => 'nimba_thot/hook',
             'touclick' => 'touclick/touclick',
             'wechat' => 'wechat/wechat',
             'pcmgr_url_safeguard' => 'pcmgr_url_safeguard/pcmgr_url_safeguard',
             'mobile' => 'mobile/mobile',
+            'soso_smilies' => 'soso_smilies/soso',
             'qqconnect' => 'qqconnect/connect',
           ),
           'adminid' => 
           array (
+            'crx349_copyrighted' => '0',
+            'nimba_thot' => '0',
             'touclick' => '0',
             'wechat' => '0',
             'pcmgr_url_safeguard' => '0',
             'mobile' => '0',
+            'soso_smilies' => '0',
             'qqconnect' => '0',
           ),
           'outputfuncs' => 
           array (
+            'viewthread_postbottom' => 
+            array (
+              0 => 
+              array (
+                0 => 'qqconnect',
+                1 => 'viewthread_postbottom_output',
+              ),
+              1 => 
+              array (
+                0 => 'mobile',
+                1 => 'viewthread_postbottom_output',
+              ),
+              2 => 
+              array (
+                0 => 'nimba_thot',
+                1 => 'viewthread_postbottom_output',
+              ),
+              3 => 
+              array (
+                0 => 'crx349_copyrighted',
+                1 => 'viewthread_postbottom_output',
+              ),
+            ),
             'viewthread_bottom' => 
             array (
               0 => 
@@ -2056,17 +3073,12 @@ j/n/Y',
                 1 => 'viewthread_top_output',
               ),
             ),
-            'viewthread_postbottom' => 
+            'viewthread_fastpost_content' => 
             array (
               0 => 
               array (
-                0 => 'qqconnect',
-                1 => 'viewthread_postbottom_output',
-              ),
-              1 => 
-              array (
-                0 => 'mobile',
-                1 => 'viewthread_postbottom_output',
+                0 => 'soso_smilies',
+                1 => 'viewthread_fastpost_content_output',
               ),
             ),
             'viewthread_fastpost_btn_extra' => 
@@ -2105,6 +3117,8 @@ j/n/Y',
             'touclick' => 'touclick/touclick',
             'wechat' => 'wechat/wechat',
             'mobile' => 'mobile/mobile',
+            'security' => 'security/security',
+            'soso_smilies' => 'soso_smilies/soso',
             'qqconnect' => 'qqconnect/connect',
           ),
           'adminid' => 
@@ -2112,6 +3126,8 @@ j/n/Y',
             'touclick' => '0',
             'wechat' => '0',
             'mobile' => '0',
+            'security' => '0',
+            'soso_smilies' => '0',
             'qqconnect' => '0',
           ),
           'outputfuncs' => 
@@ -2119,6 +3135,11 @@ j/n/Y',
             'post_bottom' => 
             array (
               0 => 
+              array (
+                0 => 'soso_smilies',
+                1 => 'post_bottom_output',
+              ),
+              1 => 
               array (
                 0 => 'touclick',
                 1 => 'post_bottom_output',
@@ -2159,6 +3180,22 @@ j/n/Y',
                 1 => 'post_showactivity',
               ),
             ),
+            'post_security' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'post_security',
+              ),
+            ),
+            'post_smileyoff' => 
+            array (
+              0 => 
+              array (
+                0 => 'soso_smilies',
+                1 => 'post_smileyoff',
+              ),
+            ),
           ),
           'messagefuncs' => 
           array (
@@ -2168,6 +3205,14 @@ j/n/Y',
               array (
                 0 => 'mobile',
                 1 => 'post_mobile_message',
+              ),
+            ),
+            'post_report' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'post_report_message',
               ),
             ),
             'post_feedlog' => 
@@ -2252,6 +3297,8 @@ j/n/Y',
             'levnav' => 'levnav/hook',
             'wechat' => 'wechat/wechat',
             'mobile' => 'mobile/mobile',
+            'security' => 'security/security',
+            'soso_smilies' => 'soso_smilies/soso',
             'qqconnect' => 'qqconnect/connect',
           ),
           'adminid' => 
@@ -2260,6 +3307,8 @@ j/n/Y',
             'levnav' => '0',
             'wechat' => '0',
             'mobile' => '0',
+            'security' => '0',
+            'soso_smilies' => '0',
             'qqconnect' => '0',
           ),
           'funcs' => 
@@ -2277,6 +3326,16 @@ j/n/Y',
                 1 => 'global_footer',
               ),
               2 => 
+              array (
+                0 => 'soso_smilies',
+                1 => 'global_footer',
+              ),
+              3 => 
+              array (
+                0 => 'security',
+                1 => 'global_footer',
+              ),
+              4 => 
               array (
                 0 => 'touclick',
                 1 => 'global_footer',
@@ -2322,6 +3381,14 @@ j/n/Y',
               array (
                 0 => 'mobile',
                 1 => 'global_mobile',
+              ),
+            ),
+            'global_footerlink' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'global_footerlink',
               ),
             ),
           ),
@@ -2443,12 +3510,14 @@ j/n/Y',
           array (
             'wechat' => 'wechat/wechat',
             'mobile' => 'mobile/mobile',
+            'security' => 'security/security',
             'qqconnect' => 'qqconnect/connect',
           ),
           'adminid' => 
           array (
             'wechat' => '0',
             'mobile' => '0',
+            'security' => '0',
             'qqconnect' => '0',
           ),
           'funcs' => 
@@ -2470,6 +3539,11 @@ j/n/Y',
                 0 => 'wechat',
                 1 => 'common',
               ),
+              3 => 
+              array (
+                0 => 'security',
+                1 => 'common',
+              ),
             ),
             'common_base' => 
             array (
@@ -2486,10 +3560,12 @@ j/n/Y',
           'module' => 
           array (
             'wechat' => 'wechat/wechat',
+            'security' => 'security/security',
           ),
           'adminid' => 
           array (
             'wechat' => '0',
+            'security' => '0',
           ),
           'funcs' => 
           array (
@@ -2500,6 +3576,11 @@ j/n/Y',
                 0 => 'wechat',
                 1 => 'deletemember',
               ),
+              1 => 
+              array (
+                0 => 'security',
+                1 => 'deletemember',
+              ),
             ),
           ),
         ),
@@ -2508,11 +3589,13 @@ j/n/Y',
           'module' => 
           array (
             'mobile' => 'mobile/mobile',
+            'soso_smilies' => 'soso_smilies/soso',
             'qqconnect' => 'qqconnect/connect',
           ),
           'adminid' => 
           array (
             'mobile' => '0',
+            'soso_smilies' => '0',
             'qqconnect' => '0',
           ),
           'funcs' => 
@@ -2526,8 +3609,175 @@ j/n/Y',
               ),
               1 => 
               array (
+                0 => 'soso_smilies',
+                1 => 'discuzcode',
+              ),
+              2 => 
+              array (
                 0 => 'mobile',
                 1 => 'discuzcode',
+              ),
+            ),
+            'discuzcode_callback_soso_smiles_1' => 
+            array (
+              0 => 
+              array (
+                0 => 'soso_smilies',
+                1 => 'discuzcode_callback_soso_smiles_1',
+              ),
+            ),
+          ),
+        ),
+        'deletepost' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'deletepost' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'deletepost',
+              ),
+            ),
+          ),
+        ),
+        'deletethread' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'deletethread' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'deletethread',
+              ),
+            ),
+          ),
+        ),
+        'savebanlog' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'savebanlog' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'savebanlog',
+              ),
+            ),
+          ),
+        ),
+        'undeletethreads' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'undeletethreads' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'undeletethreads',
+              ),
+            ),
+          ),
+        ),
+        'recyclebinpostundelete' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'recyclebinpostundelete' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'recyclebinpostundelete',
+              ),
+            ),
+          ),
+        ),
+        'secLog' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'secLog' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'secLog',
+              ),
+            ),
+          ),
+        ),
+        'getMergeAction' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'getMergeAction' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'getMergeAction',
               ),
             ),
           ),
@@ -2536,14 +3786,24 @@ j/n/Y',
         array (
           'module' => 
           array (
+            'soso_smilies' => 'soso_smilies/soso',
             'qqconnect' => 'qqconnect/connect',
           ),
           'adminid' => 
           array (
+            'soso_smilies' => '0',
             'qqconnect' => '0',
           ),
           'outputfuncs' => 
           array (
+            'forumdisplay_bottom' => 
+            array (
+              0 => 
+              array (
+                0 => 'soso_smilies',
+                1 => 'forumdisplay_bottom_output',
+              ),
+            ),
             'forumdisplay_fastpost_sync_method' => 
             array (
               0 => 
@@ -2585,12 +3845,14 @@ j/n/Y',
           array (
             'touclick' => 'touclick/touclick',
             'wechat' => 'wechat/wechat',
+            'security' => 'security/security',
             'qqconnect' => 'qqconnect/connect',
           ),
           'adminid' => 
           array (
             'touclick' => '0',
             'wechat' => '0',
+            'security' => '0',
             'qqconnect' => '0',
           ),
           'funcs' => 
@@ -2625,6 +3887,17 @@ j/n/Y',
               ),
             ),
           ),
+          'messagefuncs' => 
+          array (
+            'logging_report' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'logging_report_message',
+              ),
+            ),
+          ),
         ),
         'register' => 
         array (
@@ -2632,12 +3905,14 @@ j/n/Y',
           array (
             'touclick' => 'touclick/touclick',
             'wechat' => 'wechat/wechat',
+            'security' => 'security/security',
             'qqconnect' => 'qqconnect/connect',
           ),
           'adminid' => 
           array (
             'touclick' => '0',
             'wechat' => '0',
+            'security' => '0',
             'qqconnect' => '0',
           ),
           'funcs' => 
@@ -2680,6 +3955,17 @@ j/n/Y',
               array (
                 0 => 'wechat',
                 1 => 'register_top_output',
+              ),
+            ),
+          ),
+          'messagefuncs' => 
+          array (
+            'register_report' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'register_report_message',
               ),
             ),
           ),
@@ -2754,12 +4040,14 @@ j/n/Y',
           array (
             'touclick' => 'touclick/touclick',
             'wechat' => 'wechat/wechat',
+            'security' => 'security/security',
             'qqconnect' => 'qqconnect/connect',
           ),
           'adminid' => 
           array (
             'touclick' => '0',
             'wechat' => '0',
+            'security' => '0',
             'qqconnect' => '0',
           ),
           'funcs' => 
@@ -2777,6 +4065,11 @@ j/n/Y',
                 1 => 'global_footer',
               ),
               2 => 
+              array (
+                0 => 'security',
+                1 => 'global_footer',
+              ),
+              3 => 
               array (
                 0 => 'touclick',
                 1 => 'global_footer',
@@ -2808,6 +4101,14 @@ j/n/Y',
                 1 => 'global_usernav_extra1',
               ),
             ),
+            'global_footerlink' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'global_footerlink',
+              ),
+            ),
           ),
         ),
         'log' => 
@@ -2837,11 +4138,13 @@ j/n/Y',
           'module' => 
           array (
             'wechat' => 'wechat/wechat',
+            'security' => 'security/security',
             'qqconnect' => 'qqconnect/connect',
           ),
           'adminid' => 
           array (
             'wechat' => '0',
+            'security' => '0',
             'qqconnect' => '0',
           ),
           'funcs' => 
@@ -2850,12 +4153,17 @@ j/n/Y',
             array (
               0 => 
               array (
-                0 => 'qqconnect',
+                0 => 'wechat',
                 1 => 'common',
               ),
               1 => 
               array (
-                0 => 'wechat',
+                0 => 'qqconnect',
+                1 => 'common',
+              ),
+              2 => 
+              array (
+                0 => 'security',
                 1 => 'common',
               ),
             ),
@@ -2874,10 +4182,12 @@ j/n/Y',
           'module' => 
           array (
             'wechat' => 'wechat/wechat',
+            'security' => 'security/security',
           ),
           'adminid' => 
           array (
             'wechat' => '0',
+            'security' => '0',
           ),
           'funcs' => 
           array (
@@ -2888,6 +4198,11 @@ j/n/Y',
                 0 => 'wechat',
                 1 => 'deletemember',
               ),
+              1 => 
+              array (
+                0 => 'security',
+                1 => 'deletemember',
+              ),
             ),
           ),
         ),
@@ -2895,11 +4210,24 @@ j/n/Y',
         array (
           'module' => 
           array (
+            'security' => 'security/security',
             'qqconnect' => 'qqconnect/connect',
           ),
           'adminid' => 
           array (
+            'security' => '0',
             'qqconnect' => '0',
+          ),
+          'messagefuncs' => 
+          array (
+            'connect_report' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'connect_report_message',
+              ),
+            ),
           ),
           'funcs' => 
           array (
@@ -2928,6 +4256,160 @@ j/n/Y',
               array (
                 0 => 'qqconnect',
                 1 => 'connect_bottom_output',
+              ),
+            ),
+          ),
+        ),
+        'deletepost' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'deletepost' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'deletepost',
+              ),
+            ),
+          ),
+        ),
+        'deletethread' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'deletethread' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'deletethread',
+              ),
+            ),
+          ),
+        ),
+        'savebanlog' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'savebanlog' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'savebanlog',
+              ),
+            ),
+          ),
+        ),
+        'undeletethreads' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'undeletethreads' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'undeletethreads',
+              ),
+            ),
+          ),
+        ),
+        'recyclebinpostundelete' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'recyclebinpostundelete' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'recyclebinpostundelete',
+              ),
+            ),
+          ),
+        ),
+        'secLog' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'secLog' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'secLog',
+              ),
+            ),
+          ),
+        ),
+        'getMergeAction' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'getMergeAction' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'getMergeAction',
               ),
             ),
           ),
@@ -3006,11 +4488,15 @@ j/n/Y',
           'module' => 
           array (
             'rpancn_buy_usergroup' => 'rpancn_buy_usergroup/hook',
+            'security' => 'security/security',
+            'soso_smilies' => 'soso_smilies/soso',
             'qqconnect' => 'qqconnect/connect',
           ),
           'adminid' => 
           array (
             'rpancn_buy_usergroup' => '0',
+            'security' => '0',
+            'soso_smilies' => '0',
             'qqconnect' => '0',
           ),
           'funcs' => 
@@ -3021,6 +4507,32 @@ j/n/Y',
               array (
                 0 => 'rpancn_buy_usergroup',
                 1 => 'global_usernav_extra3',
+              ),
+            ),
+            'global_footer' => 
+            array (
+              0 => 
+              array (
+                0 => 'qqconnect',
+                1 => 'global_footer',
+              ),
+              1 => 
+              array (
+                0 => 'soso_smilies',
+                1 => 'global_footer',
+              ),
+              2 => 
+              array (
+                0 => 'security',
+                1 => 'global_footer',
+              ),
+            ),
+            'global_footerlink' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'global_footerlink',
               ),
             ),
             'global_login_extra' => 
@@ -3039,12 +4551,272 @@ j/n/Y',
                 1 => 'global_usernav_extra1',
               ),
             ),
-            'global_footer' => 
+          ),
+        ),
+        'spacecp_follow' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'messagefuncs' => 
+          array (
+            'spacecp_follow_report' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'spacecp_follow_report_message',
+              ),
+            ),
+          ),
+        ),
+        'post' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'post_security' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'post_security',
+              ),
+            ),
+          ),
+          'messagefuncs' => 
+          array (
+            'post_report' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'post_report_message',
+              ),
+            ),
+          ),
+        ),
+        'common' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+            'qqconnect' => 'qqconnect/connect',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+            'qqconnect' => '0',
+          ),
+          'funcs' => 
+          array (
+            'common' => 
             array (
               0 => 
               array (
                 0 => 'qqconnect',
-                1 => 'global_footer',
+                1 => 'common',
+              ),
+              1 => 
+              array (
+                0 => 'security',
+                1 => 'common',
+              ),
+            ),
+            'common_base' => 
+            array (
+              0 => 
+              array (
+                0 => 'qqconnect',
+                1 => 'common_base',
+              ),
+            ),
+          ),
+        ),
+        'deletepost' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'deletepost' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'deletepost',
+              ),
+            ),
+          ),
+        ),
+        'deletethread' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'deletethread' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'deletethread',
+              ),
+            ),
+          ),
+        ),
+        'savebanlog' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'savebanlog' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'savebanlog',
+              ),
+            ),
+          ),
+        ),
+        'undeletethreads' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'undeletethreads' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'undeletethreads',
+              ),
+            ),
+          ),
+        ),
+        'recyclebinpostundelete' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'recyclebinpostundelete' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'recyclebinpostundelete',
+              ),
+            ),
+          ),
+        ),
+        'deletemember' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'deletemember' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'deletemember',
+              ),
+            ),
+          ),
+        ),
+        'secLog' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'secLog' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'secLog',
+              ),
+            ),
+          ),
+        ),
+        'getMergeAction' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'getMergeAction' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'getMergeAction',
               ),
             ),
           ),
@@ -3053,20 +4825,163 @@ j/n/Y',
         array (
           'module' => 
           array (
+            'soso_smilies' => 'soso_smilies/soso',
             'qqconnect' => 'qqconnect/connect',
           ),
           'adminid' => 
           array (
+            'soso_smilies' => '0',
             'qqconnect' => '0',
+          ),
+          'outputfuncs' => 
+          array (
+            'spacecp_profile_bottom' => 
+            array (
+              0 => 
+              array (
+                0 => 'soso_smilies',
+                1 => 'spacecp_profile_bottom_output',
+              ),
+            ),
           ),
           'funcs' => 
           array (
+            'spacecp_profile_sightml' => 
+            array (
+              0 => 
+              array (
+                0 => 'soso_smilies',
+                1 => 'spacecp_profile_sightml',
+              ),
+            ),
+            'spacecp_profile_sightml_callback_soso_smiles_1' => 
+            array (
+              0 => 
+              array (
+                0 => 'soso_smilies',
+                1 => 'spacecp_profile_sightml_callback_soso_smiles_1',
+              ),
+            ),
             'spacecp_profile_bottom' => 
             array (
               0 => 
               array (
                 0 => 'qqconnect',
                 1 => 'spacecp_profile_bottom',
+              ),
+            ),
+          ),
+        ),
+        'spacecp_pm' => 
+        array (
+          'module' => 
+          array (
+            'soso_smilies' => 'soso_smilies/soso',
+          ),
+          'adminid' => 
+          array (
+            'soso_smilies' => '0',
+          ),
+          'outputfuncs' => 
+          array (
+            'spacecp_pm' => 
+            array (
+              0 => 
+              array (
+                0 => 'soso_smilies',
+                1 => 'spacecp_pm_output',
+              ),
+            ),
+          ),
+          'funcs' => 
+          array (
+            'spacecp_pm_output_space_pm_output_follow_soso_output_callback_soso_smiles_1' => 
+            array (
+              0 => 
+              array (
+                0 => 'soso_smilies',
+                1 => 'spacecp_pm_output_space_pm_output_follow_soso_output_callback_soso_smiles_1',
+              ),
+            ),
+          ),
+        ),
+        'space_pm' => 
+        array (
+          'module' => 
+          array (
+            'soso_smilies' => 'soso_smilies/soso',
+          ),
+          'adminid' => 
+          array (
+            'soso_smilies' => '0',
+          ),
+          'outputfuncs' => 
+          array (
+            'space_pm' => 
+            array (
+              0 => 
+              array (
+                0 => 'soso_smilies',
+                1 => 'space_pm_output',
+              ),
+            ),
+          ),
+        ),
+        'follow' => 
+        array (
+          'module' => 
+          array (
+            'soso_smilies' => 'soso_smilies/soso',
+          ),
+          'adminid' => 
+          array (
+            'soso_smilies' => '0',
+          ),
+          'outputfuncs' => 
+          array (
+            'follow_soso' => 
+            array (
+              0 => 
+              array (
+                0 => 'soso_smilies',
+                1 => 'follow_soso_output',
+              ),
+            ),
+          ),
+        ),
+        'discuzcode' => 
+        array (
+          'module' => 
+          array (
+            'soso_smilies' => 'soso_smilies/soso',
+            'qqconnect' => 'qqconnect/connect',
+          ),
+          'adminid' => 
+          array (
+            'soso_smilies' => '0',
+            'qqconnect' => '0',
+          ),
+          'funcs' => 
+          array (
+            'discuzcode' => 
+            array (
+              0 => 
+              array (
+                0 => 'qqconnect',
+                1 => 'discuzcode',
+              ),
+              1 => 
+              array (
+                0 => 'soso_smilies',
+                1 => 'discuzcode',
+              ),
+            ),
+            'discuzcode_callback_soso_smiles_1' => 
+            array (
+              0 => 
+              array (
+                0 => 'soso_smilies',
+                1 => 'discuzcode_callback_soso_smiles_1',
               ),
             ),
           ),
@@ -3089,58 +5004,6 @@ j/n/Y',
               array (
                 0 => 'qqconnect',
                 1 => 'plugin_qqconnect',
-              ),
-            ),
-          ),
-        ),
-        'common' => 
-        array (
-          'module' => 
-          array (
-            'qqconnect' => 'qqconnect/connect',
-          ),
-          'adminid' => 
-          array (
-            'qqconnect' => '0',
-          ),
-          'funcs' => 
-          array (
-            'common' => 
-            array (
-              0 => 
-              array (
-                0 => 'qqconnect',
-                1 => 'common',
-              ),
-            ),
-            'common_base' => 
-            array (
-              0 => 
-              array (
-                0 => 'qqconnect',
-                1 => 'common_base',
-              ),
-            ),
-          ),
-        ),
-        'discuzcode' => 
-        array (
-          'module' => 
-          array (
-            'qqconnect' => 'qqconnect/connect',
-          ),
-          'adminid' => 
-          array (
-            'qqconnect' => '0',
-          ),
-          'funcs' => 
-          array (
-            'discuzcode' => 
-            array (
-              0 => 
-              array (
-                0 => 'qqconnect',
-                1 => 'discuzcode',
               ),
             ),
           ),
@@ -3266,10 +5129,12 @@ j/n/Y',
           'module' => 
           array (
             'mobile' => 'mobile/mobile',
+            'security' => 'security/security',
           ),
           'adminid' => 
           array (
             'mobile' => '0',
+            'security' => '0',
           ),
           'messagefuncs' => 
           array (
@@ -3281,6 +5146,14 @@ j/n/Y',
                 1 => 'login_mobile_message',
               ),
             ),
+            'login_report' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'login_report_message',
+              ),
+            ),
           ),
         ),
         'common' => 
@@ -3288,10 +5161,12 @@ j/n/Y',
           'module' => 
           array (
             'mobile' => 'mobile/mobile',
+            'security' => 'security/security',
           ),
           'adminid' => 
           array (
             'mobile' => '0',
+            'security' => '0',
           ),
           'funcs' => 
           array (
@@ -3300,6 +5175,11 @@ j/n/Y',
               0 => 
               array (
                 0 => 'mobile',
+                1 => 'common',
+              ),
+              1 => 
+              array (
+                0 => 'security',
                 1 => 'common',
               ),
             ),
@@ -3332,10 +5212,12 @@ j/n/Y',
           'module' => 
           array (
             'mobile' => 'mobile/mobile',
+            'security' => 'security/security',
           ),
           'adminid' => 
           array (
             'mobile' => '0',
+            'security' => '0',
           ),
           'funcs' => 
           array (
@@ -3347,51 +5229,262 @@ j/n/Y',
                 1 => 'global_mobile',
               ),
             ),
-          ),
-        ),
-      ),
-      'base' => 
-      array (
-        'init' => 
-        array (
-          'module' => 
-          array (
-            'qqconnect' => 'qqconnect/connect',
-          ),
-          'adminid' => 
-          array (
-            'qqconnect' => '0',
-          ),
-          'funcs' => 
-          array (
-            'init' => 
+            'global_footer' => 
             array (
               0 => 
               array (
-                0 => 'qqconnect',
-                1 => 'init',
+                0 => 'security',
+                1 => 'global_footer',
+              ),
+            ),
+            'global_footerlink' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'global_footerlink',
               ),
             ),
           ),
         ),
-        'common' => 
+        'logging' => 
         array (
           'module' => 
           array (
-            'qqconnect' => 'qqconnect/connect',
+            'security' => 'security/security',
           ),
           'adminid' => 
           array (
-            'qqconnect' => '0',
+            'security' => '0',
           ),
-          'funcs' => 
+          'messagefuncs' => 
           array (
-            'common_base' => 
+            'logging_report' => 
             array (
               0 => 
               array (
-                0 => 'qqconnect',
-                1 => 'common_base',
+                0 => 'security',
+                1 => 'logging_report_message',
+              ),
+            ),
+          ),
+        ),
+        'register' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'messagefuncs' => 
+          array (
+            'register_report' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'register_report_message',
+              ),
+            ),
+          ),
+        ),
+        'connect' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'messagefuncs' => 
+          array (
+            'connect_report' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'connect_report_message',
+              ),
+            ),
+          ),
+        ),
+        'deletepost' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'deletepost' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'deletepost',
+              ),
+            ),
+          ),
+        ),
+        'deletethread' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'deletethread' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'deletethread',
+              ),
+            ),
+          ),
+        ),
+        'savebanlog' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'savebanlog' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'savebanlog',
+              ),
+            ),
+          ),
+        ),
+        'undeletethreads' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'undeletethreads' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'undeletethreads',
+              ),
+            ),
+          ),
+        ),
+        'recyclebinpostundelete' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'recyclebinpostundelete' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'recyclebinpostundelete',
+              ),
+            ),
+          ),
+        ),
+        'deletemember' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'deletemember' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'deletemember',
+              ),
+            ),
+          ),
+        ),
+        'secLog' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'secLog' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'secLog',
+              ),
+            ),
+          ),
+        ),
+        'getMergeAction' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'getMergeAction' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'getMergeAction',
               ),
             ),
           ),
@@ -3399,37 +5492,47 @@ j/n/Y',
       ),
       'group' => 
       array (
-        'forumdisplay' => 
-        array (
-          'module' => 
-          array (
-            'qqconnect' => 'qqconnect/connect',
-          ),
-          'adminid' => 
-          array (
-            'qqconnect' => '0',
-          ),
-          'outputfuncs' => 
-          array (
-            'forumdisplay_fastpost_sync_method' => 
-            array (
-              0 => 
-              array (
-                0 => 'qqconnect',
-                1 => 'forumdisplay_fastpost_sync_method_output',
-              ),
-            ),
-          ),
-        ),
         'post' => 
         array (
           'module' => 
           array (
+            'security' => 'security/security',
             'qqconnect' => 'qqconnect/connect',
           ),
           'adminid' => 
           array (
+            'security' => '0',
             'qqconnect' => '0',
+          ),
+          'funcs' => 
+          array (
+            'post_security' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'post_security',
+              ),
+            ),
+          ),
+          'messagefuncs' => 
+          array (
+            'post_report' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'post_report_message',
+              ),
+            ),
+            'post_feedlog' => 
+            array (
+              0 => 
+              array (
+                0 => 'qqconnect',
+                1 => 'post_feedlog_message',
+              ),
+            ),
           ),
           'outputfuncs' => 
           array (
@@ -3450,14 +5553,291 @@ j/n/Y',
               ),
             ),
           ),
-          'messagefuncs' => 
+        ),
+        'common' => 
+        array (
+          'module' => 
           array (
-            'post_feedlog' => 
+            'security' => 'security/security',
+            'qqconnect' => 'qqconnect/connect',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+            'qqconnect' => '0',
+          ),
+          'funcs' => 
+          array (
+            'common' => 
             array (
               0 => 
               array (
                 0 => 'qqconnect',
-                1 => 'post_feedlog_message',
+                1 => 'common',
+              ),
+              1 => 
+              array (
+                0 => 'security',
+                1 => 'common',
+              ),
+            ),
+            'common_base' => 
+            array (
+              0 => 
+              array (
+                0 => 'qqconnect',
+                1 => 'common_base',
+              ),
+            ),
+          ),
+        ),
+        'global' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+            'qqconnect' => 'qqconnect/connect',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+            'qqconnect' => '0',
+          ),
+          'funcs' => 
+          array (
+            'global_footer' => 
+            array (
+              0 => 
+              array (
+                0 => 'qqconnect',
+                1 => 'global_footer',
+              ),
+              1 => 
+              array (
+                0 => 'security',
+                1 => 'global_footer',
+              ),
+            ),
+            'global_footerlink' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'global_footerlink',
+              ),
+            ),
+            'global_login_extra' => 
+            array (
+              0 => 
+              array (
+                0 => 'qqconnect',
+                1 => 'global_login_extra',
+              ),
+            ),
+            'global_usernav_extra1' => 
+            array (
+              0 => 
+              array (
+                0 => 'qqconnect',
+                1 => 'global_usernav_extra1',
+              ),
+            ),
+          ),
+        ),
+        'deletepost' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'deletepost' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'deletepost',
+              ),
+            ),
+          ),
+        ),
+        'deletethread' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'deletethread' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'deletethread',
+              ),
+            ),
+          ),
+        ),
+        'savebanlog' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'savebanlog' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'savebanlog',
+              ),
+            ),
+          ),
+        ),
+        'undeletethreads' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'undeletethreads' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'undeletethreads',
+              ),
+            ),
+          ),
+        ),
+        'recyclebinpostundelete' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'recyclebinpostundelete' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'recyclebinpostundelete',
+              ),
+            ),
+          ),
+        ),
+        'deletemember' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'deletemember' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'deletemember',
+              ),
+            ),
+          ),
+        ),
+        'secLog' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'secLog' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'secLog',
+              ),
+            ),
+          ),
+        ),
+        'getMergeAction' => 
+        array (
+          'module' => 
+          array (
+            'security' => 'security/security',
+          ),
+          'adminid' => 
+          array (
+            'security' => '0',
+          ),
+          'funcs' => 
+          array (
+            'getMergeAction' => 
+            array (
+              0 => 
+              array (
+                0 => 'security',
+                1 => 'getMergeAction',
+              ),
+            ),
+          ),
+        ),
+        'forumdisplay' => 
+        array (
+          'module' => 
+          array (
+            'qqconnect' => 'qqconnect/connect',
+          ),
+          'adminid' => 
+          array (
+            'qqconnect' => '0',
+          ),
+          'outputfuncs' => 
+          array (
+            'forumdisplay_fastpost_sync_method' => 
+            array (
+              0 => 
+              array (
+                0 => 'qqconnect',
+                1 => 'forumdisplay_fastpost_sync_method_output',
               ),
             ),
           ),
@@ -3522,36 +5902,6 @@ j/n/Y',
             ),
           ),
         ),
-        'common' => 
-        array (
-          'module' => 
-          array (
-            'qqconnect' => 'qqconnect/connect',
-          ),
-          'adminid' => 
-          array (
-            'qqconnect' => '0',
-          ),
-          'funcs' => 
-          array (
-            'common' => 
-            array (
-              0 => 
-              array (
-                0 => 'qqconnect',
-                1 => 'common',
-              ),
-            ),
-            'common_base' => 
-            array (
-              0 => 
-              array (
-                0 => 'qqconnect',
-                1 => 'common_base',
-              ),
-            ),
-          ),
-        ),
         'discuzcode' => 
         array (
           'module' => 
@@ -3570,44 +5920,6 @@ j/n/Y',
               array (
                 0 => 'qqconnect',
                 1 => 'discuzcode',
-              ),
-            ),
-          ),
-        ),
-        'global' => 
-        array (
-          'module' => 
-          array (
-            'qqconnect' => 'qqconnect/connect',
-          ),
-          'adminid' => 
-          array (
-            'qqconnect' => '0',
-          ),
-          'funcs' => 
-          array (
-            'global_login_extra' => 
-            array (
-              0 => 
-              array (
-                0 => 'qqconnect',
-                1 => 'global_login_extra',
-              ),
-            ),
-            'global_usernav_extra1' => 
-            array (
-              0 => 
-              array (
-                0 => 'qqconnect',
-                1 => 'global_usernav_extra1',
-              ),
-            ),
-            'global_footer' => 
-            array (
-              0 => 
-              array (
-                0 => 'qqconnect',
-                1 => 'global_footer',
               ),
             ),
           ),
@@ -3635,6 +5947,53 @@ j/n/Y',
           ),
         ),
       ),
+      'base' => 
+      array (
+        'init' => 
+        array (
+          'module' => 
+          array (
+            'qqconnect' => 'qqconnect/connect',
+          ),
+          'adminid' => 
+          array (
+            'qqconnect' => '0',
+          ),
+          'funcs' => 
+          array (
+            'init' => 
+            array (
+              0 => 
+              array (
+                0 => 'qqconnect',
+                1 => 'init',
+              ),
+            ),
+          ),
+        ),
+        'common' => 
+        array (
+          'module' => 
+          array (
+            'qqconnect' => 'qqconnect/connect',
+          ),
+          'adminid' => 
+          array (
+            'qqconnect' => '0',
+          ),
+          'funcs' => 
+          array (
+            'common_base' => 
+            array (
+              0 => 
+              array (
+                0 => 'qqconnect',
+                1 => 'common_base',
+              ),
+            ),
+          ),
+        ),
+      ),
     ),
     'pluginlinks' => 
     array (
@@ -3643,17 +6002,23 @@ j/n/Y',
     array (
       'available' => 
       array (
-        0 => 'touclick',
-        1 => 'rpancn_buy_usergroup',
-        2 => 'ljqq',
-        3 => 'kx_new100',
-        4 => 'it618_firstnfocus_deyi',
-        5 => 'drk_ledadv',
-        6 => 'levnav',
-        7 => 'wechat',
-        8 => 'pcmgr_url_safeguard',
-        9 => 'mobile',
-        10 => 'qqconnect',
+        0 => 'iplus_gezi',
+        1 => 'crx349_copyrighted',
+        2 => 'nimba_thot',
+        3 => 'invite_aboc',
+        4 => 'touclick',
+        5 => 'rpancn_buy_usergroup',
+        6 => 'ljqq',
+        7 => 'kx_new100',
+        8 => 'it618_firstnfocus_deyi',
+        9 => 'drk_ledadv',
+        10 => 'levnav',
+        11 => 'wechat',
+        12 => 'pcmgr_url_safeguard',
+        13 => 'mobile',
+        14 => 'security',
+        15 => 'soso_smilies',
+        16 => 'qqconnect',
       ),
       'func' => 
       array (
@@ -3662,15 +6027,30 @@ j/n/Y',
           'common' => true,
           'deletemember' => true,
           'discuzcode' => true,
+          'deletepost' => true,
+          'deletethread' => true,
+          'savebanlog' => true,
+          'undeletethreads' => true,
+          'recyclebinpostundelete' => true,
         ),
         'hookscriptmobile' => 
         array (
           'common' => true,
           'discuzcode' => true,
+          'deletepost' => true,
+          'deletethread' => true,
+          'savebanlog' => true,
+          'undeletethreads' => true,
+          'recyclebinpostundelete' => true,
+          'deletemember' => true,
         ),
       ),
       'version' => 
       array (
+        'iplus_gezi' => 'v3.1.2',
+        'crx349_copyrighted' => 'V1.1',
+        'nimba_thot' => 'v3.5.0',
+        'invite_aboc' => '1.0.4',
         'touclick' => 'v3.2',
         'rpancn_buy_usergroup' => '2.12',
         'ljqq' => '2.0.3',
@@ -3681,6 +6061,8 @@ j/n/Y',
         'wechat' => '1.1.6',
         'pcmgr_url_safeguard' => '1.1',
         'mobile' => '1.4.8',
+        'security' => '1.11.1',
+        'soso_smilies' => '1.4',
         'qqconnect' => '1.18.2',
       ),
       'spacecp' => 
@@ -3700,6 +6082,22 @@ j/n/Y',
           'name' => 'QQ绑定',
           'url' => '',
           'directory' => 'qqconnect/',
+        ),
+        'invite_aboc:invite' => 
+        array (
+          'displayorder' => 1000,
+          'adminid' => '0',
+          'name' => '我的邀请',
+          'url' => '',
+          'directory' => 'invite_aboc/',
+        ),
+        'iplus_gezi:adlist' => 
+        array (
+          'displayorder' => 1002,
+          'adminid' => '0',
+          'name' => '广告管理',
+          'url' => '',
+          'directory' => 'iplus_gezi/',
         ),
       ),
     ),
@@ -4041,19 +6439,19 @@ j/n/Y',
       array (
         0 => 
         array (
-          'left' => '{ysAAF1fK}
-{yYPzw2ww}
-{X7GR15Wj}
-{u28X823V}
-{i1vqU1J0}
-{fkWLwVhW}
+          'left' => '{bwWfDFFD}
+{I8mu8D0H}
+{DRjV56Lf}
+{kxusfkKu}
+{d38qcDnq}
+{Ez5Gr5WA}
 <dl class="pil cl">
-	<dt>{lID8yt4I}</dt><dd>{XUm1Zid8}</dd>
+	<dt>{Jt2G2qAp}</dt><dd>{I0Zf00k5}</dd>
 </dl>
-{vvCs6qte}
-<dl class="pil cl">{Q4vAPY6Z}</dl>',
+{MZKt224m}
+<dl class="pil cl">{RSMhmJFf}</dl>',
           'top' => '<dl class="cl">
-<dt>{n6D6076e}</dt><dd>{iymalXa4}</dd>
+<dt>{AhkpngfP}</dt><dd>{tGtGP44Z}</dd>
 </dl>',
         ),
       ),
@@ -4063,70 +6461,70 @@ j/n/Y',
         array (
           'left' => 
           array (
-            '{ysAAF1fK}' => 
+            '{bwWfDFFD}' => 
             array (
               0 => 'numbercard',
               1 => '',
               2 => '',
               3 => '',
             ),
-            '{yYPzw2ww}' => 
+            '{I8mu8D0H}' => 
             array (
               0 => 'groupicon',
               1 => '<p>',
               2 => '</p>',
               3 => '',
             ),
-            '{X7GR15Wj}' => 
+            '{DRjV56Lf}' => 
             array (
               0 => 'authortitle',
               1 => '<p><em>',
               2 => '</em></p>',
               3 => '',
             ),
-            '{u28X823V}' => 
+            '{kxusfkKu}' => 
             array (
               0 => 'customstatus',
               1 => '<p class="xg1">',
               2 => '</p>',
               3 => '',
             ),
-            '{i1vqU1J0}' => 
+            '{d38qcDnq}' => 
             array (
               0 => 'star',
               1 => '<p>',
               2 => '</p>',
               3 => '',
             ),
-            '{fkWLwVhW}' => 
+            '{Ez5Gr5WA}' => 
             array (
               0 => 'upgradeprogress',
               1 => '<p>',
               2 => '</p>',
               3 => '',
             ),
-            '{lID8yt4I}' => 
+            '{Jt2G2qAp}' => 
             array (
               0 => 'baseinfo',
               1 => '',
               2 => '',
               3 => 'credits,1',
             ),
-            '{XUm1Zid8}' => 
+            '{I0Zf00k5}' => 
             array (
               0 => 'baseinfo',
               1 => '',
               2 => '',
               3 => 'credits,0',
             ),
-            '{vvCs6qte}' => 
+            '{MZKt224m}' => 
             array (
               0 => 'medal',
               1 => '<p class="md_ctrl">',
               2 => '</p>',
               3 => '',
             ),
-            '{Q4vAPY6Z}' => 
+            '{RSMhmJFf}' => 
             array (
               0 => 'baseinfo',
               1 => '',
@@ -4136,14 +6534,14 @@ j/n/Y',
           ),
           'top' => 
           array (
-            '{n6D6076e}' => 
+            '{AhkpngfP}' => 
             array (
               0 => 'baseinfo',
               1 => '',
               2 => '',
               3 => 'credits,1',
             ),
-            '{iymalXa4}' => 
+            '{tGtGP44Z}' => 
             array (
               0 => 'baseinfo',
               1 => '',
@@ -4168,10 +6566,10 @@ j/n/Y',
     'csspath' => 'data/cache/style_',
     'reginput' => 
     array (
-      'username' => 'Tqp66K',
-      'password' => 'Tfdt23',
-      'password2' => 'JVl8no',
-      'email' => 'gjaqRw',
+      'username' => 'T554mp',
+      'password' => 'fvBRYy',
+      'password2' => 'hgw3IP',
+      'email' => 'u99rDV',
     ),
     'output' => 
     array (
