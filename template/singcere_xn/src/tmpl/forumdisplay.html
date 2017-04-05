@@ -1,0 +1,70 @@
+<script id="threadlistTpl" type="text/html">
+{{each forum_threadlist as postitem i}}
+{{ if postitem.displayorder > 0}}
+    <li class="customNotice" data-tid="{{postitem.tid}}">
+        <a href="forum.php?mod=viewthread&tid={{postitem.tid}}"><span>÷√∂•</span>{{postitem.subject}}</a>
+    </li>
+{{ else}}
+    <li class="post_list_item" data-tid="{{postitem.tid}}">
+        <a class="post_item_link" href="forum.php?mod=viewthread&tid={{postitem.tid}}">
+            <span class="post_list_item_title clear">{{postitem.subject}}</span>
+            <p class="personImgDate">
+                <span class="perImg db">
+                    <img src="template/singcere_faith/src/img/forum/no-avatar.png" class="bImg db scrollLoading" width="35" height="35" data-url="{{ucenterurl}}/avatar.php?uid={{postitem.authorid}}&size=small">
+
+                    <span class="timeT">
+                        {{ if postitem.authorid && postitem.author}}
+                            {{postitem.author}}
+                        {{ else}}
+                            {{ if ismoderator}}
+                                {lang anonymous}
+                            {{ else}}
+                                $_G[setting][anonymoustext]
+                            {{ /if}}  
+                        {{ /if}}
+                        <span class="gBg1">LV5</span><i>{{postitem.dateline}}</i>
+                    </span>
+                </span>
+            </p>
+            
+            <div class="post_list_item_info clear">
+                <span class="post_list_item_info_right"><span class="post_item_info_reply_icon">{{postitem.views}}</span></span>
+            </div>
+            {{ if plugin && plugin.forumdisplay_thread_mobile.singcere_threadpreview}}{{#plugin.forumdisplay_thread_mobile.singcere_threadpreview[i]}} {{ /if}}
+        </a>
+    </li>
+{{ /if}}
+{{/each}}
+</script>
+
+<script id="bottombarTpl" type="text/html">
+<div class="select-cat cl">
+    <a href="{{url}}"><i class="fa fa-pencil-square-o pr5"></i><span>{{title}}</span></a>
+</div>
+</script>
+
+<script id="secretlistTpl" type="text/html">
+<div class="secret-list">
+{{each forum_threadlist as postitem i}}
+{{ if postitem.attachment}}
+    <div class="secret-list-item secret-list-img">
+        <a class="secret-list-a" href="secret.php?mod=show&tid={{postitem.tid}}">
+            <div class="item-img item-img-min"><img src="data/attachment/singcere_file/xn_secret/{{postitem.attachment}}" alt=""></div>
+            <span class="item-top"><span> {{postitem.content}}</span></span>
+        </a>
+        <div lat="{{postitem.lat}}" lng="{{postitem.lng}}" address-data="{{postitem.position}}" class="item-bottom clear"><span class="z">{{ if postitem.position}}<i class="fa fa-map-marker pr5"></i>{{postitem.position}} <i class="pipe"> &#12539; </i> {{ /if}}∆¿¬€ {{postitem.comments}}</span><span class="y"><span id="hert_num{{postitem.tid}}">{{postitem.like}}</span> <i tid="{{postitem.tid}}" class="fa {{ if postitem.liked}}fa-heart{{ else}}fa-heart-o thert{{ /if}}"></i></span></div>
+
+    </div>
+{{ else}}
+    
+    <div class="secret-list-item">
+        <a href="secret.php?mod=show&tid={{postitem.tid}}" class="item-top">{{postitem.content}}</a>
+        <div lat="{{postitem.lat}}" lng="{{postitem.lng}}" address-data="{{postitem.position}}" class="item-bottom clear"><span class="z">{{ if postitem.position}}<i class="fa fa-map-marker pr5"></i>{{postitem.position}} <i class="pipe"> &#12539; </i> {{ /if}}∆¿¬€ {{postitem.comments}}</span><span class="y"><span id="hert_num{{postitem.tid}}">{{postitem.like}}</span> <i tid="{{postitem.tid}}" class="fa {{ if postitem.liked}}fa-heart{{ else}}fa-heart-o thert{{ /if}}"></i></span></div>
+    </div>
+{{ /if}}
+{{/each}}
+
+
+</div>
+</script>
+

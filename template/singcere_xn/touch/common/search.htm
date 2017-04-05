@@ -1,0 +1,45 @@
+<div class="search">
+  {if CURMODULE == 'xn_promo'}
+
+      <form action="#" method="get" onsubmit="return win.submit();">
+        <div class="search_input">
+          <input type="text" name="key" class="input_keys" placeholder="输入您想获得优惠券的商家" autocomplete="off">
+          <span class="ico_clear body_bg" onclick="win.clear(this)"></span>
+        </div>
+        <div id="qixc" class="search_but body_bg" onclick="win.submit(0);clickLog('from=search_home')"><i class="fa fa-search"></i></div>
+      </form>
+
+  {elseif CURMODULE == 'xn_haodian'}
+  <form name="searchform" action="plugin.php?id=xn_haodian&mod=list" method="post">
+    <div class="search_input">
+    
+      <input type="text" name="srchtxt" value="$srchtxt" class="input_keys" placeholder="请输入店铺名称" autocomplete="off">
+      <span class="ico_clear body_bg" onclick="win.clear(this)"></span>
+    </div>
+    <div id="qixc" class="search_but body_bg" onclick="document.searchform.submit();"><i class="fa fa-search"></i></div>
+  </form>
+
+  {elseif CURMODULE == 'xn_job'}
+  <form name="searchform" action="plugin.php?id=xn_job&mod=post&action=list" method="post">
+    <div class="search_input">
+    
+      <input type="text" name="srchtxt" value="$srchtxt" class="input_keys" placeholder="请输入职位名称" autocomplete="off">
+      <span class="ico_clear body_bg"></span>
+    </div>
+    <div id="qixc" class="search_but body_bg" onclick="document.searchform.submit();"><i class="fa fa-search"></i></div>
+  </form>
+  {else}
+
+  <form name="searchform" class="searchform" method="post" autocomplete="off" action="search.php?mod=forum&mobile=2">
+    <input type="hidden" name="formhash" value="{FORMHASH}" />
+    <input type="hidden" name="searchsubmit" value="yes">
+        <div class="search_input">
+          <input value="$keyword" name="srchtxt" class="input_keys" placeholder="搜索论坛帖子" autocomplete="off">
+          <span class="ico_clear body_bg" onclick="win.clear(this)"></span>
+        </div>
+        <div id="qixc" class="search_but body_bg" onclick="document.searchform.submit();"><i class="fa fa-search"></i></div>
+  </form>
+
+  {/if}
+</div>
+

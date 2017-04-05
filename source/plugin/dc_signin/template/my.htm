@@ -1,0 +1,21 @@
+<table class="dt mtm" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<th width="20"></th>
+<th width="60">{lang dc_signin:xinqing}</th>
+<th>{lang dc_signin:content}</th>
+<th width="80">{lang dc_signin:reward}[{$_G[setting][extcredits][$_G[cache][plugin][dc_signin][extcredit]][title]}]</th>
+<th width="120">{lang dc_signin:qddate}</th> 
+</tr>
+<!--{eval $i = 0;}-->
+<!--{loop $qdlists $qd}-->
+<tr<!--{if $i%2==1}--> class="alt"<!--{/if}-->>
+<td></td>
+<td>{$qd[xq]}</td>
+<td>{$qd[say]}</td>
+<td>{$qd[credit]}</td>
+<td>{echo dgmdate($qd[dateline])}</td>
+</tr>
+<!--{eval $i++;}-->
+<!--{/loop}-->
+</tbody></table>
+<div class="pgs cl mtm">{$multipage}</div>

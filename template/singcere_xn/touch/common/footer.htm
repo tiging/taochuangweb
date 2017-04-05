@@ -1,0 +1,67 @@
+    <!--{if $_G['basescript'] != 'home' && $_GET[types]!='mall_home' && CURMODULE != 'post' && $_G['basescript'] != 'member' }-->
+    <div class="footer">
+        <div class="links">
+            <a href="$_G[cache][plugin][xn_mobile][contact]" class="repweb">联系我们</a>
+            <!--{if $_G['setting']['statcode']}-->$_G['setting']['statcode']<!--{/if}--> 
+        </div>
+        <div class="copyright"> 
+            {$_G[setting][bbname]}-$_G[cache][plugin][xn_mobile][miaosu]
+        </div>
+        <a href="javascript:scroll(0,0)" class="gotop"><i class="fa fa-chevron-up"></i></a>
+    </div>
+    <!--{/if}-->
+
+</div>
+
+
+
+    <div id="mask" class="none"></div>
+    <div id="favor_weixin" class="none" onclick="$(this).hide();"></div>
+    <!--{hook/global_footer_mobile}-->
+    <div class="none"></div>
+
+    <!--{if $_G[uid] && !isset($_G['cookie']['checkpm'])}-->
+    <script type="text/javascript" src="home.php?mod=spacecp&ac=pm&op=checknewpm&rand=$_G[timestamp]"></script>
+    <!--{/if}-->
+
+    <script src="{$_G[siteurl]}template/singcere_xn/src/js/scripts.js?1121" charset=gbk></script>
+    <script>
+        jQuery=$;
+        $(function() {
+            FastClick.attach(document.body);
+        });
+        
+
+
+        //微信分享
+        $('.share-weixin').on('click',  function() {
+            if(typeof WeixinJSBridge == 'undefined') {
+                popup.open('请在微信右上角菜单中点击分享!', 'alert');
+            } else {
+                $('#favor_weixin').show();
+                $('.bottomSection').hide();
+            }
+        });
+		
+
+
+        
+        wx.ready(function(){
+            wx.onMenuShareTimeline(wxData);
+            wx.onMenuShareAppMessage(wxData);
+            wx.onMenuShareQQ(wxData);
+            wx.onMenuShareWeibo(wxData);
+        });
+    </script>
+
+  
+
+</body>
+</html>
+<!--{eval updatesession();}-->
+<!--{if defined('IN_MOBILE')}-->
+    <!--{eval output();}-->
+<!--{else}-->
+    <!--{eval output_preview();}-->
+<!--{/if}-->
+

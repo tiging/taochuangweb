@@ -1,5 +1,8 @@
 <?php
 $data = array (
   'exp' => 0,
-  'data' => '',
+  'data' => 
+  array (
+    'singcere_xn.template' => 0,
+  ),
 );

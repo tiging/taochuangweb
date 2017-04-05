@@ -1,0 +1,109 @@
+
+<!--{template common/header}-->
+<h3 class="flb">
+    <em id="return_$_GET[handlekey]">{lang singcere_wechat:admincp_pulldata_title}($bindmember['username'])</em>
+    
+    <!--{if $_G[inajax]}--><span><a href="javascript:;" onclick="hideWindow('$_GET[handlekey]');" class="flbc" title="{lang close}">{lang close}</a></span><!--{/if}-->
+</h3>
+<form name="cpform_im" id="cpform_im" method="post" autocomplete="off" action="{ADMINSCRIPT}?action=plugins&operation=config&do=$plugin[pluginid]&identifier=$plugin[identifier]&pmod=$module[name]&op=pull">
+    <input type="hidden" name="importsubmit" value="true" />
+    <input type="hidden" name="formhash" value="{FORMHASH}" />
+    <input type="hidden" name="handlekey" value="$_GET[handlekey]" />
+    <input type="hidden" name="uid" value="$uid" />
+    <div class="c" style="width:500px;">
+        
+        <div class="tipsblock">
+            <ul class="tpcl">
+                <!--{if $userinfo}-->
+                <li><label class="meta_opr">openid</label> <div class="meta_content">$userinfo[openid]</div></li>
+                <li><label class="meta_opr">unionid</label> <div class="meta_content">$userinfo[unionid]</div></li>
+
+                <!--{if $userinfo[subscribe]}-->
+                <li><label class="meta_opr">{lang singcere_wechat:admincp_pulldata_nickname}</label> <div class="meta_content">$userinfo[nickname]</div></li>
+                <li><label class="meta_opr">{lang singcere_wechat:admincp_pulldata_sex}</label> <div class="meta_content"><!--{if $userinfo[sex] == 1}-->{lang singcere_wechat:admincp_pulldata_sex1}<!--{elseif $userinfo[sex] == 2}-->{lang singcere_wechat:admincp_pulldata_sex2}<!--{else}-->{lang singcere_wechat:admincp_pulldata_sex0}<!--{/if}--></div></li>
+                <li><label class="meta_opr">{lang singcere_wechat:admincp_pulldata_area}</label> <div class="meta_content">$userinfo[country] - $userinfo[province] - $userinfo[city]</div></li>
+                <li><label class="meta_opr">{lang singcere_wechat:admincp_pulldata_subscribe}</label> <div class="meta_content">{if $userinfo[subscribe]}{lang singcere_wechat:admincp_pulldata_subscribe1}(<!--{eval echo dgmdate($userinfo[subscribe_time], 'Y-m-d H:i');}-->){else}{lang singcere_wechat:admincp_pulldata_subscribe0}{/if}</div></li>
+                <!--{else}-->
+                <div class="info-alert">{lang singcere_wechat:admincp_pulldata_nomore}</div>
+                <!--{/if}-->
+
+                <!--{else}-->
+                <div class="info-alert"><!--{eval echo $wechat_client->error();}--></div>
+
+                <!--{/if}-->
+
+
+            </ul>
+            <!--{if $userinfo[subscribe]}-->
+            <div class="headimg">
+                <img src="<!--{eval echo substr($userinfo[headimgurl], 0, -1);}-->132" >
+            </div>
+            <!--{/if}-->
+        </div>
+    </div>
+    <div style="text-align:right;" class="o pns">
+        
+        <label for="getheadimg"><input type="checkbox" name="getheadimg" id="getheadimg" class="pc" fwin="mods">{lang singcere_wechat:admincp_pulldata_getheadimg}</label>  
+        <button type="submit" name="pullsubmit" class="pn" value="true"><strong>{lang singcere_wechat:admincp_pulldata_syc}</strong></button>
+    </div>
+</form>
+<style>
+    .meta_opr {color:#8d8d8d; float: left; width:65px; font-size: 13px;}
+    .meta_content {
+        display: table-cell;
+        vertical-align: top;
+        float: none;
+        width: auto;
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+
+    .tpcl li:after {
+        content: "\200B";
+        display: block;
+        height: 0;
+        clear: both;
+    }
+    .info-alert {
+        padding: 8px 35px 8px 14px;
+        margin: 20px;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+        background-color: #FCF8E3;
+        border: 1px solid #FBEED5;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        color: #C09853;
+    }
+    .headimg {
+        position: absolute;
+        right: 55px;
+        top: 60px;
+    }
+    .headimg img {width: 130px; height: 130px; 
+        border: 3px solid #dedede;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius:10px; 
+        padding: 0;
+    }
+    .pn {
+        vertical-align: middle;
+        overflow: hidden;
+        margin-right: 3px;
+        padding: 0;
+        height: 23px;
+        border: 1px solid #999;
+        background: #E5E5E5 url(static/image/common/pn.png) repeat-x 0 0;
+        cursor: pointer;
+        -moz-box-shadow: 0 1px 0 #E5E5E5;
+        -webkit-box-shadow: 0 1px 0 #E5E5E5;
+        box-shadow: 0 1px 0 #E5E5E5;
+    }
+    .pn strong {
+        padding: 0 10px;
+        line-height: 21px;
+    }
+</style>
+
+<!--{template common/footer}-->

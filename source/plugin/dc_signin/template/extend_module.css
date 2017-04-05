@@ -1,0 +1,92 @@
+/** plugin::dc_signin **/
+#dcsignin .sd {
+	float: left;
+	width: 220px;
+	overflow: hidden;
+}
+#dcsignin .mn {
+	float: right;
+	width: 730px;
+	margin-bottom: 1em;
+}
+.user-info {
+    padding: 6px 6px 6px 80px;
+    position: relative;
+    height: 68px;
+}
+.user-info img {
+    width: 66px;
+    height: 66px;
+    border: 1px solid #E7E7E7;
+    position: absolute;
+    left: 6px;
+    top: 6px;
+}
+.user-info .m {
+    margin: 6px 0px 5px;
+    color: #353535;
+}
+.login-info .f {
+    height: 28px;
+    line-height: 28px;
+    background-color: #F9F9F9;
+    color: #979797;
+    text-align: center;
+}
+.sign_div {
+    height: 42px;
+    background: transparent url('../../source/plugin/dc_signin/images/sign.png') no-repeat scroll 0% 0%;
+    position: relative;
+}
+.date-week {
+    color: #FFF;
+    width: 49px;
+    height: 36px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    text-align: center;
+    line-height: 1;
+}
+.date-week .date {
+    font-family: tahoma;
+    font-size: 10px;
+    margin-top: 4px;
+    letter-spacing: 1px;
+}
+.date-week .week {
+    font-family: Microsoft Yahei;
+    font-size: 14px;
+    margin-top: 2px;
+}
+.sign-num {
+    position: absolute;
+    width: 32px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    top: 15px;
+    right: 2px;
+    font-size: 14px;
+    font-family: tahoma;
+    color: #999;
+}
+.sign_div a {
+    width: 80px;
+    height: 42px;
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+    line-height: 42px;
+    font-size: 24px;
+    font-family: Microsoft Yahei;
+}
+.sign_div a:hover{text-decoration: none;}
+.tb{margin-top: 0px;}
+/** end **/
+
+/** forum::viewthread **/
+.qdsmile {padding:3px; margin-left:7px; margin-right:7px; list-style:none;}
+.qdsmile li{padding:5px .4em;background:#F7FAFF;border:2px dashed #D1D8D8;}
+.qdsmile li img{margin-bottom:5px;}
+/** end **/

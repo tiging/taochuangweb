@@ -1,0 +1,80 @@
+<!--{subtemplate common/header}-->
+<link rel="stylesheet" type="text/css" href="{$_G[siteurl]}template/singcere_xn/src/css/portal-view.css"  media="screen" />
+
+<div class="module firstatcile">
+    <div class="atcile-top">
+    	<h1 class="ptitle"><a href="$url">$csubject[title]</a></h1>           
+    	<div class="clear">
+        <p class="author clear">
+        <a href="{echo getportalcategoryurl($cat[catid])}">$cat[catname]</a><span class="pipe">/</span>{lang view_views}: <!--{if $article[viewnum] > 0}-->$article[viewnum]<!--{else}-->0<!--{/if}--><span class="pipe">/</span>{lang view_comments}: <!--{if $article[commentnum] > 0}--><a href="$common_url" title="{lang view_all_comments}">$article[commentnum]</a><!--{else}-->0<!--{/if}-->
+            <span class="y xg1">$article[dateline]</span></p>
+        </div>
+    </div>
+</div>
+<div class="comments">
+    <div class="head">
+        <h2>用户评论</h2>
+    </div>
+    <div class="content fontsmall">
+        <ul class="commentlist">
+			<!--{loop $commentlist $comment}-->
+            <li>
+                <h3 class="meta">
+			      <!--{if !empty($comment['uid'])}-->
+			      $comment[username]
+			      <!--{else}-->
+			      {lang guest}
+			      <!--{/if}-->
+                    <time><!--{date($comment[dateline])}--></time>
+                </h3>
+                <p class="content fontsmall">
+					<!--{if $_G[adminid] == 1 || $comment[uid] == $_G[uid] || $comment[status] != 1}-->
+					$comment[message]
+					<!--{else}-->
+					{lang moderate_not_validate}
+					<!--{/if}-->
+                </p>
+            </li>
+			<!--{if !empty($aimgs[$comment[cid]])}-->
+				<script type="text/javascript" reload="1">aimgcount[{$comment[cid]}] = [<!--{echo implode(',', $aimgs[$comment[cid]]);}-->];attachimgshow($comment[cid]);</script>
+			<!--{/if}-->
+			<!--{/loop}-->
+        </ul>
+        <div class="pgs cl mtm mbm">$multi</div>
+    </div>
+</div>
+
+
+<form id="cform" name="cform" action="$form_url" method="post" autocomplete="off">
+<div class="commentform">
+	<div class="commenttext">
+		<textarea id="commenttexts" name="message" placeholder="文明上网，理性发言" onkeydown="ctrlEnter(event, 'commentsubmit_btn');"></textarea>
+	</div>
+
+	<!--{if checkperm('seccode') && ($secqaacheck || $seccodecheck)}-->
+		<!--{block sectpl}--><sec> <span id="sec<hash>" onclick="showMenu(this.id);"><sec></span><div id="sec<hash>_menu" class="p_pop p_opt" style="display:none"><sec></div><!--{/block}-->
+		<div class="mtm"><!--{subtemplate common/seccheck}--></div>
+	<!--{/if}-->
+	<!--{if !empty($topicid) }-->
+		<input type="hidden" name="referer" value="portal.php?mod=topic&topicid=$topicid#comment" />
+		<input type="hidden" name="topicid" value="$topicid">
+	<!--{else}-->
+		<input type="hidden" name="portal_referer" value="portal.php?mod=view&aid=$aid#comment">
+		<input type="hidden" name="referer" value="portal.php?mod=view&aid=$aid#comment" />
+		<input type="hidden" name="id" value="$data[id]" />
+		<input type="hidden" name="idtype" value="$data[idtype]" />
+		<input type="hidden" name="aid" value="$aid">
+	<!--{/if}-->
+	<input type="hidden" name="formhash" value="{FORMHASH}">
+	<input type="hidden" name="replysubmit" value="true">
+	<input type="hidden" name="commentsubmit" value="true" />
+
+	<div class="commentsub">
+		<input type="submit" name="commentsubmit_btn" id="commentsubmit_btn" class="zg-btn-blue" value="{lang comment}"></input>
+	</div>
+
+</div>
+</form>
+
+<!--{subtemplate common/footer}-->
+

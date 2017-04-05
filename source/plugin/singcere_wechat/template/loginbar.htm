@@ -1,0 +1,70 @@
+{eval $refurl = urlencode($_G[siteurl].($_G['connect']['referer'] ? $_G['connect']['referer'] : 'index.php'));}
+
+<!--{block html}-->
+<!--[if lt IE 7 ]>
+<script src="source/plugin/singcere_wechat/template/static/dd_fix.js"></script>
+<script>DD_belatedPNG.fix('.s-loginbar-loginbox .s-loginbar-reward-ico, .s-loginbar-login .login-tip i, .s-loginbar-login-btns a,.s-loginbar-loginmod .s-loginbar-login-btn,.s-loginbar-loginbox .s-loginbar-close,.s-loginbar-tip .s-loginbar-tip-close,.s-loginbar-tip p,.s-loginbar-tip .s-loginbar-tip-trangle, .s-loginbar-loginbox .scode');</script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="source/plugin/singcere_wechat/template/static/loginbar.css">
+
+<div class="s-loginbar-loginbox" id="s-loginbar-Login" {if $this->config[case] != 1} style="display: none"{/if}>
+    <i class="s-loginbar-close" onclick="sc_loginbar_close();">{lang close}</i>
+    <div class="s-loginbar-login-bg"></div>
+    <div class="s-loginbar-login cl">
+        <i class="line-bg"></i> 
+        <div class="login-tip">{lang singcere_wechat:loginbar_tips} <i class="arrow"></i> 
+        </div>
+        <div class="s-loginbar-login-btns">
+                <a href="connect.php?mod=login&op=init&referer=$refurl" class="login-qq"></a>
+                <a href="javascript:;" onclick="showWindow('singcere_wechat_bind', 'plugin.php?id=singcere_wechat:bind')" class="login-wx" ></a>
+        </div>
+        <div class="s-loginbar-loginmod"> 
+            <div class="cl">
+            <form method="post" autocomplete="off" id="sc_loginbar_form" action="member.php?mod=logging&action=login&loginsubmit=yes&infloat=yes&lssubmit=yes" onsubmit="{if $_G['setting']['pwdsafety']}pwmd5('ls_password');{/if}return sc_loginbar_submit();">
+                <input type="hidden" name="formhash" value="{FORMHASH}" />
+                <input type="hidden" name="quickforward" value="yes" />
+                <input type="hidden" name="handlekey" value="ls" />
+                <div class="login-item"><input type="text" id="sc_loginbar_username" name="username" class="txt" autocomplete="off" tabindex="911" placeholder="{lang username}"></div>
+                <div class="login-item"><input type="password" id="sc_loginbar_password" name="password" autocomplete="off" class="txt" tabindex="912" placeholder="{lang login_password}"></div>
+                <input class="s-loginbar-login-btn" type="submit" value="{lang login}">
+            </div>
+            <p class="login-option">
+                <a href="javascript:;" onclick="display('s-loginbar-Login');showWindow('login', 'member.php?mod=logging&action=login&viewlostpw=1')">{lang forgotpw}</a>
+                &nbsp;&nbsp;/&nbsp;&nbsp;<a href="javascript:;" onclick="showWindow('singcere_wechat_bind', 'plugin.php?id=singcere_wechat:bind')">{$_G['setting']['reglinkname']}</a>
+                <label><input type="checkbox" id="cookietime_$loginhash" name="cookietime" class="checkbox"  $cookietimecheck tabindex="4" value="2592000">&nbsp;{lang login_permanent}</label>
+           </p>
+       </div>
+  </div>
+</div>
+
+<script type="text/javascript"> 
+    cookieID = 'sc_wechat_loginbar';
+    pc = isNaN(parseInt(getcookie(cookieID))) ? 0 : parseInt(getcookie(cookieID));
+    setcookie(cookieID, ++pc);
+    if(pc % 3 == 0 || pc > 3) {
+        display('s-loginbar-Login');
+    }
+  
+    
+    function sc_loginbar_close() {
+        display('s-loginbar-Login');
+        setcookie(cookieID, 0);
+    }
+    
+    function sc_loginbar_submit(op) {
+        var op = !op ? 0 : op;
+        if (op) {
+            $('sc_loginbar_form').cookietime.value = 2592000;
+        }
+        if ($('sc_loginbar_username').value == '' || $('sc_loginbar_password').value == '') {
+            showWindow('login', 'member.php?mod=logging&action=login' + (op ? '&cookietime=1' : ''));
+        } else {
+            ajaxpost('sc_loginbar_form', 'return_ls', 'return_ls', 'onerror');
+        }
+        return false;
+    }
+    
+</script>
+
+
+<!--{/block}-->

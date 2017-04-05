@@ -1,0 +1,23 @@
+<!--{template common/header}-->
+
+<!--{if $_GET[code]}-->
+<!--{eval echo diconv($userinfo->nickname, 'utf-8', CHARSET);}--></br>
+
+{$userinfo->sex} </br>
+
+<img src="$userinfo->headimgurl" height="48" width="48" />
+
+
+
+
+
+
+<!--{else}-->
+<h3><a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx26c64329e6eba829&redirect_uri={$referer}&response_type=code&scope=snsapi_userinfo#wechat_redirect">ÊÚÈ¨ Á¬½Ó</a></h3>
+<!--{/if}-->
+
+
+
+
+<!--{template common/footer}-->   
+

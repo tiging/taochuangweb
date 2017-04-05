@@ -1,0 +1,32 @@
+@charset "gbk";
+.module-a { display: block;}
+.module-a:active { background: #EEE;}
+.module { border-bottom:1px solid #eee; padding: 9px 10px 12px 10px;}
+.module h3{ border-bottom: none; padding: 0; margin-bottom: 5px; display:block; max-height:48px; line-height: 24px; overflow:hidden; font-weight: normal; font-size: 16px; color: #000;}
+.article { line-height:27px; max-height:90px; overflow:hidden;}
+.nopic .article { max-height: 70px;}
+
+.atc { float:left; width:80px; height:55px; margin-right: 10px; margin-top: 3px;}
+.atc img { width:80px; height:55px;}
+.list-message { color: #b8bac0; line-height: 22px; font-size: 13px;}
+.list-time { color: #999; line-height: 22px; font-size: 12px;}
+.author { font-size: 12px; margin-bottom: 10px; color: #3e86ce}
+.page { margin-bottom: 0; border-top: none;}
+.all-content {margin-bottom: 47px;}
+/*ÌìÆø*/
+.index-weather { position: relative; overflow: hidden; font-family: Arial; font-weight: 400; font-style: normal; color: #fff; }
+.index-weather img { max-width: 100%; }
+.index-weather .city { position: absolute; top: 0; left: 16px; height: 44px; padding-bottom: 10px; overflow: hidden; }
+.index-weather .city .name { float: left; font-size: 30px; line-height: 60px; max-width: 180px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.index-weather .weather { position: absolute; left: 16px; bottom: 16px; height: 70px; padding-left: 80px; padding-top: 18px; background-size: 80px 80px; -webkit-background-size: 80px 80px; background-repeat: no-repeat; background-position: left 2px; }
+.index-weather .weather span { display: block; }
+.index-weather .weather .date { height: 13px; font-size: 13px; line-height: 13px; }
+.index-weather .weather .temperature { height: 36px; font-size: 28px; line-height: 36px; }
+.index-weather .weather .info { height: 13px; font-size: 13px; line-height: 13px; }
+/*gallery*/
+.gallery{ width: 100%; overflow: hidden; position: relative; }
+.galleryinner{ display: block; position: relative; }
+.galleryimage{ width: 100%; max-height: 165px; overflow: hidden; }
+.galleryimage img{ width: 100%; margin: 0 auto}
+.gallerytitle{ text-align: center; font-size: 1em; height: 32px; line-height: 32px; padding: 0 36px 0 0; color: #fafafa; position: absolute; left: 0; bottom: 0; right: 0; font-weight: normal; text-shadow: 1px 1px 1px #000; background-color: rgba(0,0,0,0); background: -moz-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0.9)); background: -webkit-gradient(linear,top,from(rgba(0,0,0,0)),to(rgba(0,0,0,0.9))); background: -webkit-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0.9)); background: -o-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0.9)); }
+

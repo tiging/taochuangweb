@@ -1,0 +1,228 @@
+<html>
+<head> 
+<meta http-equiv="Content-Language" content="zh-cn" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title></title>
+</head>
+<style>
+body{font-family: "Microsoft Yahei", Arial, sans-serif; font-size: 14px; background: #fff; overflow-x:hidden;}
+body, ul, ol, li, dl, dd, p, h1, h2, h3, h4, h5, h6, form, fieldset, .pr, .pc{margin: 0;
+padding: 0;}
+ul li{list-style: none;}
+a{color: #333;
+text-decoration: none;}
+.recy{text-decoration: line-through;}
+.title{font-size: 15px;margin-bottom:5px;}
+.content{emargin-bottom:10px;}
+.textarea{background-color: #FFFCEC;}
+.module{border: 1px solid #DDDDDD; padding:5px; margin-bottom:10px;padding-left:10px;}
+.button{display: inline-block;position: relative;margin: 0px;padding: 0 20px;text-align: center;text-decoration: none;font: bold 12px/25px Arial, sans-serif;text-shadow: 1px 1px 1px rgba(255,255,255, .22);-webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 30px;-webkit-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);-moz-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);-webkit-transition: all 0.15s ease;-moz-transition: all 0.15s ease;-o-transition: all 0.15s ease;-ms-transition: all 0.15s ease;transition: all 0.15s ease;}
+.green{color: #3e5706;background: #a5cd4e;}
+</style>
+<body  style="">
+
+<div>
+	<div class="module">
+		<div class="title">
+			<span>{lang singcere_wechat:dkf_userinfo}</span>
+		</div>
+		
+		<div>
+			<span style="">{lang singcere_wechat:dkf_current_openid}</span><span type="text" id="toUin">$bindmember['openid']</span>
+		</div>
+		<div>
+			<span style="">{lang singcere_wechat:dkf_current_bbsuser}</span><span type="text" id="workeraccount">$bindmember['username'] [{$bindmember[uid]}]</span>
+		</div>
+	</div>
+
+	<div class="module">
+		<div class="title">
+			<span>{lang singcere_wechat:dkf_newest_thread}</span>
+		</div>
+		<div class="content">
+			<ul>
+				<!--{loop $threadlist $thread}-->
+					<li>
+						<a href="forum.php?mod=viewthread&tid=$thread[tid]" target="_blank" {if $thread['displayorder'] == -1}class="recy"{/if}>$thread[subject]</a>
+						<!--{if $thread['digest'] > 0}-->
+							<img src="{IMGDIR}/digest_$thread[digest].gif" alt="{lang digest} $thread[digest]" align="absmiddle" />
+						<!--{/if}-->
+						<!--{if $thread['attachment'] == 2}-->
+							<img src="{STATICURL}image/filetype/image_s.gif" alt="{lang photo_accessories}" align="absmiddle" />
+						<!--{elseif $thread['attachment'] == 1}-->
+							<img src="{STATICURL}image/filetype/common.gif" alt="{lang accessory}" align="absmiddle" />
+						<!--{/if}-->
+					</li>
+				<!--{/loop}-->
+ 
+			</ul>
+		</div>
+	</div>
+
+	<div class="module">
+		<div class="title">
+			<span>{lang singcere_wechat:dkf_newest_reply}</span>
+		</div>
+		<div class="content">
+			<ul> 
+				<!--{loop $threads $stid $pthread}-->
+				<li><a href="forum.php?mod=viewthread&tid=$pthread[tid]" target="_blank" {if $pthread['displayorder'] == -1}class="recy"{/if}>$pthread[subject]</a></li>
+				<!--{loop $tids[$stid] $pid}--> 
+				<!--{eval $post = $posts[$pid];}-->
+				<li colspan="5" class="xg1">&nbsp;<img src="{IMGDIR}/icon_quote_m_s.gif" style="vertical-align:middle;" /> <a href="forum.php?mod=redirect&goto=findpost&ptid=$pthread[tid]&pid=$pid" target="_blank"><!--{if $post[message]}-->{$post[message]}<!--{else}-->......<!--{/if}--></a> <img src="{IMGDIR}/icon_quote_m_e.gif" style="vertical-align:middle;" /></li>
+				<!--{/loop}-->
+				<!--{/loop}-->
+			</ul>
+		</div>
+	</div>
+
+	<div class="module">
+		<div class="title">
+			<span>{lang singcere_wechat:dkf_message}</span>
+		</div>
+		<div class="content">
+			<input id="radio1" type="radio" name="msg" onClick="setmsg(1)" value="1"/>{lang singcere_wechat:dkf_msg_news}
+			<input type="radio" name="msg" onClick="setmsg(2)" value="2"/>{lang singcere_wechat:dkf_msg_image}
+			<input type="radio" name="msg" onClick="setmsg(3)" value="3"/>{lang singcere_wechat:dkf_msg_text}
+			<input type="submit" onClick="putmsg()" value="{lang singcere_wechat:dkf_msg_pub}"/>
+		</div>
+		<div>
+			<textarea type="text" name="messageData" id="messageData" class="textarea" style="height:150; width:100%; overflow-y: auto;"></textarea>
+		</div>
+	</div>
+	
+
+	<div class="module">
+		<div class="title">
+			<span>{lang singcere_wechat:dkf_op_log}</span>
+		</div>
+		<div class="content">
+			<textarea id="area"  class="textarea" style="height:260;width:100%;overflow-y:auto"></textarea>
+		</div>
+	</div>
+</div>
+
+
+<script> 
+var ticket = getUrlParam('ticket');
+var workerAccouont = '';
+document.getElementById("radio1").checked = true;
+setmsg(1); 
+
+// $.getScript('http://crm1.dkf.qq.com/php/index.php/thirdapp/appdemo/get_workeraccount_by_sessionkey?callback=wokeraccountCallback&ticket='+ticket);
+
+// function wokeraccountCallback(data){
+	
+// 	document.getElementById('area').value += '您现在登录的帐号是：' +  xss(data.workeraccount,"html") + '\n';
+// 	document.getElementById('workeraccount').innerHTML =  xss(data.workeraccount,"html");
+// }
+
+function OnMapMsgClick (data) {
+	$id('area').value += "latitude :" + data['latitude'] + ",longitude:" + data['longitude'] + ",location :" + data['location'] + ",scale :" + data['scale'];
+}
+
+function OnUserChange(data) {
+	if("$_GET[openid]" != data['userid']) {
+		window.location = 'plugin.php?id=singcere_wechat:dkf&userinfo=true&formhash={FORMHASH}&openid=' + data['userid'];
+	}
+}
+</script>
+
+
+<script>
+function MCS_ClientNotify(EventData) {
+	EventData = strToJson(EventData);
+	switch(EventData['event']){
+		case 'OnUserChange':{
+			OnUserChange(EventData);
+			break;
+		}
+		case 'OnMapMsgClick':{
+			OnMapMsgClick(EventData);
+			break;
+		}
+	}
+}
+
+
+function putmsg(){
+	var strReturn = window.external.PutMsg('{"msg":'+document.getElementById('messageData').value+'}');
+	document.getElementById('area').value += 'put msg return:' + strReturn +'\n';
+}
+
+function setmsg(d){
+	var msg = [
+		'{"head":{"random":"{#random#}"}, "body":[{"type":7, "content":[{"title":"{lang singcere_wechat:dkf_question}", "digest":"{lang singcere_wechat:dkf_viewall}", "cover":"http://p.qpic.cn/ecc_merchant/0/P_idc2844234_1399602518774/0", "url":"http://weigou.qq.com/wkd/messages/show/cid-cc_idc_208646"}]}]}',
+		'{"head":{"random":"{#random#}"}, "body":[{"type":1, "content":{"picUrl":"http://p.qpic.cn/ecc_merchant/0/P_idc2844234_1399602518774/0"}}]}',
+		'{"head":{"random":"{#random#}"}, "body":[{"type":0, "content":{"text":"{lang singcere_wechat:dkf_tip}"}}]}'
+	];
+	
+	document.getElementById('messageData').value = msg[d-1].replace("{#random#}",  Math.ceil(Math.random()*10000000));
+}
+
+function strToJson(str){ 
+	var json = (new Function("return " + str))(); 
+	return json; 
+} 
+
+function getUrlParam(name)
+{
+	var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+	var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+	if (r!=null) return unescape(r[2]); return null; //返回参数值
+}
+
+function notice()
+{ 
+	// document.getElementById('area').value += '5秒钟后开始执行notice,请先切换到其他TAB\n'
+	// document.getElementById('noticecon').innerHTML="(5秒钟后开始执行notice,请先切换到其他TAB)";
+	// setTimeout('window.external.Notice("");',5000);
+}
+function xss(str,type){
+	//空过滤 
+	if(!str){
+		return str===0 ? "0" : "";
+	}
+	
+	switch(type){
+		case "none": //过度方案
+			return str+"";
+		break;
+		case "html": //过滤html字符串中的XSS
+			return str.replace(/[&'"<>\/\\\-\x00-\x09\x0b-\x0c\x1f\x80-\xff]/g, function(r){
+				return "&#" + r.charCodeAt(0) + ";"
+			}).replace(/ /g, " ").replace(/\r\n/g, "<br />").replace(/\n/g,"<br />").replace(/\r/g,"<br />");
+		break;
+		case "htmlEp": //过滤DOM节点属性中的XSS
+			return str.replace(/[&'"<>\/\\\-\x00-\x1f\x80-\xff]/g, function(r){
+				return "&#" + r.charCodeAt(0) + ";"
+			});
+		break;
+		case "url": //过滤url
+			return escape(str).replace(/\+/g, "%2B");
+		break;
+		case "miniUrl":
+			return str.replace(/%/g, "%25");
+		break;
+		case "script":
+			return str.replace(/[\\"']/g, function(r){
+				return "\\" + r;
+			}).replace(/%/g, "\\x25").replace(/\n/g, "\\n").replace(/\r/g, "\\r").replace(/\x01/g, "\\x01");
+		break;
+		case "reg":
+			return str.replace(/[\\\^\$\*\+\?\{\}\.\(\)\[\]]/g, function(a){
+				return "\\" + a;
+			});
+		break;
+		default:
+			return escape(str).replace(/[&'"<>\/\\\-\x00-\x09\x0b-\x0c\x1f\x80-\xff]/g, function(r){
+				return "&#" + r.charCodeAt(0) + ";"
+			}).replace(/ /g, " ").replace(/\r\n/g, "<br />").replace(/\n/g,"<br />").replace(/\r/g,"<br />");
+		break;
+	}
+}
+
+</script>
+
+</body>
+</html>

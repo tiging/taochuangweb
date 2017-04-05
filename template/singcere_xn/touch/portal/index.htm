@@ -1,0 +1,106 @@
+<!--{subtemplate common/header}-->
+<link rel="stylesheet" type="text/css" href="{$_G[siteurl]}template/singcere_xn/src/css/index.css"  media="screen" />
+<div id="mySwipe" class="swipe clear">
+  <div class='swipe-wrap clear'>
+  	  <!--{loop $blockdata[0] $slide}-->
+  	  <div><a href="{$slide[url]}"><img src="$_G[setting][attachurl]{$slide[thumbpath]}" alt="{$slide[title]}" swidth="{picwidth}" sheight="{picheight}"></a><span class="carousel_abs"><em>{$slide[title]}</em></span></div>
+  	  <!--{/loop}-->
+  </div>
+</div>
+<div class="swipe-point clear">
+    <ul id='position'>
+        <li class='on'></li>
+        <li></li> 
+        <li></li>
+    </ul>
+</div>
+<div class="wz_tj">
+<!--{loop $blockdata[1] $hot}-->
+<li>
+<a href="$hot[url]">
+<img src="$_G[setting][attachurl]{$hot[thumbpath]}" width="160" height="120" />
+<div class="wz_info">
+<p><span class="wz_title">$hot[title]</span><span class="wz_cate">$hot[fields][catname]</span></p>
+<p><span class="wz_titme"><!--{eval echo dgmdate($hot[fields][dateline], 'Y-m-d');}--></span><span class="wz_pl">$hot[fields][commentnum]评论</span></p>
+</div>
+</a>
+</li>
+<!--{/loop}-->
+</div>
+<div class="wz_tj wz_dt">
+<!--{loop $blockdata[4] $hot}-->
+<li>
+	<a href="$hot[url]">
+		<div class="wz_title">$hot[title]</div>
+		<div class="img_box">
+			$hot[img]
+		</div>
+		<div class="wz_info">
+			<p><span class="wz_titme"><!--{eval echo dgmdate($hot[fields][dateline], 'Y-m-d');}--></span><span class="wz_pl">$hot[fields][commentnum]评论</span></p>
+		</div>
+	</a>
+</li>
+<!--{/loop}-->
+</div>
+<div class="wz_tj">
+<!--{loop $blockdata[2] $hot}-->
+<li>
+<a href="$hot[url]">
+<img src="$_G[setting][attachurl]{$hot[thumbpath]}" width="160" height="120" />
+<div class="wz_info">
+<p><span class="wz_title">$hot[title]</span><span class="wz_cate">$hot[fields][catname]</span></p>
+<p><span class="wz_titme"><!--{eval echo dgmdate($hot[fields][dateline], 'Y-m-d');}--></span><span class="wz_pl">$hot[fields][commentnum]评论</span></p>
+</div>
+</a>
+</li>
+<!--{/loop}-->
+</div>
+<div class="wz_tj wz_dt">
+<!--{loop $blockdata[5] $hot}-->
+<li>
+	<a href="$hot[url]">
+		<div class="wz_title">$hot[title]</div>
+		<div class="img_box">
+        $hot[img]
+		</div>
+		<div class="wz_info">
+			<p><span class="wz_titme"><!--{eval echo dgmdate($hot[fields][dateline], 'Y-m-d');}--></span><span class="wz_pl">$hot[fields][commentnum]评论</span></p>
+		</div>
+	</a>
+</li>
+<!--{/loop}-->
+</div>
+<div class="wz_tj">
+<!--{loop $blockdata[3] $hot}-->
+<li>
+<a href="$hot[url]">
+<img src="$_G[setting][attachurl]{$hot[thumbpath]}" width="160" height="120" />
+<div class="wz_info">
+<p><span class="wz_title">$hot[title]</span><span class="wz_cate">$hot[fields][catname]</span></p>
+<p><span class="wz_titme"><!--{eval echo dgmdate($hot[fields][dateline], 'Y-m-d');}--></span><span class="wz_pl">$hot[fields][commentnum]评论</span></p>
+</div>
+</a>
+</li>
+<!--{/loop}-->
+</div>
+
+
+<script src='{$_G[siteurl]}template/singcere_xn/src/js/swipe.js'></script>
+<script>
+var elem = document.getElementById('mySwipe');
+window.mySwipe = Swipe(elem, {
+	auto: 3000,
+	continuous: true,
+	callback: function(pos) {
+
+	  var i = bullets.length;
+	  while (i--) {
+	    bullets[i].className = ' ';
+	  }
+	  bullets[pos].className = 'on';
+	}
+});
+var bullets = document.getElementById('position').getElementsByTagName('li');
+</script>
+<!--{subtemplate common/footer}-->
+

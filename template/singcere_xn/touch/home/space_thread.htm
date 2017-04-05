@@ -1,0 +1,57 @@
+<!--{subtemplate common/header}-->
+<!--{subtemplate home/space_nav}-->
+<!--{if $_G[uid] != $space[uid] }-->
+  <!--{subtemplate home/space_nav_list}-->
+<!--{else}-->
+
+
+<div class="home-nav home-top home-nav-top clear">
+    <h3>我的微社区</h3>
+    <a href="{$_G[siteurl]}home.php?mod=space&uid={$space[uid]}&do=favorite&view=me&type=thread" {if $do == favorite}class="cur"{/if}>
+      <div class="home-nav-a-ico"><i class="fa fa-star"></i></div>
+      <p>收藏</p>
+    </a>
+    <a href="home.php?mod=space&uid={$space[uid]}&do=thread&view=me&type=reply" {if $_GET[type] == reply}class="cur"{/if}>
+      <div class="home-nav-a-ico"><i class="fa fa-quote-left"></i></div>
+      <p>回复</p>
+    </a>
+    <a href="home.php?mod=space&uid={$space[uid]}&do=thread&view=me" {if $_GET[type] != reply}class="cur"{/if}>
+      <div class="home-nav-a-ico"><i class="fa fa-comments"></i></div>
+      <p>主题</p>
+    </a>
+</div>
+<!--{/if}-->
+<form method="post" autocomplete="off" name="delform" id="delform" action="home.php?mod=space&do=thread&view=all&order=dateline" onsubmit="showDialog('{lang del_select_thread_confirm}', 'confirm', '', '$(\'delform\').submit();'); return false;">
+    <input type="hidden" name="formhash" value="{FORMHASH}" />
+    <input type="hidden" name="delthread" value="true" />
+    <div class="j_home_thread_list_container home_thread_list_container">
+        <div class="j_home_thread_list home_thread_list">
+            <ul id="home_thread_list_list" class="j_home_thread_list_list home_thread_list_list">
+                <!--{if $list}-->
+                <!--{loop $list $thread}-->
+                    <li class="list_item">
+                        <a href="forum.php?mod=viewthread&tid=$thread[tid]" class="list_item_link">
+                            <div class="thread_body">
+                              <div class="post_abstract_text">$thread[subject]</div>
+                            </div>
+                            <div class="post_list_item_info">
+                                <span class="">发表于</span>
+                                <span class="post_list_item_info_time">$thread[dateline]</span>
+                                <span class="post_list_item_info_right"><span class="post_item_info_reply_icon">$thread[replies]</span></span>
+                            </div>
+                        </a>
+                    </li>
+                <!--{/loop}-->
+                <!--{else}-->
+                	<div class="bm_c p10" style="border-bottom:none;">
+                    {lang no_related_posts}
+                    </div>
+                <!--{/if}-->
+            </ul>
+        </div>
+    </div>
+</form>
+<!--{if $multi}--><div class="pgs clear mtm">$multi</div><!--{/if}-->
+<!--{subtemplate home/space_foot}-->
+<!--{subtemplate common/footer}-->
+

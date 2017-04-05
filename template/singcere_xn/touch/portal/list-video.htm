@@ -1,0 +1,46 @@
+<!--{template common/header}-->
+<!--[name]视频新闻列表页[/name]-->
+<!--{eval $list = array();}-->
+<!--{eval $wheresql = category_get_wheresql($cat);}-->
+<!--{eval $list = category_get_list($cat, $wheresql, $page);}-->
+
+<link rel="stylesheet" type="text/css" href="template/singcere_pt163/src/css/list-index.css" />
+<link rel="stylesheet" type="text/css" href="template/singcere_pt163/src/css/list-sub.css" />
+
+<div id="mainbody" class="cl">
+
+  <div class="location">
+    <h2><a href="./" title="{lang homepage}">$cat[catname]</a></h2>
+    <p><a href="./" title="{lang homepage}">$_G[setting][bbname]</a> &gt;&nbsp;
+      <!--{loop $cat[ups] $value}-->
+      <a href="{$portalcategory[$value['catid']]['caturl']}">$value[catname]</a> &gt;&nbsp;
+      <!--{/loop}-->
+    </p>$cat[catname]
+      <p class="y"><a href="portal.php?mod=portalcp&ac=article&catid=$cat[catid]" rel="nofollow">+新闻投稿</a></p>
+  </div>
+
+
+  <div class="main">
+    <div class="article-video li">
+      <ul>
+        <!--{loop $list['list'] $value}-->
+          <!--{eval $highlight = article_title_style($value);}-->
+          <!--{eval $article_url = fetch_article_url($value);}-->
+        <li>
+          <!--{if $value[pic]}--><a href="pt/news/$value['catid']/$value['aid'].html" target="_blank" class="img"><img src="$value[pic]" alt="$value[title]" /></a><!--{/if}-->
+          <h3><a href="pt/news/$value['catid']/$value['aid'].html" target="_blank" $highlight>$value[title]</a></h3>
+          <div class="txt">$value[summary]</div>
+        </li>
+        <!--{/loop}-->
+      </ul>
+      <!--{if $list['multi']}--><div class="pgs cl">{$list['multi']}</div><!--{/if}-->
+    </div>
+
+  </div>
+
+  <!--{subtemplate portal/portal_side}-->
+
+</div>
+
+<!--{template common/footer}-->
+

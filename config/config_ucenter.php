@@ -17,4 +17,3 @@ define('UC_API', 'http://www.taochuangweb.com/uc_server');
 define('UC_APPID', '1');
 define('UC_IP', '');
 define('UC_PPP', 20);
-?>

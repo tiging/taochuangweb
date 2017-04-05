@@ -1,0 +1,130 @@
+<div class="fastminipost">
+  <div class="fastminipost-c">
+    <div class="fastminipost-z">{if $_G[uid]}<a href="{$_G[siteurl]}home.php?mod=space&uid=$_G[uid]&do=profile"><img src="uc_server/avatar.php?uid=$_G[uid]&size=small"></a>{else} <a href="{if !$_G[uid] && IN_WECHAT}forum.php?mod=post&action=reply&tid=$_G[tid]&authorization=true{else}member.php?mod=logging&action=login{/if}"><img src="template/singcere_xn/src/img/forum/wx-login.png" alt=""></a>{/if}
+    </div>
+    <div class="fastminipost-m"><div class="fastinputd" {if !$_G[uid] && IN_WECHAT}onclick="location='forum.php?mod=post&action=reply&tid=$_G[tid]&authorization=true'"{/if}>Hi！{if $thread[folder] == 'lock'}此贴已锁，不能回复{else}{if !$_G[uid]}游客{else}$_G[member][username]{/if}~说两句吧{/if}</div></div>
+    <div class="fastminipost-y">
+      <span class="share-weixin fastshare">分享</span>
+    </div>
+  </div>
+</div>
+
+<form method="post" autocomplete="off" id="fastpostform" class="none" name="fastpostform" action="forum.php?mod=post&action=reply&fid=$_G[fid]&tid=$_G[tid]&extra=$_GET[extra]&replysubmit=yes">
+<div class="bm-title">
+  回复
+  <i class="fa fa-angle-left fa-back"></i>
+</div>
+<div class="ue_revision">
+    <div id="j_pb_main_editor" class="main_editor_panel">
+        <div class="j_editor editor">
+            <div class="j_editor_title_panel editor_title_panel"></div>
+            <div class="j_editor_content_panel editor_content_panel">
+                <div class="lay_hide">
+                  <input type="hidden" name="formhash" value="{FORMHASH}" />
+                  <!--{if $_G[forum_thread][special] == 5 && empty($firststand) && $_G['uid']}-->
+                  <div class="inbox mt-10">
+                    <select id="stand" name="stand" >
+                      <option value="">{lang debate_viewpoint}</option>
+                      <option value="0">{lang debate_neutral}</option>
+                      <option value="1">{lang debate_square}</option>
+                      <option value="2">{lang debate_opponent}</option>
+                    </select>
+                  </div>
+                  <!--{/if}-->
+                  <textarea name="message" id="fastpostmessage" placeholder="Hi！{if !$_G[uid]}游客{else}$_G[member][username]{/if}~说两句吧" style="height:88px;width:100%" class="j_editor_content editor_input editor_content" ></textarea>
+                  <!--{if checkperm('seccode') && ($secqaacheck || $seccodecheck)}-->
+                  <div class="inbox"><!--{subtemplate common/seccheck}--></div>
+                  <!--{/if}-->
+                </div>
+            </div>
+            <div class="j_editor_bottom_panel editor_bottom_panel">
+                <div class="editor_btn_list">
+                    <div class="fr j_media_bar media_bar">
+                        <!--{eval $postformname = 'fastpostform';}--> 
+                        <!--{subtemplate forum/post_multi}-->
+                    </div>
+                    <div class="j_submit_btn_panel submit_btn_panel">
+                      <input type="submit" name="replysubmit" id="fastpostsubmit" value="{lang reply}" class="submit_disable" disabled="true"/>
+
+                    </div>
+                </div>
+                <div id="fastuploaddiv_data" class="smiletoggle"><div class="triangle-up"></div><ul id="imglist" class="post_imglist cl bl_line clear"></ul></div>
+                <div id="fastsmiliesdiv_data" class="smiletoggle"><div class="triangle-up"></div><div id="fastsmilies" class="clear"></div></div>
+            </div>
+        </div>
+    </div>
+</div>
+</form>
+
+<div class="overlay none"></div>
+
+
+
+<script>
+// function errorhandle_fastpost(msg) {
+//     $('#fastpostsubmit').attr('disable', 'false');
+// }
+
+// $('#fastpostsubmit').on('click', function() {
+//     var obj = $(this);
+//     if(obj.attr('disable') == 'true') {
+//         return false;
+//     }
+//     obj.attr('disable', 'true');
+//     return true;
+// });
+
+
+$(function(){  
+    $(".fastinputd").click(function(){  
+        $('#fastpostform').removeClass('none');
+        $('.view-content').addClass('none');
+        $('.footer-channels').addClass('none');
+        $("#fastpostmessage").focus();
+    });
+
+    $(".fa-back").click(function(){  
+        $('#fastpostform').addClass('none');
+        $('.view-content').removeClass('none');
+    });
+
+
+
+    $('#fastpostmessage').on('keyup input', function() {
+        var obj = $(this);
+        if(obj.val()) {
+
+            $('#fastpostsubmit').removeClass('submit_disable').addClass('submit_btn');
+            $('#fastpostsubmit').attr('disabled', false);
+        } else {
+ 
+            $('#fastpostsubmit').removeClass('submit_btn').addClass('submit_disable');
+            $('#fastpostsubmit').attr('disabled', true);
+        }
+    });
+
+    $('#needmessage').on('scroll', function() {
+        var obj = $(this);
+        if(obj.scrollTop() > 0) {
+          obj.attr('rows', parseInt(obj.attr('rows'))+2);
+        }
+    }).scrollTop($(document).height());
+
+});  
+</script>
+
+
+
+<script> 
+$(document).ready(function () { 
+
+//当点击底部标签时候，执行方法，其中offset()获取匹配元素在当前视口的相对偏移,返回的是一个对象，有两个属性top,left 
+//animate,的第二个属性当然我们也可以设置'slow','normal'或'fast' 
+$('#foot').click(function () { 
+$('html').animate( 
+{scrollTop:$('span').offset().top},0 
+); 
+}); 
+}); 
+</script> 
+

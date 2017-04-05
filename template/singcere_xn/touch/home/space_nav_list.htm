@@ -1,0 +1,61 @@
+<div class="j_home_card home_card">
+	<div class="home_card_portrait">
+		<a class="j_home_card_portrait_link home_card_portrait_link" href="javascript:void(0)">
+			<img src="{avatar($space[uid], 'middle', true)}" alt="" class="home_card_portrait_pic"></a>
+	</div>
+	<div class="home_card_info">
+		<span class="home_card_uname">
+			<a class="home_card_uname_link" href="home.php?mod=space&uid={$space[uid]}">{$space[username]}</a>
+		</span>
+	</div>
+	<div class="clear"></div>
+	<div class="home-nav home-nav-top clear">
+		<!--{if $_G[uid] == $space[uid] }-->
+		<a href="{$_G[siteurl]}home.php?mod=space&uid=$_G[uid]&do=profile" {if $do == profile && $_GET[page]!=profile}class="cur"{/if}>
+			<div class="home-nav-a-ico"><i class="fa fa-home"></i></div>
+			<p>首页</p>
+		</a>
+		<a href="{$_G[siteurl]}home.php?mod=space&uid=$space[uid]&do=profile&page=profile" {if $ac==profile || $_GET[page]==profile || $ac==plugin}class="cur"{/if}>
+			<div class="home-nav-a-ico"><i class="fa fa-user"></i></div>
+			<p>资料</p>
+		</a>
+		<a href="{$_G[siteurl]}home.php?mod=space&do=notice&view=system" {if $do == notice}class="cur"{/if}>
+			<div class="home-nav-a-ico {if $_G[member][newprompt]}twinkling{/if}"><i class="fa fa-bell"></i></div>
+			<p>提醒</p>
+			{if $_G[member][newprompt]}
+			<i class="new-prompt twinkling">{$_G[member][newprompt]}</i>
+			{/if}
+		</a>
+		<a href="{$_G[siteurl]}home.php?mod=space&do=pm" {if $do == pm || $ac == pm}class="cur"{/if}>
+			<div class="home-nav-a-ico  {if $_G[member][newpm]}twinkling{/if}"><i class="fa fa-envelope"></i></div>
+			<p>短消息</p>
+			{if $_G[member][newpm]}
+			<i class="new-prompt twinkling">{$_G[member][newpm]}</i>
+			{/if}
+		</a>
+		<a href="member.php?mod=logging&action=logout&formhash={FORMHASH}">
+			<div class="home-nav-a-ico"><i class="fa fa-sign-out"></i></div>
+			<p>退出</p>
+		</a>
+		<!--{else}-->
+		
+         <a href="{$_G[siteurl]}home.php?mod=space&uid=$space[uid]&do=profile" {if $do == 'profile'}class="cur"{/if}>
+    <div class="home-nav-a-ico"><i class="fa fa-user"></i></div>
+    <p>资料</p>
+    </a> <a href="{$_G[siteurl]}home.php?mod=space&uid={$space[uid]}&do=thread&view=me&type=thread" {if $_GET[type] == thread}class="cur"{/if}>
+    <div class="home-nav-a-ico"><i class="fa fa-comments"></i></div>
+    <p>主题</p>
+    </a> <a href="{$_G[siteurl]}home.php?mod=space&uid={$space[uid]}&do=thread&view=me&type=reply" {if $_GET[type] == reply}class="cur"{/if}>
+    <div class="home-nav-a-ico"><i class="fa fa-quote-left"></i></div>
+    <p>回复</p>
+    </a> 
+		<!--{/if}-->
+		<!-- 
+		<a href="{$_G[siteurl]}home.php?mod=space&do=pm">
+			<div class="home-nav-a-ico"><i class="fa fa-tasks"></i></div>
+			<p>任务</p>
+		</a>
+		 -->
+	</div>
+</div>
+
