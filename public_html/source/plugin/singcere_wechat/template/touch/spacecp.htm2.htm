@@ -1,0 +1,73 @@
+
+
+<!--{if $_G['member']['openid']}-->
+	<div class="bindmain">
+		<p class="pbm bbda xi1">您已将本站帐号 <strong>$_G['member']['username']</strong> 与微信账号绑定</p> 
+		<!--{if $bindmember[isregister]}-->
+			<script src="static/js/register.js?{VERHASH}" type="text/javascript"></script><br/> 
+			<h2><a href="javascript:;" class="xi2">设置独立密码与新用户名</a> [仅针对微信用户,开放一次权限请务必确认后再提交]</h2>
+			<form id="wechatform" method="post" autocomplete="off" action="plugin.php?id=singcere_wechat:spacecp">
+				<input type="hidden" name="formhash" value="{FORMHASH}" />
+				<div class="password">
+					<table cellspacing="0" cellpadding="0" class="tfm">
+						<tr>
+							<th><label>新用户名</label></th>
+							<td><input type="text" id="newusername" name="newusername" size="30" maxlength="15" class="px p_fre" tabindex="1" value="$_G[username]"/></td>
+							<td class="tipcol"><i id="tip_newusername" class="p_tip"></i><kbd id="chk_newusername" class="p_chk"></kbd></td>
+						</tr>
+						<tr>
+							<th><label>{lang wechat:wechat_spacecp_pw}</label></th>
+							<td><input type="password" id="newpassword1" name="newpassword1" size="30" class="px p_fre" tabindex="1" /></td>
+							<td class="tipcol"><i id="tip_newpassword1" class="p_tip"></i><kbd id="chk_newpassword1" class="p_chk"></kbd></td>
+						</tr>
+						<tr>
+							<th><label>{lang wechat:wechat_spacecp_repw}</label></th>
+							<td><input type="password" id="newpassword2" name="newpassword2" size="30" class="px p_fre" tabindex="2" /></td>
+							<td class="tipcol"><i id="tip_newpassword2" class="p_tip"></i><kbd id="chk_newpassword2" class="p_chk"></kbd></td>
+						</tr>
+						<tr>
+							<th></th>
+							<td>
+								<button type="submit" name="resetpwsubmit" value="yes" class="pn pnc"><strong>{lang submit}</strong></button>
+							</td>
+						</tr> 
+					</table>
+				</div>
+			</form>
+			<br />
+			<script type="text/javascript">
+				pwlength = 6;
+				strongpw = [];
+				$('newusername').onblur = function() { 
+					checkusername('newusername');
+				}
+				checkPwdComplexity($('newpassword1'), $('newpassword2'));
+				function checkusername(id) {
+					$('tip_' + id).style.display = 'none';
+					errormessage(id);
+					var username = trim($(id).value);
+					if($('tip_' + id).parentNode.className.match(/ p_right/) && (username == '' || username == lastusername)) {
+						return;
+					} else {
+						lastusername = username;
+					}
+					if(username.match(/<|"/ig)) {
+						errormessage(id, '用户名包含敏感字符');
+						return;
+					}
+					var unlen = username.replace(/[^\x00-\xff]/g, "**").length;
+					if(unlen < 3 || unlen > 15) {
+						errormessage(id, unlen < 3 ? '用户名不得小于 3 个字符' : '用户名不得超过 15 个字符');
+						return;
+					}
+					var x = new Ajax();
+					$('tip_' + id).parentNode.className = $('tip_' + id).parentNode.className.replace(/ p_right/, '');
+					x.get('plugin.php?id=singcere_wechat:spacecp&inajax=yes&infloat=register&handlekey=register&ajaxmenu=1&action=checkusername&newusername=' + (BROWSER.ie && document.charset == 'utf-8' ? encodeURIComponent(username) : username.replace(/%/g, '%25').replace(/#/g, '%23')), function(s) {
+						errormessage(id, s);
+					});
+				}
+			</script>
+		<!--{/if}-->
+	</div> 
+<!--{/if}-->
+

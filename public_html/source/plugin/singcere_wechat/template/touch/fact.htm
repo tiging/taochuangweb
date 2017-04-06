@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset={CHARSET}">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <title>{lang singcere_wechat:fact_title}</title>
+    
+</head>
+
+<style>
+    html, body, textarea, ul, li, input, h3{ margin: 0; padding: 0; }
+    ul, li { list-style: none;}
+    h3 { font-weight: normal; margin-bottom: 10px;}
+    .clear:before, .clear:after { display: table; content: ""; }
+    .clear:after { clear: both; }
+    #fact_container { font-size: 14px; padding: 10px; }
+    .fact_content, .fact_mobile { margin-right: 22px; margin-bottom: 10px; line-height: 0; }
+    .fact_pt { border:1px solid #eee; width: 100%; font-size: 16px; padding: 10px; line-height: 22px; -webkit-appearance: none; border-radius: 3px; }
+    .fact_px { border:1px solid #eee; width: 100%; font-size: 16px; padding: 10px; line-height: 22px; -webkit-appearance: none; border-radius: 3px; }
+    .fact_img { margin-bottom: 10px; padding: 10px; border:1px solid #eee; background: #F8F8F8; border-radius: 3px; }
+    .fact_img ul { display: block; }
+    .fact_img li { width: 32%; line-height:0; margin-right: 2%; margin-bottom: 5px; float: left; }
+    .fact_img li.last { margin-right: 0; }
+    .fact_img li img { width: 100%; border-radius: 3px; line-height:0;}
+    .fact_user {margin-bottom: 10px;}
+    .fact_user li{margin-bottom: 5px;}
+
+    .fact_btn input{ -webkit-appearance: none; width: 100%; height: 44px; line-height: 44px; border-radius: 3px; background: #4998e7; color: #fff; text-align: center; border:none; font-size: 16px;}
+    
+    .alert_right, .alert_error, .alert_info {padding: 16px 0px 16px 58px;min-height: 20px;height: auto !important;line-height: 20px;background: url("static/image/common/info.gif") no-repeat scroll 8px center;font-size: 14px;}
+    .alert_error { background-image: url(static/image/common/error.gif); }
+    .alert_info { background-image: url(static/image/common/info.gif); }
+    #messagetext {margin: 60px auto;padding: 20px;width: 80%;border: 3px solid rgb(242, 242, 242);background: none repeat scroll 0% 0% rgb(255, 255, 255);}
+    
+</style>
+
+<body>  
+
+
+<!--{if $op == 'post_success'}-->
+<div id='messagetext' onclick="WeixinJSBridge.invoke('closeWindow', {});">
+    <div class="alert_info">
+        <p>{lang singcere_wechat:fact_post_success}</p>
+    </div>
+</div>
+<!--{else}-->
+    <form action="plugin.php?id=singcere_wechat:fact" method="post">
+        <input type="hidden" name="factid" value="$factid" />
+        <input type="hidden" name="formhash" value="{FORMHASH}" />
+        <div id="fact_container">
+            <div class="fact_mobile">
+                <input type="text" name="subject" placeholder="{lang singcere_wechat:fact_subject}" class="fact_px">
+            </div>
+            <div class="fact_content">
+                <textarea name="message" id="bl_content" placeholder="{lang singcere_wechat:fact_message}" rows="9" class="fact_pt"></textarea>
+            </div>
+            <div class="fact_mobile">
+                <input type="tel" name="mobile" placeholder="{lang singcere_wechat:fact_mobile}" class="fact_px">
+            </div>
+            <div class="fact_user">
+                <ul>
+                <li><label><input type="radio" name="anonymous" value="0" checked="checked">{lang singcere_wechat:fact_anonymous_no} $_G['username']</label></li>
+                <li><label><input type="radio" name="anonymous" value="1">{lang singcere_wechat:fact_anonymous_yes}</label></li>
+                </ul>
+            </div>
+
+            <!--{if $fact[attachment]}-->
+            <div class="fact_img">
+                <h3>{lang singcere_wechat:fact_remote_img}</h3> 
+                <ul class="clear">
+                    <!--{eval $ix = 0;}-->
+                    <!--{loop $fact[attachment] $key $pic}-->
+                    <!--{eval $ix++;}-->
+                    <li {if $ix%3 == 0}class="last"{/if}><img src="plugin.php?id=singcere_wechat:misc&ac=img2wx&url=$pic" alt="" /></li>
+                    <!--{/loop}-->
+                </ul> 
+            </div>
+            <!--{/if}-->
+            <div class="fact_btn"> 
+                <input type="submit" name="factsubmit" class="submit_btn" value="{lang singcere_wechat:fact_post}">
+            </div>
+
+        </div>
+    </form>
+<!--{/if}-->
+
+
+
+
+</body> 
+</html>
+
+<!--{eval updatesession();}-->
+<!--{if defined('IN_MOBILE')}-->
+    <!--{eval output();}-->
+<!--{else}-->
+    <!--{eval output_preview();}-->
+<!--{/if}-->

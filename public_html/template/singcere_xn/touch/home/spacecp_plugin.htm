@@ -1,0 +1,14 @@
+<!--{template common/header}-->
+<!--{subtemplate home/space_nav}-->
+<!--{subtemplate home/space_nav_list}-->
+
+<div class="second-nav clear">
+	<a href="{$_G[siteurl]}home.php?mod=space&uid=$space[uid]&do=profile&page=profile">我的资料</a>
+	<a href="{$_G[siteurl]}home.php?mod=spacecp&ac=profile">修改资料</a>
+	<a {if $_G['member']['isregister'] == 0 }href="{$_G[siteurl]}home.php?mod=spacecp&ac=profile&op=password"{else}href="{$_G[siteurl]}home.php?mod=spacecp&ac=plugin&id=singcere_wechat:spacecp"{/if} class="cur">账号密码</a>
+</div>
+<!--{eval include(template($_GET['id']));}-->
+
+<!--{subtemplate home/space_foot}-->
+<!--{template common/footer}-->
+

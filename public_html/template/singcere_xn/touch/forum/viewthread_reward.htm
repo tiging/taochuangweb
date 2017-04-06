@@ -1,0 +1,38 @@
+<style>
+
+.rwd {}
+	.rsld, .rusld { width: 90px; height: 118px; margin-right:8px; background: url({IMGDIR}/rwd.gif) no-repeat 0 0; text-align: center; color: #F30; }
+	.rsld { background-position: 0 -118px; }
+		.rsld cite, .rusld cite { display: block; margin: 26px auto 6px; _margin-bottom: -6px; height: 30px; font-size: 28px; }
+	.rwdn { margin-left: 110px; }
+.rwdbst {}
+</style>
+
+
+<div class="rwd clear">
+<div class="{if $_G['forum_thread']['price'] > 0}rusld{elseif $_G['forum_thread']['price'] < 0}rsld{/if} z">
+<cite>$rewardprice</cite>{$_G['setting']['extcredits'][$_G['setting']['creditstransextra'][2]][unit]}{$_G['setting']['extcredits'][$_G['setting']['creditstransextra'][2]][title]}</div>
+$post[message]
+</div>
+
+	
+
+
+<!--{if $post['attachment']}-->
+	<div class="warning">{lang attachment}: <em><!--{if $_G['uid']}-->{lang attach_nopermission}<!--{else}-->{lang attach_nopermission_login}<!--{/if}--></em></div>
+<!--{elseif $post['imagelist'] || $post['attachlist']}-->
+    <!--{if $post['imagelist']}-->
+         {echo showattach($post, 1)}
+    <!--{/if}-->
+    <!--{if $post['attachlist']}-->
+         {echo showattach($post)}
+    <!--{/if}-->
+<!--{/if}-->
+<!--{eval $post['attachment'] = $post['imagelist'] = $post['attachlist'] = '';}-->
+
+<!--{if $bestpost}-->
+<div class="warning">$faithlang[bestpost_tips]</div>
+<!--{/if}-->
+
+
+

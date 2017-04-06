@@ -1,0 +1,40 @@
+/*view*/
+.post-activity { padding: 0 0 15px 0 !important; border-top: none;}
+.post-activity .comments { padding: 0 15px !important;}
+.post-activity .article { margin-top: 0;}
+
+
+.ico-apply-close, .ico-guanfang, .ico-hd-close { background-image: url(../img/forum/sprite-activity.png?0316); background-size: 150px 300px; }
+.activity-view-cover { position: relative; overflow: hidden;}
+.activity-view-cover img { width: 100%; }
+.activity-view-title { font-size: 20px; line-height: 20px; padding: 1px 0 1px 10px; border-left: 3px solid #4c7f00; margin: 5px 0 10px -10px;}
+.activity-view-message, .activity-view-address { font-size: 14px; color: #666;}
+.activity-view-message p~p { margin:0;}
+.activity-view-c { position: relative;}
+.c-4c7f00 { color: #4c7f00; }
+.tip_red { color: #ff0000; font-size: 14px;}
+.view-btn { text-align: center;}
+.activ-tit { background-image: url(../img/forum/activ-tit.png); margin-bottom: 10px; width: 67px; padding-left: 8px; height: 22px; background-size: 100px 44px; color: #fff; display: inline-block; line-height: 22px; font-size: 13px; margin-left: -10px; }
+.ico-guanfang {display: block; position: absolute; right: 0; top: 0; height: 63px; width: 63px; background-position: right top;}
+.ico-hd-close { height: 52px; width: 112px; position: absolute; right: 20px; top: 90px; background-position: -39px -158px;}
+.ico-apply-close { height: 52px; width: 112px; position: absolute; right: 20px; top: 90px; background-position: -39px -210px;}
+
+.activity-view-intro .intro-tips, .activity-view-rule .rule-tips { line-height: 28px; font-size: 14px; }
+.activity-view-apply .activ-tit, .activity-view-rule .activ-tit { width: 90px; background-position: left bottom; color: 999; }
+.activity-view-apply .apply-avatar { padding: 5px 5px 0 5px; }
+.activity-view-apply .apply-avatar li { height: 31px; line-height: 31px; float: left; overflow: hidden; white-space: nowrap; width: 50%; margin-bottom: 10px; font-size: 12px; color: #666; }
+.activity-view-apply .apply-avatar img { border-radius: 3px; height: 30px; width: 30px; display: inline-block; margin-right: 5px; vertical-align:middle;}
+
+#activityjoin { margin-bottom: 10px; }
+#activityjoin .activtiy-post { padding: 20px 0 }
+#activityjoin p { position: relative; margin-bottom: -5px;}
+#activityjoin p#birthdistrictbox{margin-top: -41px;height: 41px;margin-bottom: 0;}
+#activityjoin p#birthdistrictbox select{ margin-top:5px;}
+#activityjoin .tit { /*position: absolute;*/ left:10px; top:0; font-weight: normal; height: 40px; line-height: 40px; width: 100%; display:block;}
+#activityjoin .tit_r{/* margin-left:85px;*/ display:block; height:41px;}
+#activityjoin .tit_r select{ width:29%;float: left;margin-right: 2%;box-sizing: border-box;margin-top: 5px;}
+#activityjoin .px, #activityjoin .txt { border:1px solid #eee;/* padding-left: 85px;*/ -moz-box-sizing: border-box; box-sizing: border-box; }
+#activityjoin .pn, #activityjoincancel .pn, #activitylogin .pn { width: 100%; border-radius: 3px; border:none; height: 40px;}
+#activityjoincancel .mtn, #activitylogin .mtn { padding: 20px 30px 25px 20px; }
+#activitylogin .pn { line-height: 40px; text-align: center; font-size: 16px; padding: 0;}
+

@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2,X2.5,X3,X3.1,X3.2]]></item>
+	<item id="Time"><![CDATA[2015-07-21 14:09]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://localhost/x32/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[【亮剑】虚拟人气]]></item>
+			<item id="identifier"><![CDATA[aljrq]]></item>
+			<item id="description"><![CDATA[最专业的虚拟人气插件]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[aljrq/]]></item>
+			<item id="copyright"><![CDATA[亮剑Discuz!(http://www.seoeye.cn)]]></item>
+			<item id="version"><![CDATA[3.1.2]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[sj]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[28]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[huitie]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[autocontents]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[分版块回复内容设置]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="3">
+					<item id="name"><![CDATA[majia]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[马甲功能]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="4">
+					<item id="name"><![CDATA[reply_tj]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[回复统计]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[2]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="5">
+					<item id="name"><![CDATA[avatar]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[自动头像]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[3]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="6">
+					<item id="name"><![CDATA[app]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[<b style="color:red">亮剑应用中心</b>]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[5]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2,X2.5,X3,X3.1,X3.2]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[是否开启虚拟人气]]></item>
+				<item id="description"><![CDATA[虚拟人气与自动回帖同用开始时间段跟结束时间段控制，不在这个时间段内将不执行]]></item>
+				<item id="variable"><![CDATA[isrq]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[是否开启自动头像]]></item>
+				<item id="description"><![CDATA[开启开关插件可以为没有头像的马甲跟没有头像的论坛用户自动生成一张头像]]></item>
+				<item id="variable"><![CDATA[is_avatar]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[随机显示数量上限]]></item>
+				<item id="description"><![CDATA[会员及游客共用上限及下限，会各自随机出一个数量添加到在线列表]]></item>
+				<item id="variable"><![CDATA[mm]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[100]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[随机显示会员数量下限]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[m]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[最高记录]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[high]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[1000]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[最高记录时间]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[time]]></item>
+				<item id="type"><![CDATA[date]]></item>
+				<item id="value"><![CDATA[2013-07-21]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[当在线人数小于多少时刷新列 ...]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[lt]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[111]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[开启虚拟昨日今日会员]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[iskaiqi]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[今日|昨日|帖子|会员]]></item>
+				<item id="description"><![CDATA[格式：今日|昨日|帖子|会员
+虚拟数据=实际数据+所填数据（随真实帖子数变化而变化）
+如不需要虚拟请关闭开关
+如需要虚拟单个请以0占位
+例如只需要虚拟会员人数（0|0|0|10000）这样就能虚拟会员数为10000]]></item>
+				<item id="variable"><![CDATA[suoyou]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[1000|0|0|10000]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="9">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[虚拟数据开始时间]]></item>
+				<item id="description"><![CDATA[请填写一个0-23的数代表从几点开始执行虚拟数据
+注：只对今日帖子数有效]]></item>
+				<item id="variable"><![CDATA[xunitime]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[2]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="10">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[版块数据虚拟]]></item>
+				<item id="description"><![CDATA[一行一个
+版块fid|今日发帖|主题数|帖子数]]></item>
+				<item id="variable"><![CDATA[forumsttp]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[2|100|105|110
+36|100|105|110]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="11">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[是否开启自动回复]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[isnot]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="12">
+				<item id="displayorder"><![CDATA[9]]></item>
+				<item id="title"><![CDATA[是否开启不重名模式]]></item>
+				<item id="description"><![CDATA[开启不重名模式(即选是)将一个马甲只能在一个帖子下回帖一次，不开启（即选否）将不限制！默认选择开启不重名模式！]]></item>
+				<item id="variable"><![CDATA[iskaiguan]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="13">
+				<item id="displayorder"><![CDATA[9]]></item>
+				<item id="title"><![CDATA[是否开启回帖提醒]]></item>
+				<item id="description"><![CDATA[自动回帖时是否给发帖人发送一条站内消息提醒]]></item>
+				<item id="variable"><![CDATA[tixing]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="14">
+				<item id="displayorder"><![CDATA[9]]></item>
+				<item id="title"><![CDATA[是否开启多帖模式]]></item>
+				<item id="description"><![CDATA[多帖模式（随机回复符合条件的帖子）与单帖模式（回复指定TID，多个用英文逗号隔开）允许共存]]></item>
+				<item id="variable"><![CDATA[isduotie]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="15">
+				<item id="displayorder"><![CDATA[11]]></item>
+				<item id="title"><![CDATA[自动回复内容]]></item>
+				<item id="description"><![CDATA[格式：一行一句
+分版块没有设置自动回复内容时将随机抽取这里的自动回复内容作为回帖内容
+变量替换：{name}=回帖用户名，{author}=楼主用户名，{date}=当前日期，{time}=当前时间，{subject}帖子标题，{forum}=当前版块，{biaoqing} = 随机表情]]></item>
+				<item id="variable"><![CDATA[autocontent]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[看帖回帖是美德！:lol
+这是什么东东啊
+小手一抖，钱钱到手！
+我是来刷分的，嘿嘿
+路过，学习下
+有道理。。。
+不错不错，楼主您辛苦了。。。
+帮帮顶顶！！
+路过，支持一下啦
+写的真的很不错
+好好 学习了 确实不错
+真是 收益 匪浅
+相当不错，感谢无私分享精神！
+学习了，不错，讲的太有道理了
+沙发！沙发!
+我抢、我抢、我抢沙发~
+帮你顶下哈！！
+我是个凑数的。。。
+找到好贴不容易，我顶你了，谢了
+有竞争才有进步嘛
+学习了，谢谢分享、、、
+不知该说些什么。。。。。。就是谢谢
+支持一下:lol
+没看完~~~~~~ 先顶，好同志
+过来看看的
+谢谢楼主，共同发展]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="16">
+				<item id="displayorder"><![CDATA[12]]></item>
+				<item id="title"><![CDATA[自动回帖版块]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[bankuai]]></item>
+				<item id="type"><![CDATA[forums]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[2]]></item>
+				</item>
+			</item>
+			<item id="17">
+				<item id="displayorder"><![CDATA[13]]></item>
+				<item id="title"><![CDATA[回复多少小时内的贴子]]></item>
+				<item id="description"><![CDATA[时间单位为小时，如填写24将回复24小时内的帖子]]></item>
+				<item id="variable"><![CDATA[globaltime]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[8760]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="18">
+				<item id="displayorder"><![CDATA[14]]></item>
+				<item id="title"><![CDATA[过虑多久内的帖子不回复]]></item>
+				<item id="description"><![CDATA[单位：小时
+如1则1小时内的帖子不参与自动回帖]]></item>
+				<item id="variable"><![CDATA[begintime]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="19">
+				<item id="displayorder"><![CDATA[15]]></item>
+				<item id="title"><![CDATA[多少秒调用一次自动回帖]]></item>
+				<item id="description"><![CDATA[回帖间隔时间单位：秒
+在网站有人访问的时候，多少秒执行一次自动回帖]]></item>
+				<item id="variable"><![CDATA[huitiesj]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[10]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="20">
+				<item id="displayorder"><![CDATA[16]]></item>
+				<item id="title"><![CDATA[回帖次数模式]]></item>
+				<item id="description"><![CDATA[最高次数：当帖子达到最高次数（回帖次数）的帖子将不在回帖
+每日限回：当一天回复达到数值（回帖次数）将不在回帖（只针对多帖模式，新帖跟单帖还会回帖）]]></item>
+				<item id="variable"><![CDATA[xh_day]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[0 = 最高次数
+1 = 每日限回]]></item>
+			</item>
+			<item id="21">
+				<item id="displayorder"><![CDATA[17]]></item>
+				<item id="title"><![CDATA[回帖次数]]></item>
+				<item id="description"><![CDATA[回复数小于等于回帖次数的帖子可以参加自动回复，免费版最多支持回复5次,商业版无限制。
+最高次数：同一帖子最多允许回复的次数。
+每日限回：每日最高回复次数]]></item>
+				<item id="variable"><![CDATA[cishu]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[30]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="22">
+				<item id="displayorder"><![CDATA[74]]></item>
+				<item id="title"><![CDATA[指定马甲功能用户组]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[user_majia]]></item>
+				<item id="type"><![CDATA[groups]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[10]]></item>
+					<item id="1"><![CDATA[11]]></item>
+					<item id="2"><![CDATA[12]]></item>
+					<item id="3"><![CDATA[13]]></item>
+					<item id="4"><![CDATA[14]]></item>
+					<item id="5"><![CDATA[15]]></item>
+				</item>
+			</item>
+			<item id="23">
+				<item id="displayorder"><![CDATA[76]]></item>
+				<item id="title"><![CDATA[自动回帖开始时间段]]></item>
+				<item id="description"><![CDATA[24小时制(0-23)，请填写整数，可以与结束时间段相同，例如我开始填0时，结束填23时，那么回帖时间则是每天的00:00-23:59.
+不支持隔天设置（如22：00-1：00）]]></item>
+				<item id="variable"><![CDATA[ks]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="24">
+				<item id="displayorder"><![CDATA[77]]></item>
+				<item id="title"><![CDATA[自动回帖结束时间段]]></item>
+				<item id="description"><![CDATA[24小时制，请填写整数,实际结束时间为该点的59分，例：如果我填写的是22,那么实际结束时间为22：59.]]></item>
+				<item id="variable"><![CDATA[js]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[23]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="25">
+				<item id="displayorder"><![CDATA[78]]></item>
+				<item id="title"><![CDATA[每次循环随机回复个数]]></item>
+				<item id="description"><![CDATA[每次自动回帖循环随机回复多少个帖子]]></item>
+				<item id="variable"><![CDATA[num]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="26">
+				<item id="displayorder"><![CDATA[79]]></item>
+				<item id="title"><![CDATA[是否开启单帖模式]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[isdt]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="27">
+				<item id="displayorder"><![CDATA[80]]></item>
+				<item id="title"><![CDATA[单帖模式帖子tid]]></item>
+				<item id="description"><![CDATA[帖子tid，多个用英文逗号隔开如tid1,tid2]]></item>
+				<item id="variable"><![CDATA[dttid]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[436,170,533,46]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="28">
+				<item id="displayorder"><![CDATA[81]]></item>
+				<item id="title"><![CDATA[单帖每次回复多少个TID]]></item>
+				<item id="description"><![CDATA[触发单帖回复时在单帖模式TID中随机抽取多少个TID进行回复]]></item>
+				<item id="variable"><![CDATA[dt_num]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="29">
+				<item id="displayorder"><![CDATA[82]]></item>
+				<item id="title"><![CDATA[单帖模式次数限制]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[dtcishu]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[999]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="30">
+				<item id="displayorder"><![CDATA[82]]></item>
+				<item id="title"><![CDATA[单帖模式时间间隔]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[dantietime]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[5]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="31">
+				<item id="displayorder"><![CDATA[82]]></item>
+				<item id="title"><![CDATA[回帖奖励积分类型]]></item>
+				<item id="description"><![CDATA[如开启回帖奖励，请选择一种奖励积分类型]]></item>
+				<item id="variable"><![CDATA[jflx]]></item>
+				<item id="type"><![CDATA[extcredit]]></item>
+				<item id="value"><![CDATA[2]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="32">
+				<item id="displayorder"><![CDATA[82]]></item>
+				<item id="title"><![CDATA[是否开启回帖奖励]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[isjiangli]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="33">
+				<item id="displayorder"><![CDATA[83]]></item>
+				<item id="title"><![CDATA[奖励积分数]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[jfs]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="34">
+				<item id="displayorder"><![CDATA[84]]></item>
+				<item id="title"><![CDATA[是否开启浏览量自增长]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[isview]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="35">
+				<item id="displayorder"><![CDATA[85]]></item>
+				<item id="title"><![CDATA[查看数小于多少的帖子]]></item>
+				<item id="description"><![CDATA[取出浏览量小于多少的帖子用来自增长]]></item>
+				<item id="variable"><![CDATA[viewsnum]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[1000]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="36">
+				<item id="displayorder"><![CDATA[86]]></item>
+				<item id="title"><![CDATA[每次自增长最小值]]></item>
+				<item id="description"><![CDATA[规则：(每次自增长数量最小值跟每次自增长数量最大值)中的随机一个数+原帖浏览=作为新的浏览量]]></item>
+				<item id="variable"><![CDATA[smallv]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="37">
+				<item id="displayorder"><![CDATA[87]]></item>
+				<item id="title"><![CDATA[每次自增长数量最大值]]></item>
+				<item id="description"><![CDATA[规则：(每次自增长数量最小值跟每次自增长数量最大值)中的随机一个数+原帖浏览=作为新的浏览量]]></item>
+				<item id="variable"><![CDATA[bigv]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[10]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="38">
+				<item id="displayorder"><![CDATA[88]]></item>
+				<item id="title"><![CDATA[过虑多久的帖子不增长]]></item>
+				<item id="description"><![CDATA[单位：小时
+过虑多少小时内的帖子不参与浏览量自增长，默认0不过虑]]></item>
+				<item id="variable"><![CDATA[viewstarttime]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="39">
+				<item id="displayorder"><![CDATA[89]]></item>
+				<item id="title"><![CDATA[自增长多少小时内的帖子]]></item>
+				<item id="description"><![CDATA[单位：小时
+取多少小时内的帖子参与浏览量自增长（除过虑不参与浏览量自增长的帖子外）默认自增长8760小时内（即1年内）的帖子]]></item>
+				<item id="variable"><![CDATA[viewendtime]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[8760]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="40">
+				<item id="displayorder"><![CDATA[90]]></item>
+				<item id="title"><![CDATA[浏览量自增长时间间隔]]></item>
+				<item id="description"><![CDATA[单位：秒
+多久执行一次浏览量自增长程序]]></item>
+				<item id="variable"><![CDATA[viewtime]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[10]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="41">
+				<item id="displayorder"><![CDATA[91]]></item>
+				<item id="title"><![CDATA[每次自增长多少个帖子]]></item>
+				<item id="description"><![CDATA[每次执行代码取多少个帖子自动增长浏览量]]></item>
+				<item id="variable"><![CDATA[viewnum]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="42">
+				<item id="displayorder"><![CDATA[100]]></item>
+				<item id="title"><![CDATA[允许自动浏览量版块]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[browse_bk]]></item>
+				<item id="type"><![CDATA[forums]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[2]]></item>
+				</item>
+			</item>
+			<item id="43">
+				<item id="displayorder"><![CDATA[101]]></item>
+				<item id="title"><![CDATA[是否开启单帖浏览自增长]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[isdtviews]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="44">
+				<item id="displayorder"><![CDATA[102]]></item>
+				<item id="title"><![CDATA[单帖浏览量自增长TID]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[dtviewstid]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[502,1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="45">
+				<item id="displayorder"><![CDATA[103]]></item>
+				<item id="title"><![CDATA[单帖每次自增长多少个TID]]></item>
+				<item id="description"><![CDATA[触发单帖自增长时在单帖自增长TID中随机抽取多少个TID进行自增长]]></item>
+				<item id="variable"><![CDATA[dtview_num]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="46">
+				<item id="displayorder"><![CDATA[104]]></item>
+				<item id="title"><![CDATA[单帖自增长最大值]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[dtviewsbig]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[10]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="47">
+				<item id="displayorder"><![CDATA[104]]></item>
+				<item id="title"><![CDATA[单帖自增长最小值]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[dtviewssmall]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="48">
+				<item id="displayorder"><![CDATA[105]]></item>
+				<item id="title"><![CDATA[浏览量单帖时间间隔]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[dtvtime]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[5]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="49">
+				<item id="displayorder"><![CDATA[106]]></item>
+				<item id="title"><![CDATA[单帖最大浏览量]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[dtbigv]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[10000]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="50">
+				<item id="displayorder"><![CDATA[107]]></item>
+				<item id="title"><![CDATA[是否开启新帖触发回帖]]></item>
+				<item id="description"><![CDATA[开启开关则只要有发布新帖程序将直接会跟着随机回复一条回复，只回复1条，然后由多帖随机模式接着自动回复]]></item>
+				<item id="variable"><![CDATA[isxintie]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="51">
+				<item id="displayorder"><![CDATA[108]]></item>
+				<item id="title"><![CDATA[新帖触发回帖内容]]></item>
+				<item id="description"><![CDATA[一行一句]]></item>
+				<item id="variable"><![CDATA[nierong]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[沙发！沙发!
+小手一抖，沙发到手！]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="52">
+				<item id="displayorder"><![CDATA[109]]></item>
+				<item id="title"><![CDATA[新帖触发时间间隔]]></item>
+				<item id="description"><![CDATA[单位：秒
+填写0可以实现秒回新帖抢沙发]]></item>
+				<item id="variable"><![CDATA[xintietime]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[5]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="53">
+				<item id="displayorder"><![CDATA[110]]></item>
+				<item id="title"><![CDATA[过虑帖子列表]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[gltid]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="54">
+				<item id="displayorder"><![CDATA[111]]></item>
+				<item id="title"><![CDATA[是否开启门户回帖]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[ispro]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="55">
+				<item id="displayorder"><![CDATA[112]]></item>
+				<item id="title"><![CDATA[门户回帖时间间隔]]></item>
+				<item id="description"><![CDATA[单位：秒
+两次触发回帖时间间隔]]></item>
+				<item id="variable"><![CDATA[protime]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[10]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="56">
+				<item id="displayorder"><![CDATA[113]]></item>
+				<item id="title"><![CDATA[门户回帖内容]]></item>
+				<item id="description"><![CDATA[一行一句
+变量替换：{name}=回帖用户名，{author}=楼主用户名，{date}=当前日期，{time}=当前时间，{subject}帖子标题]]></item>
+				<item id="variable"><![CDATA[promessage]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[看帖回帖是美德！:lol
+这是什么东东啊
+小手一抖，钱钱到手！
+我是来刷分的，嘿嘿
+路过，学习下
+有道理。。。
+不错不错，楼主您辛苦了。。。
+帮帮顶顶！！
+路过，支持一下啦
+写的真的很不错
+好好 学习了 确实不错
+真是 收益 匪浅
+相当不错，感谢无私分享精神！
+学习了，不错，讲的太有道理了
+沙发！沙发!
+我抢、我抢、我抢沙发~
+帮你顶下哈！！
+我是个凑数的。。。
+找到好贴不容易，我顶你了，谢了
+有竞争才有进步嘛
+学习了，谢谢分享、、、
+不知该说些什么。。。。。。就是谢谢
+支持一下:lol
+没看完~~~~~~ 先顶，好同志
+过来看看的
+谢谢楼主，共同发展]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="57">
+				<item id="displayorder"><![CDATA[114]]></item>
+				<item id="title"><![CDATA[每次回复几个文章]]></item>
+				<item id="description"><![CDATA[触发回帖时一次回复多少个文章]]></item>
+				<item id="variable"><![CDATA[pronum]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="58">
+				<item id="displayorder"><![CDATA[115]]></item>
+				<item id="title"><![CDATA[过滤多久的文章不回复]]></item>
+				<item id="description"><![CDATA[单位：小时
+你不想今天的文章自动回复请填写24，填0不过虑]]></item>
+				<item id="variable"><![CDATA[prostart]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="59">
+				<item id="displayorder"><![CDATA[116]]></item>
+				<item id="title"><![CDATA[回复多久内的文章]]></item>
+				<item id="description"><![CDATA[单位：小时
+回复多少小时内的文章。默认回复8760小时内（即1年内）的帖子]]></item>
+				<item id="variable"><![CDATA[proend]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[8760]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="60">
+				<item id="displayorder"><![CDATA[117]]></item>
+				<item id="title"><![CDATA[过虑文章列表]]></item>
+				<item id="description"><![CDATA[把你不想被回到的文章ID填写在这里，多个用英文逗号隔开
+如：1,2,3(文章ID为1和2和3的将不被回复)]]></item>
+				<item id="variable"><![CDATA[glaid]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="61">
+				<item id="displayorder"><![CDATA[118]]></item>
+				<item id="title"><![CDATA[每日限回文章数]]></item>
+				<item id="description"><![CDATA[每天最多回复多少次，达到设置值时将不在回复]]></item>
+				<item id="variable"><![CDATA[pro_day]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[30]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="aljrq1"><![CDATA[设置成功]]></item>
+				<item id="majia_1"><![CDATA[请输入要导入的马甲帐号!一行一个]]></item>
+				<item id="majia_2"><![CDATA[帐号已被注册或用户名过长，请检查。已被注册帐号：]]></item>
+				<item id="majia_3"><![CDATA[成功导入]]></item>
+				<item id="majia_4"><![CDATA[个马甲]]></item>
+				<item id="majia_5"><![CDATA[马甲已存在，请检查。已存在UID：]]></item>
+				<item id="xx2"><![CDATA[数据清理成功]]></item>
+				<item id="autocentents_1"><![CDATA[回复定制说明]]></item>
+				<item id="autocentents_2"><![CDATA[多帖版块可以为每个版块分配一个回复内容，一行一句，这里没有设置的将调用通用的设置回复内容]]></item>
+				<item id="autocentents_3"><![CDATA[单帖tid可以为指定的每个帖子ID分配回复内容，一行一句，这里没有设置的将调用通用的设置回复内容]]></item>
+				<item id="autocentents_4"><![CDATA[回复定制说明]]></item>
+				<item id="autocentents_5"><![CDATA[回复定制说明]]></item>
+				<item id="count_1"><![CDATA[标题]]></item>
+				<item id="count_2"><![CDATA[本日、本周、本月的盈利统计不包含电脑对战]]></item>
+				<item id="count_3"><![CDATA[支持用户UID跟对战人用户名及时间段搜索]]></item>
+				<item id="count_4"><![CDATA[本日回复统计：]]></item>
+				<item id="count_5"><![CDATA[本周回复统计：]]></item>
+				<item id="count_6"><![CDATA[本月回复统计：]]></item>
+				<item id="count_7"><![CDATA[版块]]></item>
+				<item id="count_8"><![CDATA[回帖内容]]></item>
+				<item id="count_9"><![CDATA[回帖人]]></item>
+				<item id="count_10"><![CDATA[回帖时间]]></item>
+				<item id="count_11"><![CDATA[操作]]></item>
+				<item id="count_12"><![CDATA[查看]]></item>
+				<item id="avatar_1"><![CDATA[更新头像缓存]]></item>
+				<item id="avatar_2"><![CDATA[头像图片在<font color=red>source/plugin/aljrq/images/</font>目录下，如需自行添加头像请将您的头像图片上传到本目录!]]></item>
+				<item id="avatar_3"><![CDATA[请您上传头像后点击下面的“更新头像缓存”，如不在此处点击，插件将在您上传头像文件一小时后自动更新!]]></item>
+				<item id="avatar_4"><![CDATA[插件只支持jpg格式，其他格式插件将自动过滤不用!]]></item>
+				<item id="avatar_5"><![CDATA[插件默认提供图片大小200x200!]]></item>
+				<item id="avatar_6"><![CDATA[更新成功！!]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="aljrq2"><![CDATA[参数设置]]></item>
+				<item id="aljrq3"><![CDATA[格式：一行一句。]]></item>
+				<item id="aljrq4"><![CDATA[双击输入框可扩大/缩小]]></item>
+				<item id="aljrq5"><![CDATA[提交]]></item>
+				<item id="nav_1"><![CDATA[注册自动回复马甲]]></item>
+				<item id="nav_2"><![CDATA[导入论坛已有用户]]></item>
+				<item id="nav_3"><![CDATA[导入指定用户组用户]]></item>
+				<item id="nav_4"><![CDATA[管理自动回复马甲]]></item>
+				<item id="nav_5"><![CDATA[马甲功能]]></item>
+				<item id="majia_1"><![CDATA[马甲用户名:]]></item>
+				<item id="majia_2"><![CDATA[一行一个用户名<br>*请输入网站不存在的马甲用户名，直接输入一行一个提交后即生成新马甲]]></item>
+				<item id="majia_3"><![CDATA[统一密码设置:]]></item>
+				<item id="majia_4"><![CDATA[默认密码:a1005200]]></item>
+				<item id="majia_5"><![CDATA[用户组:]]></item>
+				<item id="majia_6"><![CDATA[提交]]></item>
+				<item id="majia_7"><![CDATA[按 Enter 键可随时提交您的修改]]></item>
+				<item id="uidmajia_1"><![CDATA[一行一个UID！<br>*（友情提示：为避免网站会员投诉，导入前请确保导入的帐号UID是非真实会员。）]]></item>
+				<item id="glmajia_1"><![CDATA[用户名]]></item>
+				<item id="glmajia_2"><![CDATA[积分]]></item>
+				<item id="glmajia_3"><![CDATA[发帖数]]></item>
+				<item id="glmajia_4"><![CDATA[操作]]></item>
+				<item id="glmajia_5"><![CDATA[禁用]]></item>
+				<item id="glmajia_6"><![CDATA[启用]]></item>
+				<item id="glmajia_7"><![CDATA[全选]]></item>
+				<item id="glmajia_8"><![CDATA[删除所有马甲]]></item>
+				<item id="glmajia_9"><![CDATA[将用户彻底删除，不可还原，请慎重操作]]></item>
+				<item id="glmajia_10"><![CDATA[移除马甲]]></item>
+				<item id="glmajia_11"><![CDATA[将选定用户移出马甲队列，用户依然保留，下次可继续充当马甲使用]]></item>
+				<item id="glmajia_12"><![CDATA[删除]]></item>
+				<item id="glmajia_13"><![CDATA[上传头像]]></item>
+				<item id="glmajia_14"><![CDATA[隐藏]]></item>
+				<item id="glmajia_15"><![CDATA[确认禁用该用户？]]></item>
+				<item id="glmajia_16"><![CDATA[确认启用该用户？]]></item>
+				<item id="glmajia_17"><![CDATA[注：上传完头像需要刷新本页面才会生效，你可批量上传完后再刷新]]></item>
+				<item id="glmajia_18"><![CDATA[清空马甲]]></item>
+				<item id="admin_keyword_2"><![CDATA[时间段：]]></item>
+				<item id="nav_huifu_1"><![CDATA[回复定制]]></item>
+				<item id="nav_huifu_2"><![CDATA[多帖版块]]></item>
+				<item id="nav_huifu_3"><![CDATA[单帖tid]]></item>
+				<item id="nav_tj_1"><![CDATA[论坛]]></item>
+				<item id="nav_tj_2"><![CDATA[门户]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+		<item id="upgradefile"><![CDATA[upgrade.php]]></item>
+	</item>
+</root>

@@ -1,0 +1,133 @@
+<style>
+.bindmain{font-family: "Hiragino Sans GB","Microsoft YaHei","����",Helvetica,Arial,Tahoma,sans-serif;}
+.help_box{display: inline-block;font-size: 14px;width: 50%;vertical-align: top;text-align: left;}
+.help_box h3{font-size: 18px;font-weight: 400;font-style: normal;}
+.app_advance_item{margin-bottom: 20px;}
+.app_advance_item{position: relative;margin: 10px 0 10px 56px;}
+.app_advance_item dd{color: #9e9f9f;}
+.icon_app_advance{width: 38px;height: 38px;vertical-align: middle;display: inline-block;}
+.icon_app_advance.link{background: url("source/plugin/singcere_wechat/template/static/common.png") 0 -524px no-repeat;}
+.icon_app_advance.account{background: url("source/plugin/singcere_wechat/template/static/common.png") 0 -572px no-repeat;}
+.icon_app_advance.more{background: url("source/plugin/singcere_wechat/template/static/common.png") 0 -620px no-repeat;}
+.app_advance_item .icon_app_advance{position: absolute;top: 3px;left: -56px;}
+#wechatform{float: left;}
+#wechatform .p_chk{position: absolute;z-index: 1;padding-left: 10px;width: 390px;color: red;font-weight: 700;font-family: Tahoma,Helvetica,'SimSun',sans-serif;}
+.bindmain a {text-decoration:none;}
+.alert{padding: 8px 35px 8px 14px;margin-bottom: 3px;text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);background-color: #FCF8E3;border: 1px solid #FBEED5;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;color: #C09853;}
+.alert-success{background-color: #DFF0D8;border-color: #D6E9C6;color: #468847; }
+.alert-success:hover{background-color: #D6E9C6;}
+</style>
+
+
+<!--{if $_G['member']['openid']}-->
+	<div class="bindmain">
+		<p class="pbm bbda xi1">{lang singcere_wechat:spacecp_binded_check}</p> 
+		<!--{if $bindmember[isregister]}-->
+			<script src="static/js/register.js?{VERHASH}" type="text/javascript"></script><br/> 
+			<h2>{lang singcere_wechat:spacecp_newusername_title}</h2>
+			<form id="wechatform" method="post" autocomplete="off" action="plugin.php?id=singcere_wechat:spacecp">
+				<input type="hidden" name="formhash" value="{FORMHASH}" />
+				<div class="password">
+					<table cellspacing="0" cellpadding="0" class="tfm">
+						<!--{if $allowusername}-->
+						<tr>
+							<th><label>{lang singcere_wechat:spacecp_username}</label></th>
+							<td><input type="text" id="newusername" name="newusername" size="30" maxlength="15" class="px p_fre" tabindex="1" value="$_G[username]"/></td>
+							<td class="tipcol"><i id="tip_newusername" class="p_tip"></i><kbd id="chk_newusername" class="p_chk"></kbd></td>
+						</tr>
+						<!--{/if}-->
+						<tr>
+							<th><label>{lang singcere_wechat:spacecp_pw}</label></th>
+							<td><input type="password" id="newpassword1" name="newpassword1" size="30" class="px p_fre" tabindex="1" /></td>
+							<td class="tipcol"><i id="tip_newpassword1" class="p_tip"></i><kbd id="chk_newpassword1" class="p_chk"></kbd></td>
+						</tr>
+						<tr>
+							<th><label>{lang singcere_wechat:spacecp_repw}</label></th>
+							<td><input type="password" id="newpassword2" name="newpassword2" size="30" class="px p_fre" tabindex="2" /></td>
+							<td class="tipcol"><i id="tip_newpassword2" class="p_tip"></i><kbd id="chk_newpassword2" class="p_chk"></kbd></td>
+						</tr>
+						<tr>
+							<th></th>
+							<td>
+								<button type="submit" name="resetpwsubmit" value="yes" class="pn pnc"><strong>{lang submit}</strong></button>
+							</td>
+						</tr> 
+					</table>
+				</div>
+			</form>
+			<br />
+			<script type="text/javascript">
+				pwlength = 6;
+				strongpw = [];
+				$('newusername').onblur = function() { 
+					checkusername('newusername');
+				}
+				checkPwdComplexity($('newpassword1'), $('newpassword2'));
+				function checkusername(id) {
+					$('tip_' + id).style.display = 'none';
+					errormessage(id);
+					var username = trim($(id).value);
+					if($('tip_' + id).parentNode.className.match(/ p_right/) && (username == '' || username == lastusername)) {
+						return;
+					} else {
+						lastusername = username;
+					}
+					if(username.match(/<|"/ig)) {
+						errormessage(id, '{lang singcere_wechat:spacecp_username_danger}');
+						return;
+					}
+					var unlen = username.replace(/[^\x00-\xff]/g, "**").length;
+					if(unlen < 3 || unlen > 15) {
+						errormessage(id, unlen < 3 ? '{lang singcere_wechat:spacecp_username_length3}' : '{lang singcere_wechat:spacecp_username_length15}');
+						return;
+					}
+					var x = new Ajax();
+					$('tip_' + id).parentNode.className = $('tip_' + id).parentNode.className.replace(/ p_right/, '');
+					x.get('plugin.php?id=singcere_wechat:spacecp&inajax=yes&infloat=register&handlekey=register&ajaxmenu=1&action=checkusername&newusername=' + (BROWSER.ie && document.charset == 'utf-8' ? encodeURIComponent(username) : username.replace(/%/g, '%25').replace(/#/g, '%23')), function(s) {
+						errormessage(id, s);
+					});
+				}
+			</script>
+		<!--{/if}-->
+	</div> 
+<!--{/if}-->
+
+<!--{if !$_G['member']['openid'] || ($_G['member']['openid'] && !$bindmember[isregister]) }-->
+	<div class="mtw bm2 cl bindmain">
+		<div class="bm2_b bw0 hm" style="padding-top: 70px;">
+			<!--{if $_G['member']['openid']}-->
+			<a href="javascript:;" onclick="showWindow('singcere_wechat_bind', 'plugin.php?id=singcere_wechat:bind')"><div class="alert alert-success" style="width:80%"><strong>{lang singcere_wechat:spacecp_edit_bind}</strong></div></a>
+			<!--{else}-->
+			<a href="plugin.php?id=singcere_wechat:bind" onclick="showWindow('singcere_wechat_bind', this.href);"><img src="source/plugin/singcere_wechat/template/static/icon32_wx_button.png" /></a>
+			<p class="mtn xg1">{lang singcere_wechat:spacecp_bind}</p>
+			<!--{/if}-->
+
+			
+		</div> 
+		<div class="help_box">
+		    <h2 class="xi1 xs2">{lang singcere_wechat:spacecp_do_more}</h2>
+		    <div class="app_advance_list">
+		        <dl class="app_advance_item">
+		            {lang singcere_wechat:spacecp_do_1}
+		            <dd class="icon_app_advance link">
+		            </dd>
+		        </dl>
+		        <dl class="app_advance_item">
+		            {lang singcere_wechat:spacecp_do_2}
+		            <dd class="icon_app_advance account">
+		            </dd>
+		        </dl>
+		        <dl class="app_advance_item last">
+		            {lang singcere_wechat:spacecp_do_3}
+		            <dd class="icon_app_advance more">
+		            </dd>
+		        </dl>
+		    </div>
+		</div>
+	</div>
+<!--{/if}-->
+
+ 
+
+
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[ljqq.plugin]]></item>
+	<item id="RevisionID"><![CDATA[21985]]></item>
+	<item id="SN"><![CDATA[20170330222WppX2g8YZ]]></item>
+	<item id="RevisionDateline"><![CDATA[1458190802]]></item>
+	<item id="Data">
+		<item id="/template/qq.htm"><![CDATA[07eebef652929926c5488ab1e7b7beb3]]></item>
+		<item id="/discuz_plugin_ljqq_SC_UTF8.xml"><![CDATA[8f9436a128ea60bef1d3064376d9a3a6]]></item>
+		<item id="/discuz_plugin_ljqq_TC_UTF8.xml"><![CDATA[9bf1964d21874a5e7fd4b3e4f0a6677d]]></item>
+		<item id="/app.inc.php"><![CDATA[3c5a202679a104bc1b72a8989d5d68c8]]></item>
+		<item id="/ljqq.class.php"><![CDATA[ace8eae4be6fa5c39a01b88681c950ef]]></item>
+		<item id="/css/css.css"><![CDATA[b20bd5fd0fca706f8b96d0b9a944a724]]></item>
+		<item id="/css/css_right.css"><![CDATA[be7a658f48ed59cf0152e9e8b9a7c886]]></item>
+		<item id="/css/css_huise.css"><![CDATA[077d290cdb3090d2938fcc58896e6393]]></item>
+		<item id="/css/css_huise_right.css"><![CDATA[d3c0393a99ea5520dad4e68d962a0f36]]></item>
+		<item id="/discuz_plugin_ljqq_TC_BIG5.xml"><![CDATA[472af42351a9c6f78fa2e8b74b731162]]></item>
+		<item id="/images/img3-5_1.png"><![CDATA[61a69749092c3f1c15fbd8e4f0302811]]></item>
+		<item id="/images/img3-5_2.png"><![CDATA[db0171b9ea88b316cb8eaf74a1f714f8]]></item>
+		<item id="/images/weibo_qq.png"><![CDATA[fb4a018317dc332b73490cd3595acced]]></item>
+		<item id="/images/img3-5_h_r.png"><![CDATA[60b3f68aae7539cae50a3fc8d51e5517]]></item>
+		<item id="/images/img3-5_r.png"><![CDATA[ce5796ee6cf0b3c9a8a4db3c1f1c7e9a]]></item>
+		<item id="/images/img3-5_4.png"><![CDATA[7e025a3ee1ff4875602aac1f79c55c5f]]></item>
+		<item id="/images/logo.png"><![CDATA[c0b1c9a7fb0c34f1dab0cb50e7985249]]></item>
+		<item id="/images/weibo_sina.png"><![CDATA[e28a706d93b567ce48433d8f8a0699c4]]></item>
+		<item id="/images/img3-5_3.png"><![CDATA[5462cb4f183aa714f1b21c4391485391]]></item>
+		<item id="/images/qqq.gif"><![CDATA[16ad615dafcd132484a29cb0d2fbe71e]]></item>
+		<item id="/images/img3-5_6.png"><![CDATA[190b5c2c57fccfc4b5ac82071805a8ef]]></item>
+		<item id="/images/weixin.jpg"><![CDATA[0c1c93533d3cba823adce4a91589095e]]></item>
+		<item id="/images/img3-5_5.png"><![CDATA[fd7f5916cfc8ee156148b5957f266c69]]></item>
+		<item id="/discuz_plugin_ljqq_SC_GBK.xml"><![CDATA[e8598ab47ff10bf57477e3ce263b5fb4]]></item>
+	</item>
+</root>

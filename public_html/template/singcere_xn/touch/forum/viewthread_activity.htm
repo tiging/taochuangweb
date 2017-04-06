@@ -1,0 +1,153 @@
+<!--{eval call_user_func('sc_wechat_auth', 1);}-->
+<link rel="stylesheet" href="template/singcere_xn/src/css/activity.css?03161">
+<div class="activity-view"> 
+  <!--{if $activity['thumb']}-->
+  <div class="activity-view-cover"> <img src="$activity['thumb']" alt="$_G[forum_thread][subject]"> <i class="ico-guanfang"></i> </div>
+  <!--{/if}-->
+  <div class="activity-view-c p10"> 
+    <!--{if $activityclose}--><i class="ico-apply-close"></i><!--{/if}-->
+    <div class="activity-view-title c-4c7f00"> $_G[forum_thread][subject] </div>
+    <div class="activity-view-message mb-15">
+      <p><span class="c_aaaaaa">活动发起：</span>商家 
+        <!--{if $shops}--> 
+        （{loop $shops $key $value}
+        $value[name]
+        {/loop}） 
+        <!--{/if}--> 
+      </p>
+      <p><span class="c_aaaaaa">活动时间：</span><!--{if $activity['starttimeto']}-->{lang activity_start_between}<!--{else}-->$activity[starttimefrom]<!--{/if}--></p>
+      <p><span class="c_aaaaaa">活动类型：</span>线下活动</p>
+      <p><span class="c_aaaaaa">活动费用：</span><!--{if $activity['cost']}-->{$activity['cost']}元<!--{else}-->免费<!--{/if}--></p>
+      <!--{if $activity['gender'] == 1}-->
+      <p> <span class="c_aaaaaa">性别要求：</span>{lang male} </p>
+      <!--{elseif $activity['gender'] == 2}-->
+      <p> <span class="c_aaaaaa">性别要求：</span>{lang female} </p>
+      <!--{/if}--> 
+      <!--{if $activity['expiration']}-->
+      <p> <span class="c_aaaaaa">报名截止：</span>$activity[expiration] </p>
+      <!--{/if}-->
+      <p><em class="c-4c7f00">{$_G[forum_thread][views]}</em> 人关注，<em class="c-4c7f00">{$allapplynum}</em> 人报名，剩余 <em class="c-4c7f00">{$aboutmembers}</em> 个名额</p>
+    </div>
+    <div class="activity-view-intro mb-15">
+      <div class="hd"> <span class="activ-tit">活动介绍</span> </div>
+      <div class="intro-tips">
+        <table cellspacing="0" cellpadding="0">
+          <tr>
+            <td class="t_f" id="postmessage_$post[pid]">$post[message]</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    
+    <!--{if !$_G['uid'] && !$activityclose}-->
+    <div id="activitylogin">
+      <div class="hd"> <span class="activ-tit">活动报名</span></div>
+      <div class="mtn"><a class="pn zg-btn-green" href="member.php?mod=logging&action=login&mobile=2">请登录后报名</a></div>
+    </div>
+    <!--{/if}--> 
+    
+    <!--{if $_G['uid'] && !$activityclose && (!$applied || $isverified == 2)}-->
+    <div id="activityjoin">
+      <div class="hd"> <span class="activ-tit">活动报名</span></div>
+      <div class="activtiy-post t_f"> 
+        <!--{if $_G['forum']['status'] == 3 && helper_access::check_module('group') && $isgroupuser != 'isgroupuser'}-->
+        <p>{lang activity_no_member}</p>
+        <p><a href="forum.php?mod=group&action=join&fid=$_G[fid]" class="xi2">{lang activity_join_group}</a></p>
+        <!--{else}-->
+        <form name="activity" id="activity" method="post" autocomplete="off" action="forum.php?mod=misc&action=activityapplies&fid=$_G[fid]&tid=$_G[tid]&pid=$post[pid]{if $_GET['from']}&from=$_GET['from']{/if}&mobile=yes" >
+          <input type="hidden" name="formhash" value="{FORMHASH}" />
+          
+          <!--{if $_G['setting']['activitycredit'] && $activity['credit'] && !$applied}-->
+          <p class="xi1">{lang activity_need_credit} $activity[credit] {$_G['setting']['extcredits'][$_G['setting']['activitycredit']][title]}</p>
+          <!--{/if}--> 
+          
+          <!--{if !empty($activity['ufield']['userfield'])}--> 
+          <!--{loop $activity['ufield']['userfield'] $fieldid}--> 
+          <!--{if $settings[$fieldid][available]}-->
+          <p> <strong class="tit">$settings[$fieldid][title]</strong> <span class="tit_r">$htmls[$fieldid]</span> </p>
+          <!--{/if}--> 
+          <!--{/loop}--> 
+          <!--{/if}--> 
+          <!--{if !empty($activity['ufield']['extfield'])}--> 
+          <!--{loop $activity['ufield']['extfield'] $extname}-->
+          <p> <strong class="tit"> $extname</strong> <span class="tit_r">
+            <input type="text" name="$extname" maxlength="200" class="txt" value="{if !empty($ufielddata)}$ufielddata[extfield][$extname]{/if}" />
+            </span> </p>
+          
+          <!--{/loop}--> 
+          <!--{/if}-->
+          <p> <strong class="tit">参加理由</strong> <span class="tit_r">
+            <input name="message" type="text" rows="1" class="txt" placeholder="">
+            $applyinfo[message]
+            </input>
+            </span> </p>
+          <p class="o"> 
+            <!--{if $_G['setting']['activitycredit'] && $activity['credit'] && checklowerlimit(array('extcredits'.$_G['setting']['activitycredit'] => '-'.$activity['credit']), $_G['uid'], 1, 0, 1) !== true}-->
+          <p class="xi1">{$_G['setting']['extcredits'][$_G['setting']['activitycredit']][title]} {lang not_enough}$activity['credit']</p>
+          <!--{else}-->
+          <input type="hidden" name="activitysubmit" value="true">
+          <em class="xi1" id="return_activityapplies"></em>
+          <button type="submit" class="pn zg-btn-blue"><i class="fa fa-pencil-square pr5"></i>提交报名资料</button>
+          <!--{/if}-->
+          </p>
+          <p class="tip_red">提示：报名后须分享到朋友圈才生效。</p>
+        </form>
+        <script type="text/javascript">
+					function succeedhandle_activityapplies(locationhref, message) {
+						showDialog(message, 'notice', '', 'location.href="' + locationhref + '"');
+					}
+				</script> 
+        <!--{/if}--> 
+      </div>
+    </div>
+    <!--{elseif $_G['uid'] && !$activityclose && $applied}-->
+    <div id="activityjoincancel">
+      <div class="bm_c pd5">
+        <div class="hd"> <span class="activ-tit">您已报名</span></div>
+        <form name="activity" method="post" autocomplete="off" action="forum.php?mod=misc&action=activityapplies&fid=$_G[fid]&tid=$_G[tid]&pid=$post[pid]{if $_GET['from']}&from=$_GET['from']{/if}">
+          <input type="hidden" name="formhash" value="{FORMHASH}" />
+          <p class="mtn">
+            <button type="submit" name="activitycancel" class="pn zg-btn-red" value="true">点此取消报名</button>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--{/if}--> 
+    
+    <!--{if $applylist}-->
+    <div class="activity-view-apply mb-15">
+      <div class="hd"> <span class="activ-tit"><!--{if !$activityclose}-->{lang activity_new_join}{$applynumbers}{lang activity_member_unit}<!--{else}-->参加名单 {$applynumbers}人<!--{/if}--></span> </div>
+      <div class="apply-avatar clear">
+        <ul>
+          <!--{loop $applylist $apply}-->
+          <li><!--{echo avatar($apply[uid], 'small')}-->$apply[username]</li>
+          <!--{/loop}-->
+        </ul>
+      </div>
+    </div>
+    <!--{/if}--> 
+    
+    <!--{if $applylistverified}-->
+    <div class="activity-view-apply mb-15">
+      <div class="hd"> <span class="activ-tit">{lang activity_new_signup}{$noverifiednum}{lang activity_member_unit}</span> </div>
+      <div class="apply-avatar clear">
+        <ul>
+          <!--{loop $applylistverified $apply}-->
+          <li><!--{echo avatar($apply[uid], 'small')}-->$apply[username]</li>
+          <!--{/loop}-->
+        </ul>
+      </div>
+    </div>
+    <!--{/if}--> 
+    
+  </div>
+</div>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.4"></script> 
+<script type="text/javascript">
+// 百度地图API功能
+var map = new BMap.Map("allmap");
+map.centerAndZoom(new BMap.Point({$activity1[activity_lat]}), 17);
+var marker1 = new BMap.Marker(new BMap.Point({$activity1[activity_lat]}));  // 创建标注
+map.addOverlay(marker1);              // 将标注添加到地图中
+</script>
+
