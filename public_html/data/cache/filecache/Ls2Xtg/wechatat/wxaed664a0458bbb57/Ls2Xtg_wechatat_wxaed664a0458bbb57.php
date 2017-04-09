@@ -3,7 +3,7 @@ $data = array (
   'exp' => 0,
   'data' => 
   array (
-    'token' => 'yJ-76ZsZxZGL9yEjLgtAU39EyS7jjd79LtOfUkQjJGvQhgw9yFm36HG4_ACKNTu4GoyULyNIGHTme3t-xj2jHMv4gUVpvKoC0HRn0SkhyhH8tDHt59EbZB2DReY4wt8sWLBhAEALAQ',
-    'expiration' => 1491406464,
+    'token' => '5j3tMr6ehL5reJoOg2wAOpXKjArLG7mJoc3lcj2kdPDzG6R3opXVtHDVbLXkOz7VjpCuFeYcnBZu_xlCExvbporhABNnR1msvHGjeJE-DtKBvZzpNt_kAnBe9n3ryM1tYAZjAFAMON',
+    'expiration' => 1491760060,
   ),
 );
