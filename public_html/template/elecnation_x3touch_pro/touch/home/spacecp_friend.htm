@@ -1,0 +1,259 @@
+<!--{template common/header}-->
+
+<!-- header start -->
+<header class="header">
+    <div class="nav">
+        <div class="category">
+		<!--{if $op == 'request'}-->
+			{lang friend_request}
+		<!--{elseif $op == 'group'}-->
+			{lang set_friend_group}
+        <!--{elseif $op == 'ignore'}-->
+        	{lang lgnore_friend}
+		<!--{elseif $op == 'editnote'}-->
+        	{lang friend_note}
+        <!--{else}-->
+        	{lang add_friend}
+        <!--{/if}-->
+        
+        <div id="elecnation_nav_left">
+            <a href="javascript:;" onclick="history.go(-1)"><img src="{$_G['style']['styleimgdir']}/touch/common/images/icon_back.png" width="41" height="30"/></a>
+        </div>
+        <div id="elecnation_nav_right">
+            <a href="home.php?mod=space&uid={$_G[uid]}&do=profile&mycenter=1" class="z"><img src="{$_G['style']['styleimgdir']}/touch/common/images/icon_center.png" width="41" height="30"/></a>
+        </div>
+        </div>
+    </div>
+</header>
+<!-- header end -->
+<!--{subtemplate home/space_friend_nav}-->
+
+<div class="wp">
+<div style="padding:8px;">
+		<!--{if $op =='ignore'}-->
+        	<div id="elecnation_comment_title_line" style="margin-top:18px;"></div>
+    		<div id="elecnation_comment_title" style="width:68px;"><em id="return_$_GET[handlekey]">{lang lgnore_friend}</em></div>
+
+			<form method="post" autocomplete="off" id="friendform_{$uid}" name="friendform_{$uid}" action="home.php?mod=spacecp&ac=friend&op=ignore&uid=$uid&confirm=1">
+				<input type="hidden" name="referer" value="{echo dreferer()}">
+				<input type="hidden" name="friendsubmit" value="true" />
+				<input type="hidden" name="formhash" value="{FORMHASH}" />
+				<input type="hidden" name="from" value="$_GET[from]" />
+				<div class="elecnation_center" style="padding:8px;">{lang determine_lgnore_friend}</div>
+				<div class="elecnation_center" style="padding:8px;">
+					<button type="submit" name="friendsubmit_btn" class="pn pnc" value="true"><strong>{lang determine}</strong></button>
+				</div>
+			</form>
+			<script type="text/javascript">
+				function succeedhandle_{$_GET[handlekey]}(url, msg, values) {
+					if(values['from'] == 'notice') {
+						deleteQueryNotice(values['uid'], 'pendingFriend');
+					} else if(typeof friend_delete == 'function') {
+						friend_delete(values['uid']);
+					}
+				}
+			</script>
+
+		<!--{elseif $op=='editnote'}-->
+
+			<div id="elecnation_comment_title_line" style="margin-top:18px;"></div>
+    		<div id="elecnation_comment_title" style="width:68px;"><em id="return_$_GET[handlekey]">{lang friend_note}</em></div>
+            
+			<form method="post" autocomplete="off" id="editnoteform_{$uid}" name="editnoteform_{$uid}" action="home.php?mod=spacecp&ac=friend&op=editnote&uid=$uid">
+				<input type="hidden" name="referer" value="{echo dreferer()}">
+				<input type="hidden" name="editnotesubmit" value="true" />
+				<input type="hidden" name="formhash" value="{FORMHASH}" />
+				<div class="elecnation_center" style="padding:8px;">
+					{lang friend_note_message}
+					<input type="text" name="note" value="$friend[note]" size="36" style="font-size:13px; padding:6px;" />
+				</div>
+				<div class="elecnation_center" style="padding:8px;">
+					<button type="submit" name="editnotesubmit_btn" class="pn pnc" value="true"><strong>{lang determine}</strong></button>
+				</div>
+			</form>
+			<script type="text/javascript">
+				function succeedhandle_$_GET[handlekey](url, msg, values) {
+					var uid=values['uid'];
+					var elem = $('friend_note_'+uid);
+					if(elem) {
+						elem.innerHTML = values['note'];
+					}
+				}
+			</script>
+
+		<!--{elseif $op=='group'}-->
+
+			<div id="elecnation_comment_title_line" style="margin-top:18px;"></div>
+    		<div id="elecnation_comment_title" style="width:68px;"><em id="return_$_GET[handlekey]">{lang set_friend_group}</em></div>
+
+			<!--{if $list}-->
+			<form method="post" autocomplete="off" action="home.php?mod=spacecp&ac=friend&op=group&ref">
+				<div id="friend_ul">
+					<div>
+					<!--{loop $list $key $value}-->
+						<div style="line-height:30px; border-bottom:1px dotted #DDDDDD; padding:8px 0;">
+                        	<span class="z" style="margin-right:8px;"><input type="checkbox" name="fuids[]" value="$value[uid]" /></span>
+                            <div id="elecnation_friend_avatar">
+                                <div id="elecnation_friend_avatar_rad">
+                                    <img src="<!--{avatar($value[uid], small, true)}-->" width="24" height="24" />
+                                </div>
+                            </div>
+                            
+                            <span class="z" style="margin-left:8px;">
+                                <h4><a href="home.php?mod=space&uid=$value[uid]">$value[username]</a></h4>
+                            </span>
+                            <span class="elecnation_time z">$value[note]</span>                            
+                            <span class="y">$value[group]</span>
+                            
+                        <div id="elecnation_clear"></div>
+						</div>
+					<!--{/loop}-->
+					</div>
+				</div>
+				<div class="elecnation_center" style="padding:8px 0;">
+					{lang set_member_group}
+					<select name="group">
+					<!--{loop $groups $key $value}-->
+						<option value="$key">$value</option>
+					<!--{/loop}-->
+					</select>&nbsp;
+					<button type="submit" name="btnsubmit" value="true"><strong>{lang determine}</strong></button>
+				</div>
+				<!--{if $multi}--><div>$multi</div><!--{/if}-->
+				<input type="hidden" name="formhash" value="{FORMHASH}" />
+				<input type="hidden" name="groupsubmin" value="true" />
+			</form>
+			<!--{else}-->
+			<div id="elecnation_noinfo">{lang no_friend_list}</div>
+			<!--{/if}-->
+
+
+		<!--{elseif $op=='request'}-->
+
+			<div style="text-align:center;">
+				<div id="elecnation_comment_title_line" style="margin-top:18px;"></div>
+    			<div id="elecnation_comment_title" style="width:188px;">{lang select_friend_application_do}</div>
+				<!--{if $maxfriendnum}-->
+				<div class="elecnation_center" style="padding:8px;">({lang max_friend_num})</div>
+				<!--{/if}-->
+			</div>
+			<!--{if $list}-->
+			<div id="friend_ul">
+				<!--{loop $list $key $value}-->
+                <div id="friend_tbody_$value[fuid]" style="border-bottom:1px dotted #DDDDDD; padding:8px 0;">
+                <div style="width:310px; margin:0 auto; text-align:center;">
+                    <div class="elecnation_friedn_bt_float">
+                        <a href="home.php?mod=spacecp&ac=friend&op=add&uid=$value[fuid]&handlekey=afrfriendhk_{$value[uid]}" id="afr_$value[fuid]">
+                              <div class="elecnation_friend_bt" style="border:1px solid #73AA66;">{lang approval_the_request}</div>
+                        </a>
+                    </div>
+                        
+                    <div id="elecnation_friend_avatar_mid">
+                        <div id="elecnation_friend_avatar_mid_rad">
+                            <a href="home.php?mod=space&uid=$value[fuid]"><img src="<!--{avatar($value[fuid], middle, true)}-->" width="60" height="60" style="border:none;" /></a>
+                    	</div>
+                    </div>
+                        
+                    <div class="elecnation_friedn_bt_float">
+                        <a href="home.php?mod=spacecp&ac=friend&op=ignore&uid=$value[fuid]&confirm=1&handlekey=afifriendhk_{$value[uid]}" id="afi_$value[fuid]" style="color:#D90000;">
+                        	<div class="elecnation_friend_bt" style="border:1px solid #D90000;">
+                            	{lang ignore}{lang request}
+                            </div>
+                        </a>
+                    </div>
+                    <div id="elecnation_clear"></div>
+                    <div style="text-align: center; padding:8px 16px;">
+                    	<!--{date($value[dateline], 'n-j H:i')}-->, $value[fusername] {lang invite_you_to_friends}
+                        <!--{if $value[note]}--><br><img src="{$_G['style']['styleimgdir']}/touch/common/images/qa.gif"> $value[note] <img src="{$_G['style']['styleimgdir']}/touch/common/images/qz.gif"><!--{/if}-->
+                        </div>
+                    </div>
+                </div>
+				<!--{/loop}-->
+			</div>
+			<!--{if $multi}--><div class="pgs cl mtm">$multi</div><!--{/if}-->
+			<!--{else}-->
+			<div id="elecnation_noinfo">{lang no_new_friend_application}</div>
+			<!--{/if}-->
+
+		<!--{elseif $op=='add'}-->
+        <div id="elecnation_comment_title_line" style="margin-top:18px;"></div>
+    	<div id="elecnation_comment_title" style="width:68px;">{lang add_friend}</div>
+        
+        <div style="padding:8px;">
+        <div class="elecnation_friend_avatar_min_line">
+            <div id="elecnation_friend_avatar_mid_rad">
+                 <a href="home.php?mod=space&uid=$tospace[uid]"><img src="<!--{avatar($tospace[uid], middle, true)}-->" width="60" height="60" style="border:none;" /></a>
+            </div>
+        </div>
+        </div>
+
+			<form method="post" autocomplete="off" id="addform_{$tospace[uid]}" name="addform_{$tospace[uid]}" action="home.php?mod=spacecp&ac=friend&op=add&uid=$tospace[uid]">
+				<input type="hidden" name="referer" value="{echo dreferer()}" />
+				<input type="hidden" name="addsubmit" value="true" />
+				<input type="hidden" name="formhash" value="{FORMHASH}" />
+                <div class="elecnation_center">{lang add} <strong>{$tospace[username]}</strong> {lang add_friend_note}</div>
+				<div class="elecnation_center" style="padding:8px 0;">
+                	<input type="text" name="note" value="" onkeydown="ctrlEnter(event, 'addsubmit_btn', 1);" size="36" style="font-size:13px; padding:6px;" />
+                    <div class="elecnation_center">{lang view_note_message}</div>
+                    <div class="elecnation_center" style="padding:8px 0;">
+                    	<select name="gid">
+						<!--{loop $groups $key $value}-->
+						<option value="$key" {if empty($space['privacy']['groupname']) && $key==1} selected="selected"{/if}>$value</option>
+						<!--{/loop}-->
+						</select>
+					</div>
+							
+				</div>
+				<div class="elecnation_center" style="padding:8px;">
+					<button type="submit" name="addsubmit_btn" id="addsubmit_btn" value="true"><strong>{lang determine}</strong></button>
+				</div>
+			</form>
+		<!--{elseif $op=='add2'}-->
+        	<div id="elecnation_comment_title_line" style="margin-top:18px;"></div>
+    		<div id="elecnation_comment_title" style="width:68px;"><em id="return_$_GET[handlekey]">{lang approval_the_request}</em></div>
+
+			<form method="post" autocomplete="off" id="addratifyform_{$tospace[uid]}" name="addratifyform_{$tospace[uid]}" action="home.php?mod=spacecp&ac=friend&op=add&uid=$tospace[uid]">
+				<input type="hidden" name="referer" value="{echo dreferer()}" />
+				<input type="hidden" name="add2submit" value="true" />
+				<input type="hidden" name="from" value="$_GET[from]" />
+				<input type="hidden" name="formhash" value="{FORMHASH}" />
+                <div style="padding:8px;">
+                	<div class="elecnation_friend_avatar_min_line">
+                        <div id="elecnation_friend_avatar_mid_rad">
+                            <a href="home.php?mod=space&uid=$tospace[uid]"><img src="<!--{avatar($tospace[uid], middle, true)}-->" width="60" height="60" style="border:none;" /></a>
+                    	</div>
+                  	</div>
+                <div class="elecnation_center" style="padding:8px;">{lang approval_the_request_group}:</div>
+				
+                <div style="min-width:300px; margin:0 auto;">
+                    <!--{eval $i=0;}-->
+                    <!--{loop $groups $key $value}-->
+                    <div style="float:left; width:88px; padding:6px;">
+                    <label for="group_$key"><input type="radio" name="gid" id="group_$key" value="$key"$groupselect[$key] />$value</label>
+					</div>
+					<!--{eval $i++;}-->
+					<!--{/loop}-->
+                    <div id="elecnation_clear"></div>
+                </div>
+                
+			</div>
+			<div class="elecnation_center" style="padding:8px;">
+				<button type="submit" name="add2submit_btn" value="true"><strong>{lang approval}</strong></button>
+			</div>
+			</form>
+			<script type="text/javascript">
+				function succeedhandle_$_GET[handlekey](url, msg, values) {
+					if(values['from'] == 'notice') {
+						deleteQueryNotice(values['uid'], 'pendingFriend');
+					} else {
+						myfriend_post(values['uid']);
+					}
+				}
+			</script>
+		<!--{elseif $op=='getinviteuser'}-->
+			$jsstr
+		<!--{/if}-->
+</div>
+</div>
+
+<!--{template common/footer}-->

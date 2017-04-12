@@ -1,0 +1,15 @@
+<div id="elecnation_friend_index_top">
+        
+		<a href="home.php?mod=space&do=friend">
+        <div id="elecnation_friend_index_float_<!--{if $_GET['view']=='me'}-->1<!--{else}-->3<!--{/if}-->">{lang friend_list}</div></a>
+        
+		<a href="home.php?mod=spacecp&ac=friend&op=request">
+        <div id="elecnation_friend_index_float_<!--{if $op == 'request'}-->1<!--{elseif $op == 'add'}-->1<!--{elseif $op == 'add2'}-->1<!--{elseif $op == 'ignore'}-->1<!--{else}-->3<!--{/if}-->">{lang friend_request}</div></a>
+		        
+		<a href="home.php?mod=spacecp&ac=friend&op=group">
+        <div id="elecnation_friend_index_float_<!--{if $op == 'group'}-->1<!--{else}-->3<!--{/if}-->">{lang friends}{lang friend_group}</div></a>
+        
+        <a href="home.php?mod=space&do=friend&view=blacklist">
+        <div id="elecnation_friend_index_float_<!--{if $_GET['view'] == 'blacklist'}-->1<!--{else}-->3<!--{/if}-->">{lang my_blacklist}</div></a>
+		
+</div>

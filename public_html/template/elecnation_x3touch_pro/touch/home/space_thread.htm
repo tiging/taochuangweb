@@ -1,0 +1,64 @@
+<!--{template common/header}-->
+
+<!-- header start -->
+<header class="header">
+    <div class="nav">
+        <div class="category">
+        	{lang mythread}
+        	<div id="elecnation_nav_left">
+                <a href="home.php?mod=space&uid={$_G[uid]}&do=profile&mycenter=1"><img src="{$_G['style']['styleimgdir']}/touch/common/images/icon_center.png" width="41" height="30"/></a>
+        	</div>
+        </div>
+	</div>
+</header>
+<!-- header end -->
+<!-- main threadlist start -->
+
+<div class="threadlist wp">
+<!--{if $list}-->
+	<!--{loop $list $thread}-->
+    <div id="threadlist_li">
+    	<a href="forum.php?mod=viewthread&tid=$thread[tid]&fromguid=hot&{if $_GET['archiveid']}archiveid={$_GET['archiveid']}&{/if}extra=$extra" target="_blank">
+        	<!--{if !$thread['forumstick'] && $thread['closed'] > 1 && ($thread['isgroup'] == 1 || $thread['fid'] != $_G['fid'])}--><!--{eval $thread[tid]=$thread[closed];}--><!--{/if}-->
+            	<div>
+    				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="18" valign="top">
+                        <!--{if in_array($thread['displayorder'], array(1, 2, 3, 4))}-->
+                        	<span><img src="{$_G['style']['styleimgdir']}/touch/common/images/icon_top.gif" width="13" height="12"></span>
+                        <!--{elseif $thread['attachment'] == 2 && $_G['setting']['mobile']['mobilesimpletype'] == 0}-->
+                            <span><img src="{$_G['style']['styleimgdir']}/touch/common/images/icon_img.gif" width="13" height="12"></span>
+                        <!--{elseif $thread['digest'] > 0}-->
+                        	<span><img src="{$_G['style']['styleimgdir']}/touch/common/images/icon_dig.gif" width="13" height="12"></span>
+                        <!--{else}-->
+							<span><img src="{$_G['style']['styleimgdir']}/touch/common/images/icon_tid.gif" width="13" height="12"></span>
+                        <!--{/if}-->
+                      </td>
+                        <td valign="top">$thread[typehtml] $thread[sorthtml] $thread[subject]</td>
+                      </tr>
+                    </table>
+                </div>
+
+                <div style="margin-left:18px; font-size:11px; color:#AAAAAA; line-height:16px;">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td>
+                        	{lang reply} <!--{if $thread['isgroup'] != 1}-->{$thread[replies]}<!--{else}-->{$groupnames[$thread[tid]][replies]}<!--{/if}--> / {lang focus_show} <!--{if $thread['isgroup'] != 1}-->{$thread[views]}<!--{else}-->{$groupnames[$thread[tid]][views]}<!--{/if}--> , $thread[dateline]
+                        </td>
+                      </tr>
+                    </table>
+                </div>
+        									
+    	</a>
+    </div>
+    <!--{/loop}-->
+    $multi
+	<div id="elecnation_multi_footer"></div>
+<!--{else}-->
+	<div id="elecnation_noinfo">{lang no_related_posts}</div>
+<!--{/if}-->
+
+</div>
+<!-- main threadlist end -->
+
+<!--{template common/footer}-->

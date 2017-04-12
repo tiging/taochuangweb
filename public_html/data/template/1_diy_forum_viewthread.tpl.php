@@ -1,12 +1,12 @@
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); hookscriptoutput('viewthread');
 0
-|| checktplrefresh('data/diy/./template/default//forum/viewthread.htm', './template/default/forum/viewthread_node.htm', 1491752860, 'diy', './data/template/1_diy_forum_viewthread.tpl.php', 'data/diy/./template/default/', 'forum/viewthread')
-|| checktplrefresh('data/diy/./template/default//forum/viewthread.htm', './template/default/forum/viewthread_fastpost.htm', 1491752860, 'diy', './data/template/1_diy_forum_viewthread.tpl.php', 'data/diy/./template/default/', 'forum/viewthread')
-|| checktplrefresh('data/diy/./template/default//forum/viewthread.htm', './template/default/forum/viewthread_node_body.htm', 1491752860, 'diy', './data/template/1_diy_forum_viewthread.tpl.php', 'data/diy/./template/default/', 'forum/viewthread')
-|| checktplrefresh('data/diy/./template/default//forum/viewthread.htm', './template/default/common/seditor.htm', 1491752860, 'diy', './data/template/1_diy_forum_viewthread.tpl.php', 'data/diy/./template/default/', 'forum/viewthread')
-|| checktplrefresh('data/diy/./template/default//forum/viewthread.htm', './template/default/forum/seccheck_post.htm', 1491752860, 'diy', './data/template/1_diy_forum_viewthread.tpl.php', 'data/diy/./template/default/', 'forum/viewthread')
-|| checktplrefresh('data/diy/./template/default//forum/viewthread.htm', './template/default/common/upload.htm', 1491752860, 'diy', './data/template/1_diy_forum_viewthread.tpl.php', 'data/diy/./template/default/', 'forum/viewthread')
-|| checktplrefresh('data/diy/./template/default//forum/viewthread.htm', './template/default/common/seccheck.htm', 1491752860, 'diy', './data/template/1_diy_forum_viewthread.tpl.php', 'data/diy/./template/default/', 'forum/viewthread')
+|| checktplrefresh('data/diy/./template/default//forum/viewthread.htm', './template/default/forum/viewthread_node.htm', 1491850121, 'diy', './data/template/1_diy_forum_viewthread.tpl.php', 'data/diy/./template/default/', 'forum/viewthread')
+|| checktplrefresh('data/diy/./template/default//forum/viewthread.htm', './template/default/forum/viewthread_fastpost.htm', 1491850121, 'diy', './data/template/1_diy_forum_viewthread.tpl.php', 'data/diy/./template/default/', 'forum/viewthread')
+|| checktplrefresh('data/diy/./template/default//forum/viewthread.htm', './template/default/forum/viewthread_node_body.htm', 1491850121, 'diy', './data/template/1_diy_forum_viewthread.tpl.php', 'data/diy/./template/default/', 'forum/viewthread')
+|| checktplrefresh('data/diy/./template/default//forum/viewthread.htm', './template/default/common/seditor.htm', 1491850121, 'diy', './data/template/1_diy_forum_viewthread.tpl.php', 'data/diy/./template/default/', 'forum/viewthread')
+|| checktplrefresh('data/diy/./template/default//forum/viewthread.htm', './template/default/forum/seccheck_post.htm', 1491850121, 'diy', './data/template/1_diy_forum_viewthread.tpl.php', 'data/diy/./template/default/', 'forum/viewthread')
+|| checktplrefresh('data/diy/./template/default//forum/viewthread.htm', './template/default/common/upload.htm', 1491850121, 'diy', './data/template/1_diy_forum_viewthread.tpl.php', 'data/diy/./template/default/', 'forum/viewthread')
+|| checktplrefresh('data/diy/./template/default//forum/viewthread.htm', './template/default/common/seccheck.htm', 1491850121, 'diy', './data/template/1_diy_forum_viewthread.tpl.php', 'data/diy/./template/default/', 'forum/viewthread')
 ;
 block_get('27,28');?><?php include template('common/header'); ?><script type="text/javascript">var fid = parseInt('<?php echo $_G['fid'];?>'), tid = parseInt('<?php echo $_G['tid'];?>');</script>
 <?php if($modmenu['thread'] || $modmenu['post']) { ?>

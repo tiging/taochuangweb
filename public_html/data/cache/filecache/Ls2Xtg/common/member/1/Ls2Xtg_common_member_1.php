@@ -16,7 +16,7 @@ $data = array (
     'groupexpiry' => '0',
     'extgroupids' => '',
     'regdate' => '1489748997',
-    'credits' => 40,
+    'credits' => 49,
     'notifysound' => '0',
     'timeoffset' => '',
     'newpm' => '0',
@@ -24,7 +24,7 @@ $data = array (
     'accessmasks' => '0',
     'allowadmincp' => '1',
     'onlyacceptfriendpm' => '0',
-    'conisbind' => '0',
+    'conisbind' => '1',
     'freeze' => '0',
   ),
 );

@@ -284,7 +284,7 @@ $data = array (
     ),
     'guide' => 'a:2:{s:5:"hotdt";i:604800;s:8:"digestdt";i:604800;}',
     'hideprivate' => '0',
-    'historyposts' => '0	7',
+    'historyposts' => '1	7',
     'hottopic' => '10',
     'icp' => '辽ICP备16004775号-3',
     'imagelib' => '0',
@@ -779,7 +779,7 @@ $data = array (
     'statstatus' => '',
     'styleid' => '1',
     'styleid1' => '1',
-    'styleid2' => '2',
+    'styleid2' => '3',
     'styleid3' => '1',
     'stylejump' => '1',
     'subforumsindex' => '0',
@@ -1216,7 +1216,7 @@ j/n/Y',
     'wechatviewpluginid' => '',
     'site_qq' => '149779331',
     'connect_login_times' => '0',
-    'connect_login_report_date' => '2017-04-05',
+    'connect_login_report_date' => '2017-04-12',
     'wechatresponse' => 'a:4:{s:16:"receiveMsg::text";a:4:{s:6:"plugin";s:6:"wechat";s:7:"include";s:18:"response.class.php";s:5:"class";s:11:"WSQResponse";s:6:"method";s:4:"text";}s:19:"receiveEvent::click";a:4:{s:6:"plugin";s:6:"wechat";s:7:"include";s:18:"response.class.php";s:5:"class";s:11:"WSQResponse";s:6:"method";s:5:"click";}s:23:"receiveEvent::subscribe";a:4:{s:6:"plugin";s:6:"wechat";s:7:"include";s:18:"response.class.php";s:5:"class";s:11:"WSQResponse";s:6:"method";s:9:"subscribe";}s:18:"receiveEvent::scan";a:4:{s:6:"plugin";s:6:"wechat";s:7:"include";s:18:"response.class.php";s:5:"class";s:11:"WSQResponse";s:6:"method";s:4:"scan";}}',
     'disfixednv_forumindex' => '0',
     'forumpicstyle' => 'a:3:{s:10:"thumbwidth";i:0;s:11:"thumbheight";i:0;s:8:"thumbnum";i:0;}',
@@ -1253,7 +1253,7 @@ j/n/Y',
       0 => '1',
     ),
     'group_recommend' => '',
-    'singcere_wechat_selfmenu' => 'a:1:{s:6:"button";a:3:{i:0;a:4:{s:12:"displayorder";s:1:"0";s:4:"name";s:8:"个性体验";s:6:"keyurl";s:0:"";s:10:"sub_button";a:3:{i:0;a:3:{s:12:"displayorder";s:1:"0";s:4:"name";s:8:"签到奖励";s:6:"keyurl";s:23:"http://bbs.taohudong.cn";}i:1;a:3:{s:12:"displayorder";s:1:"1";s:4:"name";s:7:"直购VIP";s:6:"keyurl";s:159:"http://mp.weixin.qq.com/bizmall/malldetail?id=&pid=pY9Rpw-7U37R0XJck_q_HXeiX2w4&biz=MzI3ODQ5Mjc3MQ==&scene=&action=show_detail&showwxpaytitle=1#wechat_redirect";}i:2;a:3:{s:12:"displayorder";s:1:"2";s:4:"name";s:8:"技术客服";s:6:"keyurl";s:4:"kefu";}}}i:1;a:4:{s:12:"displayorder";s:1:"1";s:4:"name";s:6:"学生帮";s:6:"keyurl";s:0:"";s:10:"sub_button";a:4:{i:0;a:3:{s:12:"displayorder";s:1:"0";s:4:"name";s:10:"创业百分百";s:6:"keyurl";s:56:"http://bbs.taohudong.cn/forum.php?mod=forumdisplay&fid=2";}i:1;a:3:{s:12:"displayorder";s:1:"1";s:4:"name";s:10:"资金百分百";s:6:"keyurl";s:57:"http://bbs.taohudong.cn/forum.php?mod=forumdisplay&fid=36";}i:2;a:3:{s:12:"displayorder";s:1:"2";s:4:"name";s:10:"考试百分百";s:6:"keyurl";s:57:"http://bbs.taohudong.cn/forum.php?mod=forumdisplay&fid=37";}i:3;a:3:{s:12:"displayorder";s:1:"3";s:4:"name";s:10:"资源寻租区";s:6:"keyurl";s:57:"http://bbs.taohudong.cn/forum.php?mod=forumdisplay&fid=38";}}}i:2;a:4:{s:12:"displayorder";s:1:"2";s:4:"name";s:8:"合作共赢";s:6:"keyurl";s:0:"";s:10:"sub_button";a:4:{i:0;a:3:{s:12:"displayorder";s:1:"0";s:4:"name";s:8:"旗下品牌";s:6:"keyurl";s:11:"qixiapinpai";}i:1;a:3:{s:12:"displayorder";s:1:"1";s:4:"name";s:8:"公司实力";s:6:"keyurl";s:21:"http://m.taohudong.cn";}i:2;a:3:{s:12:"displayorder";s:1:"2";s:4:"name";s:8:"商家合作";s:6:"keyurl";s:13:"shangjiahezuo";}i:3;a:3:{s:12:"displayorder";s:1:"3";s:4:"name";s:8:"个人合作";s:6:"keyurl";s:10:"gerenhezuo";}}}}}',
+    'singcere_wechat_selfmenu' => 'a:1:{s:6:"button";a:3:{i:0;a:4:{s:12:"displayorder";s:1:"0";s:4:"name";s:8:"个性体验";s:6:"keyurl";s:0:"";s:10:"sub_button";a:3:{i:0;a:3:{s:12:"displayorder";s:1:"0";s:4:"name";s:10:"资源免费领";s:6:"keyurl";s:44:"http://www.taochuangweb.com/forum-176-1.html";}i:1;a:3:{s:12:"displayorder";s:1:"1";s:4:"name";s:7:"直购VIP";s:6:"keyurl";s:159:"http://mp.weixin.qq.com/bizmall/malldetail?id=&pid=pY9Rpw-7U37R0XJck_q_HXeiX2w4&biz=MzI3ODQ5Mjc3MQ==&scene=&action=show_detail&showwxpaytitle=1#wechat_redirect";}i:2;a:3:{s:12:"displayorder";s:1:"2";s:4:"name";s:8:"技术客服";s:6:"keyurl";s:4:"kefu";}}}i:1;a:4:{s:12:"displayorder";s:1:"1";s:4:"name";s:6:"学生帮";s:6:"keyurl";s:0:"";s:10:"sub_button";a:4:{i:0;a:3:{s:12:"displayorder";s:1:"0";s:4:"name";s:10:"创业百分百";s:6:"keyurl";s:56:"http://bbs.taohudong.cn/forum.php?mod=forumdisplay&fid=2";}i:1;a:3:{s:12:"displayorder";s:1:"1";s:4:"name";s:10:"资金百分百";s:6:"keyurl";s:57:"http://bbs.taohudong.cn/forum.php?mod=forumdisplay&fid=36";}i:2;a:3:{s:12:"displayorder";s:1:"2";s:4:"name";s:10:"考试百分百";s:6:"keyurl";s:57:"http://bbs.taohudong.cn/forum.php?mod=forumdisplay&fid=37";}i:3;a:3:{s:12:"displayorder";s:1:"3";s:4:"name";s:10:"资源寻租区";s:6:"keyurl";s:57:"http://bbs.taohudong.cn/forum.php?mod=forumdisplay&fid=38";}}}i:2;a:4:{s:12:"displayorder";s:1:"2";s:4:"name";s:8:"合作共赢";s:6:"keyurl";s:0:"";s:10:"sub_button";a:4:{i:0;a:3:{s:12:"displayorder";s:1:"0";s:4:"name";s:8:"旗下品牌";s:6:"keyurl";s:11:"qixiapinpai";}i:1;a:3:{s:12:"displayorder";s:1:"1";s:4:"name";s:8:"公司实力";s:6:"keyurl";s:21:"http://m.taohudong.cn";}i:2;a:3:{s:12:"displayorder";s:1:"2";s:4:"name";s:8:"商家合作";s:6:"keyurl";s:13:"shangjiahezuo";}i:3;a:3:{s:12:"displayorder";s:1:"3";s:4:"name";s:8:"个人合作";s:6:"keyurl";s:10:"gerenhezuo";}}}}}',
     'fastactivation' => '0',
     'newusergroupid' => '10',
     'buyusergroupexists' => '0',
@@ -1265,7 +1265,7 @@ j/n/Y',
     'styles' => 
     array (
       1 => '默认风格',
-      2 => 'singcere_xn',
+      3 => 'elecNation_X3Touch_P',
     ),
     'creditnames' => '1|威望|,2|金钱|,3|贡献|,4|淘创币|',
     'creditstransextra' => 
@@ -7110,19 +7110,19 @@ j/n/Y',
       array (
         0 => 
         array (
-          'left' => '{OvPJwjzW}
-{Z7nV0B9C}
-{Yylxi5y0}
-{ee2WC4Cy}
-{RTq5G9kQ}
-{WOw76bjW}
+          'left' => '{wU1fJsFf}
+{TlFvtjaj}
+{Uufq7Z1k}
+{Tzll5FJJ}
+{D4TgGvQ4}
+{pkn36EFJ}
 <dl class="pil cl">
-	<dt>{WQWNwnbF}</dt><dd>{jBhjYZ0q}</dd>
+	<dt>{R0Bbv999}</dt><dd>{KT699QH2}</dd>
 </dl>
-{HjPHws3R}
-<dl class="pil cl">{XUSqQVhK}</dl>',
+{zCEEuAH6}
+<dl class="pil cl">{AlECw271}</dl>',
           'top' => '<dl class="cl">
-<dt>{i11HWku1}</dt><dd>{f88yre7f}</dd>
+<dt>{wIsGcrM2}</dt><dd>{yTtsLTst}</dd>
 </dl>',
         ),
       ),
@@ -7132,70 +7132,70 @@ j/n/Y',
         array (
           'left' => 
           array (
-            '{OvPJwjzW}' => 
+            '{wU1fJsFf}' => 
             array (
               0 => 'numbercard',
               1 => '',
               2 => '',
               3 => '',
             ),
-            '{Z7nV0B9C}' => 
+            '{TlFvtjaj}' => 
             array (
               0 => 'groupicon',
               1 => '<p>',
               2 => '</p>',
               3 => '',
             ),
-            '{Yylxi5y0}' => 
+            '{Uufq7Z1k}' => 
             array (
               0 => 'authortitle',
               1 => '<p><em>',
               2 => '</em></p>',
               3 => '',
             ),
-            '{ee2WC4Cy}' => 
+            '{Tzll5FJJ}' => 
             array (
               0 => 'customstatus',
               1 => '<p class="xg1">',
               2 => '</p>',
               3 => '',
             ),
-            '{RTq5G9kQ}' => 
+            '{D4TgGvQ4}' => 
             array (
               0 => 'star',
               1 => '<p>',
               2 => '</p>',
               3 => '',
             ),
-            '{WOw76bjW}' => 
+            '{pkn36EFJ}' => 
             array (
               0 => 'upgradeprogress',
               1 => '<p>',
               2 => '</p>',
               3 => '',
             ),
-            '{WQWNwnbF}' => 
+            '{R0Bbv999}' => 
             array (
               0 => 'baseinfo',
               1 => '',
               2 => '',
               3 => 'credits,1',
             ),
-            '{jBhjYZ0q}' => 
+            '{KT699QH2}' => 
             array (
               0 => 'baseinfo',
               1 => '',
               2 => '',
               3 => 'credits,0',
             ),
-            '{HjPHws3R}' => 
+            '{zCEEuAH6}' => 
             array (
               0 => 'medal',
               1 => '<p class="md_ctrl">',
               2 => '</p>',
               3 => '',
             ),
-            '{XUSqQVhK}' => 
+            '{AlECw271}' => 
             array (
               0 => 'baseinfo',
               1 => '',
@@ -7205,14 +7205,14 @@ j/n/Y',
           ),
           'top' => 
           array (
-            '{i11HWku1}' => 
+            '{wIsGcrM2}' => 
             array (
               0 => 'baseinfo',
               1 => '',
               2 => '',
               3 => 'credits,1',
             ),
-            '{f88yre7f}' => 
+            '{yTtsLTst}' => 
             array (
               0 => 'baseinfo',
               1 => '',
@@ -7237,10 +7237,10 @@ j/n/Y',
     'csspath' => 'data/cache/style_',
     'reginput' => 
     array (
-      'username' => 'o48KSz',
-      'password' => 'vOWTjE',
-      'password2' => 'mqmuG2',
-      'email' => 'dzPEM0',
+      'username' => 'U90iiV',
+      'password' => 'R5V5c8',
+      'password2' => 'NB5SO8',
+      'email' => 'Z10Y11',
     ),
     'output' => 
     array (

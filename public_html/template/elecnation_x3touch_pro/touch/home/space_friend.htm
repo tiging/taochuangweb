@@ -1,0 +1,123 @@
+<!--{template common/header}-->
+<!-- header start -->
+<header class="header">
+    <div class="nav">
+        <div class="category">
+        <!--{if $_GET['view'] == 'visitor'}-->
+			{lang my_visitor}
+		<!--{elseif $_GET['view'] == 'blacklist'}-->
+        	{lang my_blacklist}
+        <!--{else}-->
+        	{lang friend_list}
+        <!--{/if}-->
+        
+        <div id="elecnation_nav_left">
+            <a href="javascript:;" onclick="history.go(-1)"><img src="{$_G['style']['styleimgdir']}/touch/common/images/icon_back.png" width="41" height="30"/></a>
+        </div>
+        <div id="elecnation_nav_right">
+            <a href="home.php?mod=space&uid={$_G[uid]}&do=profile&mycenter=1" class="z"><img src="{$_G['style']['styleimgdir']}/touch/common/images/icon_center.png" width="41" height="30"/></a>
+        </div>
+        </div>
+    </div>
+</header>
+<!-- header end -->
+<!--{subtemplate home/space_friend_nav}-->
+
+<div class="wp">
+<div style="padding:8px;">
+	<!--{if $space[self]}-->
+        <!--{if $_GET['view']=='blacklist'}-->
+            <div id="elecnation_comment_title_line" style="margin-top:18px;"></div>
+    		<div id="elecnation_comment_title" style="width:98px;">{lang add_blacklist}</div>
+			
+			<div style="padding-top:8px;">
+            	<form method="post" autocomplete="off" name="blackform" action="home.php?mod=spacecp&ac=friend&op=blacklist&start=$_GET[start]">
+					<table width="100%" cellpadding="0" cellspacing="0">
+						<tr>
+							<td align="center"><input type="text" name="username" value="" size="16" style="font-size:16px; padding:6px;" /></td>
+					  	</tr>
+						<tr>
+						<td height="36" align="center" valign="bottom"><button type="submit" name="blacklistsubmit_btn" id="moodsubmit_btn" value="true" ><em>{lang add}{lang username}</em></button></td>
+						</tr>
+					</table>
+					<input type="hidden" name="blacklistsubmit" value="true" />
+					<input type="hidden" name="formhash" value="{FORMHASH}" />
+			  </form>
+			</div>
+            
+            <div style="text-align:center;" class="grey">{lang blacklist_message}</div>
+            
+            <div id="elecnation_comment_title_line" style="margin-top:18px;"></div>
+    		<div id="elecnation_comment_title" style="width:68px;">{lang my_blacklist}</div>
+		<!--{/if}-->
+        
+        <!--{if $list}-->
+			<div id="friend_ul">
+			<ul class="buddy cl">
+			<!--{loop $list $key $value}-->
+			<div id="friend_{$value[uid]}_li" style="padding:6px 0;">
+				<!--{if $value[username] == ''}-->
+					<div class="avt"><img src="{STATICURL}image/magic/hidden.gif" /></div>
+					<h4>{lang anonymity}</h4>
+				<!--{else}-->
+                	<div id="elecnation_friend_avatar">
+						<div id="elecnation_friend_avatar_rad">
+							<a href="home.php?mod=space&uid=$value[uid]"><img src="<!--{avatar($value[uid], small, true)}-->" width="24" height="24" style="border:none;" /></a>
+						</div>
+					</div>
+
+					<h4>
+					<span class="y" style="line-height:30px;">
+					<!--{if $_GET['view'] == 'blacklist'}-->
+						<a href="home.php?mod=spacecp&ac=friend&op=blacklist&subop=delete&uid=$value[uid]&start=$_GET[start]">{lang delete_blacklist}</a>
+					<!--{elseif $_GET['view'] == 'visitor' || $_GET['view'] == 'trace'}-->
+						<!--{date($value[dateline], 'n{lang month}j{lang day}')}-->
+					<!--{elseif $_GET['view'] == 'online'}-->
+						<!--{date($ols[$value[uid]], 'H:i')}-->
+					<!--{else}-->
+						{lang hot}(<span id="spannum_$value[uid]">$value[num]</span>)
+					<!--{/if}-->
+					</span>
+                                            
+					<span class="z" style="line-height:30px; margin-left:8px;">
+						<a href="home.php?mod=space&uid=$value[uid]"{eval g_color($value[groupid]);}>$value[username]</a>
+					</span>
+                    </h4>
+                <!--{/if}-->
+                                    
+				<div style="line-height:30px;">
+				<!--{if !in_array($_GET['view'], array('blacklist', 'visitor', 'trace', 'online'))}-->
+					<span class="elecnation_time z">$value[note]</span>
+					<span class="elecnation_time z"><a href="home.php?mod=spacecp&ac=friend&op=editnote&uid=$value[uid]&handlekey=editnote_{$value[uid]}" id="friend_editnote_$value[uid]">{lang friend_editnote}</a></span>
+					<span class="elecnation_time z"><a href="home.php?mod=spacecp&ac=friend&op=ignore&uid=$value[uid]&handlekey=delfriendhk_{$value[uid]}" id="a_ignore_$key" >{lang delete}</a></span>
+				<!--{/if}-->
+				</div>
+                
+				<div id="elecnation_clear" style="border-bottom:1px dotted #CCCCCC; padding-bottom:8px;"></div>
+            </div>
+			<!--{/loop}-->
+			</ul>
+			</div>
+			
+            <!--{if $multi}-->$multi<!--{/if}-->
+            
+		<!--{else}-->
+        	<!--{if $_GET['view'] == 'me' && !$friendnum}-->
+        		<div id="elecnation_noinfo">{lang no_friend_list}</div>
+            <!--{elseif $_GET['view'] == 'blacklist' && !$friendnum}-->
+        		<div id="elecnation_noinfo">{lang no_friend_list}</div>
+            <!--{/if}-->
+            
+            
+		<!--{/if}-->
+						
+            <!--{if $groups}-->
+                    </div>
+                </div>
+            <!--{/if}-->
+
+	<!--{/if}-->
+</div>
+</div>
+
+<!--{template common/footer}-->
