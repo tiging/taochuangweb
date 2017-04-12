@@ -1,4 +1,0 @@
-var TO=new Mo.TabMenu("mouseover");TO.TabClass("active","");var Sel=Mo("#play ul").html('');var Box=Mo("#play a");for(var i=0;i<Box.size();i++){Sel.create("li",{"innerHTML":i+1});TO.Add(Mo("#play ul li").item(-1),Box.item(i));};TO.Play(0);TO.Auto(5000);var TO=new Mo.TabMenu("mouseover");TO.TabClass("active","");var Sel=Mo("#top ol li");var Box=Mo("#top ul");for(var i=0;i<=Sel.size();i++){TO.Add(Sel.item(i),Box.item(i));};TO.Play(2);TO.Auto(20000);
-
-var TO=new Mo.TabMenu("mouseover");TO.TabClass("active","");var Sel=Mo("#bind_star .cl_option li");var Box=Mo("#bind_star div[rel=box]");for(var i=0;i<=Sel.size();i++){TO.Add(Sel.item(i),Box.item(i));};TO.Play(0);
-var TO=new Mo.TabMenu("mouseover");TO.TabClass("active","");var Sel=Mo("#bind_naver .cl_option li");var Box=Mo("#bind_naver div[rel=box]");for(var i=0;i<=Sel.size();i++){TO.Add(Sel.item(i),Box.item(i));};TO.Play(0);

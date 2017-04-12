@@ -1,6 +1,0 @@
-.second-nav { background: #F4F4F4; height: 44px; position: relative; overflow: hidden; }
-.second-nav-list { position: relative; overflow-y: hidden; overflow-x: scroll; height: 64px; }
-.second-nav-list-ul{ position: absolute; left: 0; font-size: 0; white-space: nowrap; }
-.second-nav a { display: inline-block; height: 44px; line-height: 44px; padding: 0 15px; font-size: 16px; text-align: center; color: #333; }
-.second-nav a.cur { background: #fff; }
-
